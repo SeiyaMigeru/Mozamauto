@@ -11,8 +11,7 @@ const PartnersHero = () => {
           max-xl:padding-x pt-28 text-center"
       >
         <h1 className="mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold">
-          Partners Of {" "}
-          <span className="text-stone-500 inline-block mt-3">Mozamauto</span>
+          Partners Of {" "} <span className="text-stone-500 inline-block mt-3">Mozamauto</span>
         </h1>
       </div>
     </section>

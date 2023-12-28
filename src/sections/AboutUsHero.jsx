@@ -10,7 +10,7 @@ const AboutUsHero = () => {
       >
         <h1 className="mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold">
           All About{" "}
-          <span className="text-stone-500 inline-block mt-3">Mozamauto</span>
+          <span className="text-stone-500 inline-block mt-3">Mozam Auto</span>
         </h1>
       </div>
     </section>

@@ -1,13 +1,13 @@
 import React from 'react';
 import Nav from '../components/Nav';
-import { ContactUsHero, Footer, ContactDetails, ContactUsForm } from '../sections';
+import { Footer, ContactUsForm, ContacUsHero, } from '../sections';
 
 const ContactUs = () => {
   return (
     <main className="relative">
       <Nav/>
       <section className="padding-x ">
-        <ContactUsHero />
+        <ContacUsHero/>
       </section>
       <section className='padding'>
         <ContactUsForm/>

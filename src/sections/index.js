@@ -9,16 +9,26 @@ import AboutUsHero from './AboutUsHero';
 import VM from './VM';
 import Brands from './Brands';
 import Certification from './Certification';
-import ContactUsHero from './ContactUsHero';
 import ContactDetails from './ContactDetails';
 import AppointmentHero from './AppointmentHero';
 import Calendar from './Calendar';
 import ContactUsForm from './ContactUsForm';
 import ContactUsForm1 from './ContactUsForm1';
 import ContactUsForm2 from './ContactUsForm2';
+import ContactUsForm3 from './ContactUsForm3';
+import ContacUsHero from './ContacUsHero';
+import PartnersHero from './PartnersHero';
+import PartnerSection1 from './PartnerSection1';
+import PartnerSection2 from './PartnerSection2';
+import PartnerSection3 from './PartnerSection3';
+import ProductsHero from './ProductsHero';
+import ProductsTab from './ProductsTab';
+import ProductCards from './ProductCards';
 
 export {
     CustomerReviews, Footer, Hero, PopularProducts, Services, Subscribe, SuperQuality,
-    AboutUsHero, VM, Brands, Certification, ContactUsHero, ContactDetails, AppointmentHero,
-    Calendar, ContactUsForm, ContactUsForm1, ContactUsForm2
+    AboutUsHero, VM, Brands, Certification, ContactDetails, AppointmentHero,
+    Calendar, ContactUsForm, ContactUsForm1, ContactUsForm3, ContactUsForm2, ContacUsHero,
+    PartnersHero, PartnerSection1, PartnerSection2, PartnerSection3, ProductsHero, ProductsTab,
+    ProductCards
 }

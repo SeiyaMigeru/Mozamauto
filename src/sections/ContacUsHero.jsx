@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ContactUsHero = () => {
+const ContacUsHero = () => {
   return (
     <section
     className="w-full  flex xl:flex-row flex-col justify-center
@@ -11,13 +11,12 @@ const ContactUsHero = () => {
         max-xl:padding-x pt-28 text-center"
     >
       <h1 className="mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold">
-        The{" "}
-        <span className="text-stone-500 inline-block mt-3">Mozam</span>
-        {" "} Team
+        Contact{" "}
+        <span className="text-stone-500 inline-block mt-3">Us</span>
       </h1>
     </div>
   </section>
   )
 }
 
-export default ContactUsHero
+export default ContacUsHero

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { HomePage, ContactUs, AboutUs, Appointment, Products } from "./pages";
+import { HomePage, ContactUs, AboutUs, Appointment, Products, Partners } from "./pages";
 
 const App = () => (
   <Router>
@@ -10,6 +10,7 @@ const App = () => (
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/appointment" element={<Appointment/>} />
         <Route path="/products" element={<Products />} />
+        <Route path="/partners" element={<Partners />} />
       </Routes>
     </div>
   </Router>

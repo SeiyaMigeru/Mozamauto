@@ -3,5 +3,6 @@ import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
 import Appointment from "./Appointment";
 import Products from "./Products";
+import Partners from "./Partners";
 
-export {HomePage, AboutUs, ContactUs, Appointment, Products}
+export {HomePage, AboutUs, ContactUs, Appointment, Products, Partners}

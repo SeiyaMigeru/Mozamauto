@@ -1,10 +1,16 @@
 import Nav from "../components/Nav"
-import { Footer } from "../sections"
+import { Footer, ProductsHero, ProductsTab } from "../sections"
 
 const Products = () => {
   return (
     <main className="relative">
       <Nav/>
+      <section className="padding-x">
+        <ProductsHero/>
+      </section>
+      <section className="padding">
+        <ProductsTab/>
+      </section>
       <section className="sm:px-16 px-8 sm:pt-6 pt-3 pb-8 bg-black">
         <Footer />
       </section>

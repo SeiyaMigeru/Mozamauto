@@ -11,8 +11,8 @@ const ProductsHero = () => {
           max-xl:padding-x pt-28 text-center"
       >
         <h1 className="mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold">
-          <span className="text-stone-500 inline-block mt-3">Mozamauto</span>
-           {" "} Shop
+          <span className="text-stone-500 inline-block mt-3">Mozam Auto</span>
+           {" "} Trucks & Parts
         </h1>
       </div>
     </section>

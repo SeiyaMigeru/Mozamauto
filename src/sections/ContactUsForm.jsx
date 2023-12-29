@@ -2,6 +2,7 @@ import {useState} from "react";
 import ContactUsForm1 from "./ContactUsForm1";
 import ContactUsForm2 from "./ContactUsForm2";
 import ContactUsForm3 from "./ContactUsForm3";
+import ContactUsForm4 from "./ContactUsForm4";
 
 const ContactUsForm = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -67,6 +68,21 @@ const ContactUsForm = () => {
                   </span>
                 </span>
               </button>
+
+              <button
+                type="button"
+                className={`hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-gray-200 p-4 md:p-5 rounded-xl active ${activeTab === 1 ? 'hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent' : ''}`}
+                onClick={() => handleTabClick(4)}
+                id="tabs-with-card-item-4" data-hs-tab="#tabs-with-card-4" aria-controls="tabs-with-card-4" role="tab"
+              >
+                <span class="flex">
+                  <svg class="flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7 hs-tab-active:text-blue-600 text-gray-800 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+                  <span class="grow ms-6">
+                    <span class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800  ">Powerful features</span>
+                    <span class="block mt-1 text-gray-800 ">Reduce time and effort on building modern look design with Preline only.</span>
+                  </span>
+                </span>
+              </button>
             </nav>
 
           </div>
@@ -86,6 +102,10 @@ const ContactUsForm = () => {
     
                 <div id="tabs-with-card-3" class="hidden" className={activeTab === 3 ? '' : 'hidden'} role="tabpanel" aria-labelledby="tabs-with-card-item-3">
                   <ContactUsForm3/>
+                </div>
+
+                <div id="tabs-with-card-4" class="hidden" className={activeTab === 4 ? '' : 'hidden'} role="tabpanel" aria-labelledby="tabs-with-card-item-4">
+                  <ContactUsForm4/>
                 </div>
               </div>
 

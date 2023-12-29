@@ -6,6 +6,7 @@ import {
   Services,
   Subscribe,
   SuperQuality,
+  HomeHero
 } from "../sections";
 import Nav from "../components/Nav";
 
@@ -13,7 +14,7 @@ const HomePage = () => {
   return (
     <main className="relative">
       <Nav />
-      <section className=" xl:padding-l wide:padding-r padding-b">
+      <section className="padding">
         <Hero />
       </section>
       <section className="padding">

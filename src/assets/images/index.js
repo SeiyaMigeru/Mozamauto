@@ -8,8 +8,9 @@ import product4 from './Product4.jpg';
 import part from './part.png';
 import customer1 from './Customer1.jpg';
 import customer2 from './Customer2.jpg';
+import BGHero from './BGHero.png'
 
 export {
     truck1,truck2,truck3, product1, product2, product3, product4, part,
-    customer1, customer2
+    customer1, customer2, BGHero
 }

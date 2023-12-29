@@ -3,7 +3,7 @@ import React from 'react'
 const ContactUsForm2 = () => {
   return (
     <div class=" bg-white flex flex-col border rounded-xl p-4 sm:p-6 lg:p-10 ">
-    <h2 class="text-xl font-semibold text-gray-800 ">Department 2 form</h2>
+    <h2 class="text-xl font-semibold text-gray-800 ">Service Department</h2>
 
     <form>
       <div class="mt-6 grid gap-4 lg:gap-6">

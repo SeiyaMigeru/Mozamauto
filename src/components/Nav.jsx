@@ -1,13 +1,15 @@
 import { headerLogo, hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
+import Lang from "./Lang";
 
 const Nav = () => {
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
-      <nav className="flex justify-between items-center max-container">
+    <header className="padding-x py-8 absolute z-10  w-full">
+      <nav className="flex bg-white rounded-md px-2 justify-between gap-10 items-center max-container  bg-opacity-20">
         <a href="/">
           <img src={headerLogo} alt="Logo" width={130} height={29} />
         </a>
+        <Lang/>
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>

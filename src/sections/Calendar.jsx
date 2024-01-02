@@ -157,7 +157,7 @@ const Calendar = () => {
 
             <div class="mt-3 text-center">
               <p class="text-sm text-gray-500">
-                We'll get back to you in 1-2 business days.
+                We'll get back to you within 24-48 hours.
               </p>
             </div>
           </div>

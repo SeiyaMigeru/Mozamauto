@@ -3,9 +3,9 @@ const ContactDetails = () => {
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
         <h2 class="text-2xl font-bold md:text-4xl md:leading-tight">
-          Our leadership
+        People of Mozam 
         </h2>
-        <p class="mt-1 text-gray-600 ">Creative people</p>
+        <p class="mt-1 text-gray-600 ">Passionate individuals that executes exemplary results</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

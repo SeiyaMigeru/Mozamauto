@@ -3,7 +3,7 @@ import React from "react";
 const ContactUsForm1 = () => {
   return (
     <div class=" bg-white flex flex-col border rounded-xl p-4 sm:p-6 lg:p-10 ">
-      <h2 class="text-xl font-semibold text-gray-800 ">Informations Desk</h2>
+      <h2 class="text-xl font-semibold text-gray-800 ">Information Desk</h2>
 
       <form>
         <div class="mt-6 grid gap-4 lg:gap-6">
@@ -61,7 +61,7 @@ const ContactUsForm1 = () => {
                 for="hs-company-hire-us-1"
                 class="block mb-2 text-sm text-gray-700 font-medium "
               >
-                Company
+                Company Name
               </label>
               <input
                 type="text"
@@ -76,7 +76,7 @@ const ContactUsForm1 = () => {
                 for="hs-company-website-hire-us-1"
                 class="block mb-2 text-sm text-gray-700 font-medium "
               >
-                Company Website
+                Contact Number
               </label>
               <input
                 type="text"
@@ -115,7 +115,7 @@ const ContactUsForm1 = () => {
 
       <div class="mt-3 text-center">
         <p class="text-sm text-gray-500">
-          We'll get back to you in 1-2 business days.
+        We'll get back to you within 24-48 hours.
         </p>
       </div>
     </div>

@@ -21,8 +21,8 @@ const VM = () => {
             <blockquote>
             <h1 className="mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold text-stone-400">Vision</h1>
               <p class="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal ">
-                To say that switching to Preline has been life-changing is an
-                understatement. My business has tripled and I got my life back.
+              Our objective is to become a robust, creative, and innovative company with 
+              national recognition for the quality of our products and professionalism in offering our services.
               </p>
             </blockquote>
           </div>
@@ -39,8 +39,9 @@ const VM = () => {
               <h1 className="mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold text-stone-400">Mission</h1>
 
               <p class="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal ">
-                To say that switching to Preline has been life-changing is an
-                understatement. My business has tripled and I got my life back.
+              It is our mission to provide services to our clients (companies and organizations in general) with quality, efficiency, responsibility, and integrity, 
+              while maintaining professional secrecy and meeting their highest expectations, meeting deadlines for the success of their businesses,
+              making them more productive and profitable, through the provision of light and heavy vehicles and passenger transport, among other things.
               </p>
             </blockquote>
           </div>

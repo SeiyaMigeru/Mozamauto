@@ -9,7 +9,7 @@ const SuperQuality = () => {
       <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
           <span>Try the</span>
           <br />
-          <span className="text-stone-500 inline-block mt-3">Excellence in our</span> Truck Parts
+          <span className="text-stone-500 inline-block mt-3">Excellence of our</span> Truck Parts
         </h2>
         <p className=" mt-4 lg:max-w-lg info-text">
         Elevate your adventure with confidence, knowing that your vehicle is outfitted with the best-in-class equipment available. 

@@ -15,8 +15,7 @@ const Footer = () => {
 
       {/* Description */}
       <p className="mt-6 text-sm text-center justify-self-center leading-7 font-montserrat text-white-400 sm:max-w-sm col-span-1 row-span-1">
-        Explore our selection of products and experience excellence in every
-        detail
+      THE TRUCK INDUSTRY'S FUTURE IS AT HAND.
       </p>
 
       {/* Social Media Icons */}

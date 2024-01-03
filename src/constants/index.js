@@ -6,9 +6,9 @@ export const navLinks = [
     { href: "/products", label: "Products" },
     { href: "/about-us", label: "About Us" },    
     { href: "/partners", label: "Partners" },
-    { href: "/contact-us", label: "Contact Us" },
     { href: "/mozamnews", label: "MozNews" },
-
+    { href: "/contact-us", label: "Contact Us" },
+    
 ];
 
 export const statistics = [

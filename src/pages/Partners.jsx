@@ -48,10 +48,10 @@ const Partners = () => {
       <section className="padding-x ">
         <PartnerSection2 />
       </section>
-      <section className="padding-x ">
+      <section className="padding ">
         <PartnerSection3 />
+        <FloatingIcon isFixed={isFloatingIconFixed} />
       </section>
-      <FloatingIcon isFixed={isFloatingIconFixed} />
       <section className="sm:px-16 px-8 sm:pt-6 pt-3 pb-8 bg-black">
         <Footer />
       </section>

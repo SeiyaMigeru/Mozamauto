@@ -63,10 +63,10 @@ const HomePage = () => {
       <section className="bg-[#f1e9d2] padding">
         <CustomerReviews />
       </section>
-      <section className="padding-x sm:py-32 py-16 w-full">
+      <section className="padding sm:py-32 py-16 w-full">
         <Subscribe />
+        <FloatingIcon isFixed={isFloatingIconFixed} />
       </section>
-      <FloatingIcon isFixed={isFloatingIconFixed} />
       <section className="sm:px-16 px-8 sm:pt-6 pt-3 pb-8 bg-black">
         <Footer />
       </section>

@@ -54,8 +54,8 @@ const AboutUs = () => {
       </section>
       <section className="padding">
         <Brands/>
+        <FloatingIcon isFixed={isFloatingIconFixed} />
       </section>
-      <FloatingIcon isFixed={isFloatingIconFixed} />
       <section className="sm:px-16 px-8 sm:pt-6 pt-3 pb-8 bg-black">
         <Footer />
       </section>

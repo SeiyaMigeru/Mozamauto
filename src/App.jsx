@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { HomePage, ContactUs, AboutUs, Appointment, Products, Partners } from "./pages";
+import { HomePage, ContactUs, AboutUs, Appointment, Products, Partners, MozamNews } from "./pages";
 
 const App = () => (
   <Router>
@@ -11,6 +11,7 @@ const App = () => (
         <Route path="/appointment" element={<Appointment/>} />
         <Route path="/products" element={<Products />} />
         <Route path="/partners" element={<Partners />} />
+        <Route path="/mozamnews" element={<MozamNews />} />
       </Routes>
     </div>
   </Router>

@@ -26,11 +26,13 @@ import ProductsTab from './ProductsTab';
 import ProductCards from './ProductCards';
 import HomeHero from './HomeHero';
 import ContactUsForm4 from './ContactUsForm4';
+import MozamEvents from './MozamEvents';
+import MozamNewsHero from './MozamNewsHero';
 
 export {
     CustomerReviews, Footer, Hero, PopularProducts, Services, Subscribe, SuperQuality,
     AboutUsHero, VM, Brands, WhoIsMozam, LeadersOfMozam, AppointmentHero,
     Calendar, ContactUsForm, ContactUsForm1, ContactUsForm3, ContactUsForm2, ContacUsHero,
     PartnersHero, PartnerSection1, PartnerSection2, PartnerSection3, ProductsHero, ProductsTab,
-    ProductCards, HomeHero, ContactUsForm4,
+    ProductCards, HomeHero, ContactUsForm4, MozamEvents, MozamNewsHero
 }

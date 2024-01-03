@@ -14,6 +14,10 @@ const ProductsHero = () => {
           <span className="text-stone-500 inline-block mt-3">Mozam Auto</span>
            {" "} Trucks & Parts
         </h1>
+
+        <h2 class="text-lg text-gray-800 font-bold ">
+        We take pride in offering a wide variety of premium products, each of which is a testament to quality and endurance.
+        </h2>
       </div>
     </section>
   )

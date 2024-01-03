@@ -7,13 +7,13 @@ const SuperQuality = () => {
       gap-10 w-full max-container"> 
       <div className="flex flex-1 flex-col">
       <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
-          <span>We Offer</span>
+          <span>Try the</span>
           <br />
-          <span className="text-stone-500 inline-block mt-3">Outstanding</span> Truck Parts
+          <span className="text-stone-500 inline-block mt-3">Excellence in our</span> Truck Parts
         </h2>
         <p className=" mt-4 lg:max-w-lg info-text">
-        Elevate your journey with confidence, knowing that you've equipped your truck with the best-in-class gear available. 
-        Explore our top products and transform your truck into the ultimate driving machine.
+        Elevate your adventure with confidence, knowing that your vehicle is outfitted with the best-in-class equipment available. 
+        Explore our best-selling items. Be <span className="text-lg font-palanquin font-bold">"DRIVEN TO PERFECTION".</span>
         </p>
         <div className="mt-11"><Button label="View Details"/></div>
       </div>

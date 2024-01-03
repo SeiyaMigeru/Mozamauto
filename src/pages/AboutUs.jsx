@@ -1,5 +1,5 @@
 import Nav from "../components/Nav"
-import { AboutUsHero, Footer, VM, Brands, Certification, ContactDetails } from "../sections"
+import { AboutUsHero, Footer, VM, Brands, WhoIsMozam, LeadersOfMozam } from "../sections"
 
 const AboutUs = () => {
   return (
@@ -12,10 +12,10 @@ const AboutUs = () => {
         <VM/>
       </section>
       <section>
-        <Certification/>
+        <WhoIsMozam/>
       </section>
       <section>
-        <ContactDetails/>
+        <LeadersOfMozam/>
       </section>
       <section className="padding">
         <Brands/>

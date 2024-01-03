@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Certification = () => {
+const WhoisMozam = () => {
   return (
 
 
@@ -70,4 +70,4 @@ const Certification = () => {
   )
 }
 
-export default Certification
+export default WhoisMozam

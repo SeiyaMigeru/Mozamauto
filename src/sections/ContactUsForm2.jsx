@@ -92,7 +92,7 @@ const ContactUsForm2 = () => {
             for="hs-about-hire-us-1"
             class="block mb-2 text-sm text-gray-700 font-medium "
           >
-            Details
+            Let us know about the trucks condition
           </label>
           <textarea
             id="hs-about-hire-us-1"

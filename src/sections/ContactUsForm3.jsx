@@ -62,7 +62,7 @@ const ContactUsForm3 = () => {
                   for="hs-company-hire-us-1"
                   class="block mb-2 text-sm text-gray-700 font-medium "
                 >
-                  Company Nane
+                  Company Name
                 </label>
                 <input
                   type="text"
@@ -93,7 +93,7 @@ const ContactUsForm3 = () => {
                 for="hs-about-hire-us-1"
                 class="block mb-2 text-sm text-gray-700 font-medium "
               >
-                Details
+                Provide a summary of what you are looking for:
               </label>
               <textarea
                 id="hs-about-hire-us-1"

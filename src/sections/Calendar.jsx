@@ -6,11 +6,10 @@ const Calendar = () => {
       <div class="grid md:grid-cols-2 items-center gap-12">
         <div>
           <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight ">
-            Hire us
+          A SERVICE YOUR TRUCK TRULY DESERVE!
           </h1>
           <p class="mt-1 md:text-lg text-gray-800 ">
-            We help brands and platforms turn big ideas into beautiful digital
-            products and experiences.
+            Experience it first hand here in Mozam Auto
           </p>
 
           <div class="mt-8">
@@ -34,7 +33,7 @@ const Calendar = () => {
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-gray-600 ">Industry-leading design</span>
+                <span class="text-gray-600 ">Trouble-free Appointment Setting</span>
               </li>
 
               <li class="flex space-x-3">
@@ -52,7 +51,7 @@ const Calendar = () => {
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-gray-600 ">Developer community support</span>
+                <span class="text-gray-600 ">Fast & Time-mannered responses</span>
               </li>
 
               <li class="flex space-x-3">
@@ -70,7 +69,7 @@ const Calendar = () => {
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-gray-600 ">Simple and affordable</span>
+                <span class="text-gray-600 ">Masterful Servicing</span>
               </li>
             </ul>
           </div>
@@ -109,7 +108,7 @@ const Calendar = () => {
             </div>
 
             <span class="text-sm text-gray-500">
-              Trusted by over 37k customer
+              Trusted by many trucking companies here in Mozambique
             </span>
           </div>
         </div>
@@ -117,7 +116,7 @@ const Calendar = () => {
         <div class="relative">
           <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-10 ">
             <h2 class="text-xl font-semibold text-gray-800 ">
-              Fill in the form
+              Choose a date
             </h2>
 
             <form>
@@ -150,7 +149,7 @@ const Calendar = () => {
                   type="submit"
                   class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-stone-600 text-white hover:bg-stone-700 disabled:opacity-50 disabled:pointer-events-none "
                 >
-                  Send inquiry
+                  Book Appointment
                 </button>
               </div>
             </form>

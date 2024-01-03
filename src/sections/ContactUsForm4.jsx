@@ -3,7 +3,7 @@ import React from 'react'
 const ContactUsForm4 = () => {
   return (
     <div class=" bg-white flex flex-col border rounded-xl p-4 sm:p-6 lg:p-10 ">
-    <h2 class="text-xl font-semibold text-gray-800 ">Department 4 form</h2>
+    <h2 class="text-xl font-semibold text-gray-800 ">Part-Sales Department</h2>
 
     <form>
       <div class="mt-6 grid gap-4 lg:gap-6">
@@ -92,7 +92,7 @@ const ContactUsForm4 = () => {
             for="hs-about-hire-us-1"
             class="block mb-2 text-sm text-gray-700 font-medium "
           >
-            Details
+            Provide a summary of what you are looking for:
           </label>
           <textarea
             id="hs-about-hire-us-1"
@@ -108,7 +108,7 @@ const ContactUsForm4 = () => {
           type="submit"
           class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-stone-600 text-white hover:bg-stone-700 disabled:opacity-50 disabled:pointer-events-none"
         >
-          Send inquiry
+          Request Quotation
         </button>
       </div>
     </form>

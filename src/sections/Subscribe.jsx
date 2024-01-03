@@ -4,8 +4,8 @@ const Subscribe = () => {
   return (
     <section className="max-container flex justify-between items-center max-lg:flex-col gap-10">
       <h3 className="text-4xl leading-[68px] lg:max-w-md font-palanquin font-bold">
-      We value your Opinions;
-        <span className="text-stone-500"> Send us your Feedback</span>
+      You Are Valued.
+        <span className="text-stone-500">Send us your Feedback.</span>
       </h3>
       <div className="lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded">
         <input type="text" placeholder="example@gmail.com" className="input" />

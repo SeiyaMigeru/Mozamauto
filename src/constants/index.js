@@ -7,7 +7,7 @@ export const navLinks = [
     { href: "/about-us", label: "About Us" },    
     { href: "/partners", label: "Partners" },
     { href: "/contact-us", label: "Contact Us" },
-    { href: "/mozamnews", label: "MozamNews" },
+    { href: "/mozamnews", label: "MozNews" },
 
 ];
 

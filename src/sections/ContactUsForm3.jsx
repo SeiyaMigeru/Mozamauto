@@ -4,7 +4,7 @@ const ContactUsForm3 = () => {
 
     return (
         <div class=" bg-white flex flex-col border rounded-xl p-4 sm:p-6 lg:p-10 ">
-        <h2 class="text-xl font-semibold text-gray-800 ">Department 3 form</h2>
+        <h2 class="text-xl font-semibold text-gray-800 ">Sales Department</h2>
   
         <form>
           <div class="mt-6 grid gap-4 lg:gap-6">
@@ -62,7 +62,7 @@ const ContactUsForm3 = () => {
                   for="hs-company-hire-us-1"
                   class="block mb-2 text-sm text-gray-700 font-medium "
                 >
-                  Company
+                  Company Nane
                 </label>
                 <input
                   type="text"
@@ -77,7 +77,7 @@ const ContactUsForm3 = () => {
                   for="hs-company-website-hire-us-1"
                   class="block mb-2 text-sm text-gray-700 font-medium "
                 >
-                  Company Website
+                  Contact Number
                 </label>
                 <input
                   type="text"
@@ -109,14 +109,14 @@ const ContactUsForm3 = () => {
               type="submit"
               class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-stone-600 text-white hover:bg-stone-700 disabled:opacity-50 disabled:pointer-events-none"
             >
-              Send inquiry
+              Request Quotation
             </button>
           </div>
         </form>
   
         <div class="mt-3 text-center">
           <p class="text-sm text-gray-500">
-            We'll get back to you in 1-2 business days.
+            We'll get back to you within 24-48 hours.
           </p>
         </div>
       </div>

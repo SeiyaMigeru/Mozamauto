@@ -9,8 +9,8 @@ const AboutUsHero = () => {
           max-xl:padding-x pt-28 text-center"
       >
         <h1 className="mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold">
-          All About{" "}
-          <span className="text-stone-500 inline-block mt-3">Mozam Auto</span>
+        Mozam Auto {" "}
+          <span className="text-stone-500 inline-block mt-3">and it's People</span>
         </h1>
       </div>
     </section>

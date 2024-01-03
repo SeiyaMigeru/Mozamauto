@@ -17,10 +17,11 @@ const Certification = () => {
 
             <div class="space-y-2 md:space-y-4">
               <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 ">
-              We tackle the challenges start-ups face
+              Who is Mozam Auto?
               </h2>
               <p class="text-gray-500">
-                Besides working with start-up enterprises as a partner for digitalization, we have built enterprise products for common pain points that we have encountered in various products and projects.
+              We are a medium-sized company in the initial phases of the project, where we have formed partnerships with the manufacturers of  truck, industrial truck, oil, and tire offering a diversified products representing the Chinese brand in the national territory, initially in the provinces of Sofala, Tete, and Manica in central Mozambique.
+              To ensure our clients' satisfaction, we want to operate in the trade of large cargo trucks (articulated and other), including maintenance and repair.
               </p>
             </div>
 
@@ -33,7 +34,7 @@ const Certification = () => {
                 </span>
     
                 <span class="text-sm sm:text-base text-gray-500">
-                  <span class="font-bold">Easy & fast</span> designing
+                  <span class="font-bold">Outstanding</span> Service
                 </span>
               </li>
     
@@ -43,7 +44,7 @@ const Certification = () => {
                 </span>
     
                 <span class="text-sm sm:text-base text-gray-500">
-                  Powerful <span class="font-bold">features</span>
+                   <span class="font-bold">High-Quality</span> Parts
                 </span>
               </li>
     
@@ -53,7 +54,7 @@ const Certification = () => {
                 </span>
     
                 <span class="text-sm sm:text-base text-gray-500">
-                  User Experience Design
+                <span class="font-bold">Passionate</span> Teams
                 </span>
               </li>
             </ul>

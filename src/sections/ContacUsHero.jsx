@@ -11,8 +11,8 @@ const ContacUsHero = () => {
         max-xl:padding-x pt-28 text-center"
     >
       <h1 className="mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold">
-        Contact{" "}
-        <span className="text-stone-500 inline-block mt-3">Us</span>
+      Send us your{" "}
+        <span className="text-stone-500 inline-block mt-3">Query</span>
       </h1>
     </div>
   </section>

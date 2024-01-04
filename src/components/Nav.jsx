@@ -49,7 +49,7 @@ const Nav = () => {
             onClick={toggleNavLinks}
             className={`hamburger-btn ${showNavLinks ? "open" : ""}`}
           >
-            <img src={hamburger} className="mx-6" alt="Hamburger" width={24} height={24} />
+            <img src={hamburger} className="mx-6" alt="Hamburger" width={30} height={30} />
           </button>
 
           <a

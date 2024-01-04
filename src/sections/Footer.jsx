@@ -43,7 +43,7 @@ const Footer = () => {
           <p>Copyright. All Rights Reserved</p>
         </div>
         <a
-          className="flex col-span-1 row-span-2 text-xs items-center text-center underline leading-7 font-montserrat justify-self-center text-white-400 sm:max-w-sm mt-10"
+          className="flex col-span-1 row-span-2 text-xs mt-5 text-center underline leading-7 font-montserrat justify-self-center text-white-400 sm:max-w-sm "
           href={googleMapsLocationURL}
           target="_blank"
           rel="noopener noreferrer"

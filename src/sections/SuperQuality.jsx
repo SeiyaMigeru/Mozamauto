@@ -15,7 +15,7 @@ const SuperQuality = () => {
         Elevate your adventure with confidence, knowing that your vehicle is outfitted with the best-in-class equipment available. 
         Explore our best-selling items. Be <span className="text-lg font-palanquin font-bold">DRIVEN TO PERFECTION.</span>
         </p>
-        <div className="mt-11"><Button label="View Details"/></div>
+        <div className="mt-11"><Button label="Shop Now"/></div>
       </div>
       <div className=" flex-1 flex justify-center items-center">
         <img

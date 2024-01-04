@@ -3,8 +3,8 @@ import { truck1, truck2, truck3, product1, product2,
 import { facebook, fastTruck, passion, support, instagram, twitter } from '../assets/icons'
 
 export const navLinks = [
+    { href: "/about-us", label: "About Us" },
     { href: "/products", label: "Products" },
-    { href: "/about-us", label: "About Us" },    
     { href: "/partners", label: "Partners" },
     { href: "/mozamnews", label: "MozNews" },
     { href: "/contact-us", label: "Contact Us" },

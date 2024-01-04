@@ -15,8 +15,7 @@ const Footer = () => {
 
       {/* Description */}
       <p className="mt-6 text-sm text-center justify-self-center leading-7 font-montserrat text-white-400 sm:max-w-sm col-span-1 row-span-1">
-        Explore our selection of products and experience excellence in every
-        detail
+      CHOOSE MOZAM AUTO. BE "DRIVEN TO PERFECTION"
       </p>
 
       {/* Social Media Icons */}
@@ -48,7 +47,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Av. Samora Machel, Munhava - Casquinha beira Sofala, 2100
+          AAntiga Estrada N6 Munhava Casquinha Beira Sofala 2100
         </a>
         <p className="font-montserrat text-white col-span-1 row-span-2 cursor-pointer items-center flex mt-10 justify-self-end">
           Terms & Conditions

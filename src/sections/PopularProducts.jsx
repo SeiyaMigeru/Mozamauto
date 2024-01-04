@@ -5,7 +5,7 @@ const PopularProducts = () => {
   return (
     <section className='max-container max-sm:mt-12'>
       <div className='flex flex-col justify-start gap-5'>
-        <h2 className='text-4xl font-palanquin font-bold'>Our <span className='text-stone-500'>Popular</span> Products</h2>
+        <h2 className='text-4xl font-palanquin font-bold'>OUR <span className='text-stone-500'>EXPENDABLE</span> TRUCKS</h2>
         <p className='lg:max-w-lg mt-2 font-montserrat text-slate-gray'>Explore the pinnacle of power and performance with our curated selection of top-tier trucks. </p>
       </div>
 

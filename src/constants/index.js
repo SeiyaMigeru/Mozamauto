@@ -3,8 +3,8 @@ import { truck1, truck2, truck3, product1, product2,
 import { facebook, fastTruck, passion, support, instagram, twitter } from '../assets/icons'
 
 export const navLinks = [
+    { href: "/about-us", label: "About Us" },
     { href: "/products", label: "Products" },
-    { href: "/about-us", label: "About Us" },    
     { href: "/partners", label: "Partners" },
     { href: "/mozamnews", label: "MozNews" },
     { href: "/contact-us", label: "Contact Us" },
@@ -31,9 +31,9 @@ export const products = [
 ];
 
 export const services = [
-    {imgURL: fastTruck, label:"Quality Items", subtext:"We take pride in offering a diverse range of premium products, ensuring that each item is a testament to quality and durability."},
-    {imgURL: passion, label:"Passionate Employees", subtext:"Our passionate team of dedicated professionals works tirelessly to bring you the finest selection, fueled by a shared commitment to excellence."},
-    {imgURL: support, label:"Customer Service", subtext:"customer satisfaction is paramount, and our dedicated support team is always ready to assist you on your journey to discovering and enjoying our exceptional products."},
+    {imgURL: fastTruck, label:"Outstanding Service", subtext:"We are made up of experienced professionals that are equipped with excellent workmanship to do excellent work in enabling you to get back on your journey."},
+    {imgURL: passion, label:"High-Quality Parts", subtext:"We take pride in offering a wide variety of premium products, each of which is a testament to quality and endurance."},
+    {imgURL: support, label:"Passionate Teams", subtext:"Our dedicated team of passionate specialists works relentlessly to bring you the best selection, driven by a shared dedication to quality."},
 ];
 
 export const reviews = [

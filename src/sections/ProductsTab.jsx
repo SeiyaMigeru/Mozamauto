@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { CSSTransition } from "react-transition-group";
 import { FirenzaTire1, FirenzaTire2 } from "../assets/images";
+import { InfoModal } from "../sections";
 
 class ProductsTab extends Component {
   constructor(props) {
@@ -9,12 +9,23 @@ class ProductsTab extends Component {
       selectedCategory: null,
       truckData: [
         // Your truck data here, each truck should have a category attribute
-        { id: 1, name: "Truck 1", category: "Category A", },
-        { id: 2, name: "Truck 2", category: "Category B", },
-        { id: 3, name: "Firenza Tire 1", category: "Category D", img: FirenzaTire1 },
-        { id: 4, name: "Firenza Tire 1", category: "Category D", img: FirenzaTire2 },
-        // Add more trucks with categories
+        { id: 1, name: "Truck 1", category: "Category A" },
+        { id: 2, name: "Truck 2", category: "Category B" },
+        {
+          id: 3,
+          name: "Firenza Tire 1",
+          category: "Category D",
+          img: FirenzaTire1,
+        },
+        {
+          id: 4,
+          name: "Firenza Tire 2",
+          category: "Category D",
+          img: FirenzaTire2,
+        },
       ],
+      isModalOpen: false,
+      selectedTruck: null,
     };
   }
 
@@ -23,11 +34,14 @@ class ProductsTab extends Component {
   };
 
   handleCardClick = (truckId) => {
-    this.setState((prevState) => ({
-      truckData: prevState.truckData.map((truck) => ({
-        ...truck,
-      })),
-    }));
+    const selectedTruck = this.state.truckData.find(
+      (truck) => truck.id === truckId
+    );
+
+    this.setState({
+      selectedTruck,
+      isModalOpen: true,
+    });
   };
 
   isCategoryEmpty = (category) => {
@@ -38,8 +52,16 @@ class ProductsTab extends Component {
     );
   };
 
+  handleModalClose = () => {
+    this.setState({
+      isModalOpen: false,
+      selectedTruck: null,
+    });
+  };
+
   render() {
-    const { selectedCategory, truckData } = this.state;
+    const { selectedCategory, truckData, isModalOpen, selectedTruck } =
+      this.state;
 
     // Filter the trucks based on the selected category
     const filteredTrucks =
@@ -63,7 +85,9 @@ class ProductsTab extends Component {
             <li
               onClick={() => this.handleCategoryClick("Category A")}
               className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category A" ? "text-stone-700 bg-stone-300" : ""
+                selectedCategory === "Category A"
+                  ? "text-stone-700 bg-stone-300"
+                  : ""
               }`}
             >
               Shacman
@@ -71,7 +95,9 @@ class ProductsTab extends Component {
             <li
               onClick={() => this.handleCategoryClick("Category B")}
               className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category B" ? "text-stone-700 bg-stone-300" : ""
+                selectedCategory === "Category B"
+                  ? "text-stone-700 bg-stone-300"
+                  : ""
               }`}
             >
               Lovol
@@ -79,7 +105,9 @@ class ProductsTab extends Component {
             <li
               onClick={() => this.handleCategoryClick("Category C")}
               className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category C" ? "text-stone-700 bg-stone-300" : ""
+                selectedCategory === "Category C"
+                  ? "text-stone-700 bg-stone-300"
+                  : ""
               }`}
             >
               CMC
@@ -87,7 +115,9 @@ class ProductsTab extends Component {
             <li
               onClick={() => this.handleCategoryClick("Category D")}
               className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category D" ? "text-stone-700 bg-stone-300" : ""
+                selectedCategory === "Category D"
+                  ? "text-stone-700 bg-stone-300"
+                  : ""
               }`}
             >
               Firenza
@@ -95,7 +125,9 @@ class ProductsTab extends Component {
             <li
               onClick={() => this.handleCategoryClick("Category E")}
               className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category E" ? "text-stone-700 bg-stone-300" : ""
+                selectedCategory === "Category E"
+                  ? "text-stone-700 bg-stone-300"
+                  : ""
               }`}
             >
               Fuchs Oil
@@ -103,7 +135,9 @@ class ProductsTab extends Component {
             <li
               onClick={() => this.handleCategoryClick("Category F")}
               className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category F" ? "text-stone-700 bg-stone-300" : ""
+                selectedCategory === "Category F"
+                  ? "text-stone-700 bg-stone-300"
+                  : ""
               }`}
             >
               Willard Batteries
@@ -111,7 +145,9 @@ class ProductsTab extends Component {
             <li
               onClick={() => this.handleCategoryClick("Category G")}
               className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category G" ? "text-stone-700 bg-stone-300" : ""
+                selectedCategory === "Category G"
+                  ? "text-stone-700 bg-stone-300"
+                  : ""
               }`}
             >
               Parts & Accessories
@@ -123,21 +159,30 @@ class ProductsTab extends Component {
             {filteredTrucks.length === 0 ? (
               this.isCategoryEmpty(selectedCategory) ? (
                 <div className="flex items-center justify-center bg-white p-4 h-full">
-                  <p className="text-2xl font-bold font-palanquin">No Products Available</p>
+                  <p className="text-2xl font-bold font-palanquin">
+                    No Products Available
+                  </p>
                 </div>
               ) : null
             ) : (
               filteredTrucks.map((truck) => (
-                  <div
-                    className={`flex items-center flex-col justify-center bg-white rounded shadow-lg p-4 cursor-pointer hover:bg-stone-200 max-w-sm`}
-                    onClick={() => this.handleCardClick(truck.id)}
-                  >
-                    <img className=""src={truck.img} width={300} height={300}/>
-                    <h3 className=" text-xl font-montserrat m-3 font-semibold">{truck.name}</h3>
-                  </div>
+                <div
+                  className={`flex items-center flex-col justify-center bg-white rounded shadow-lg p-4 cursor-pointer hover:bg-stone-200 max-w-sm`}
+                  onClick={() => this.handleCardClick(truck.id)}
+                >
+                  <img className="" src={truck.img} width={300} height={300} />
+                  <h3 className=" text-xl font-montserrat m-3 font-semibold">
+                    {truck.name}
+                  </h3>
+                </div>
               ))
             )}
           </div>
+          <InfoModal
+            isOpen={this.state.isModalOpen}
+            onClose={() => this.setState({ isModalOpen: false })}
+            truck={this.state.selectedTruck}
+          />
         </div>
       </div>
     );

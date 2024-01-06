@@ -57,7 +57,7 @@ const Nav = () => {
             className="font-montserrat leading-normal text-lg ml-2 rounded-full flex justify-center items-center px-4 py-2 border bg-stone-500 hover:bg-stone-700 text-white border-stone-500"
           >
             {" "}
-            Appointment{" "}
+            Book Appointment{" "}
           </a>
         </div>
       </nav>

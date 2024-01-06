@@ -23,7 +23,6 @@ import PartnerSection2 from './PartnerSection2';
 import PartnerSection3 from './PartnerSection3';
 import ProductsHero from './ProductsHero';
 import ProductsTab from './ProductsTab';
-import ProductCards from './ProductCards';
 import HomeHero from './HomeHero';
 import ContactUsForm4 from './ContactUsForm4';
 import MozamEvents from './MozamEvents';
@@ -34,5 +33,5 @@ export {
     AboutUsHero, VM, Brands, WhoIsMozam, LeadersOfMozam, AppointmentHero,
     Calendar, ContactUsForm, ContactUsForm1, ContactUsForm3, ContactUsForm2, ContacUsHero,
     PartnersHero, PartnerSection1, PartnerSection2, PartnerSection3, ProductsHero, ProductsTab,
-    ProductCards, HomeHero, ContactUsForm4, MozamEvents, MozamNewsHero
+     HomeHero, ContactUsForm4, MozamEvents, MozamNewsHero
 }

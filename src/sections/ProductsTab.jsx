@@ -23,6 +23,12 @@ class ProductsTab extends Component {
           category: "Category D",
           img: FirenzaTire2,
         },
+        {
+          id: 5,
+          name: "Firenza Tire 2",
+          category: "Category D",
+          img: FirenzaTire2,
+        },
       ],
       isModalOpen: false,
       selectedTruck: null,
@@ -72,7 +78,39 @@ class ProductsTab extends Component {
     return (
       <div className="flex">
         <div className="w-1/4 p-4">
-          <h2 className="text-lg font-bold mb-4">Mozam Products</h2>
+          <h2 className="text-2xl font-palanquin font-bold mb-4">Mozam Products</h2>
+          <div class="my-6 py-2 px-3">
+            <div class="relative max-w-xs">
+              <label for="hs-table-search" class="sr-only">
+                Search
+              </label>
+              <input
+                type="text"
+                name="hs-table-search"
+                id="hs-table-search"
+                class="py-2 ps-9 block w-3/4 border border-stone-200 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-90 disabled:pointer-events-none"
+                placeholder="Search for items"
+              />
+              <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-3">
+                <svg
+                  class="h-4 w-4 text-gray-400"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.3-4.3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
           <ul>
             <li
               onClick={() => this.handleCategoryClick(null)}
@@ -154,8 +192,8 @@ class ProductsTab extends Component {
             </li>
           </ul>
         </div>
-        <div className="w-3/4 p-4">
-          <div className="grid xl:grid-cols-3 grid-cols-2 gap-8">
+        <div className=" md:mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             {filteredTrucks.length === 0 ? (
               this.isCategoryEmpty(selectedCategory) ? (
                 <div className="flex items-center justify-center bg-white p-4 h-full">
@@ -167,13 +205,13 @@ class ProductsTab extends Component {
             ) : (
               filteredTrucks.map((truck) => (
                 <div
-                  className={`flex items-center flex-col justify-center bg-white rounded shadow-lg p-4 cursor-pointer hover:bg-stone-200 max-w-sm`}
+                  className={`relative flex items-center flex-col justify-center bg-white rounded shadow-lg cursor-pointer hover:bg-stone-200 max-w-sm`}
                   onClick={() => this.handleCardClick(truck.id)}
                 >
                   <img className="" src={truck.img} width={300} height={300} />
-                  <h3 className=" text-xl font-montserrat m-3 font-semibold">
+                  <div className="absolute inset-0 bg-black bg-opacity-50 text-white text-2xl font-bold font-palanquin flex items-start pt-3 justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                     {truck.name}
-                  </h3>
+                  </div>
                 </div>
               ))
             )}

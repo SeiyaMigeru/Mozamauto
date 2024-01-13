@@ -3,6 +3,7 @@ import ContactUsForm1 from "./ContactUsForm1";
 import ContactUsForm2 from "./ContactUsForm2";
 import ContactUsForm3 from "./ContactUsForm3";
 import ContactUsForm4 from "./ContactUsForm4";
+import ContactForm from "./ContactForm";
 
 const ContactUsForm = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -93,19 +94,19 @@ const ContactUsForm = () => {
 
               <div>
                 <div id="tabs-with-card-1" role="tabpanel" className={activeTab === 1 ? '' : 'hidden'} aria-labelledby="tabs-with-card-item-1">
-                  <ContactUsForm1/>
+                  <ContactForm formTitle={"Information Desk"} destination={"information"} detailsLabel={"Details"} submitFormLabel={"Send Inquiry"} />
                 </div>
     
                 <div id="tabs-with-card-2" class="hidden" className={activeTab === 2 ? '' : 'hidden'} role="tabpanel" aria-labelledby="tabs-with-card-item-2">
-                  <ContactUsForm2/>
+                  <ContactForm formTitle={"Service Department"} destination={"service"} detailsLabel={"Let us know about the trucks condition"} submitFormLabel={"Send Inquiry"} />
                 </div>
     
                 <div id="tabs-with-card-3" class="hidden" className={activeTab === 3 ? '' : 'hidden'} role="tabpanel" aria-labelledby="tabs-with-card-item-3">
-                  <ContactUsForm3/>
+                  <ContactForm formTitle={"Part-Sales Department"} destination={"partSales"} detailsLabel={"Provide a summary of what you are looking for"} submitFormLabel={"Request Quotation"} />
                 </div>
 
                 <div id="tabs-with-card-4" class="hidden" className={activeTab === 4 ? '' : 'hidden'} role="tabpanel" aria-labelledby="tabs-with-card-item-4">
-                  <ContactUsForm4/>
+                  <ContactForm formTitle={"Sales Department"} destination={"sales"} detailsLabel={"Provide a summary of what you are looking for"} submitFormLabel={"Request Quotation"} />
                 </div>
               </div>
 

@@ -82,7 +82,7 @@ class ProductsTab extends Component {
                 selectedCategory === "Category C" ? "text-stone-700 bg-stone-300" : ""
               }`}
             >
-              CMC
+              CIMC
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category D")}
@@ -106,7 +106,7 @@ class ProductsTab extends Component {
                 selectedCategory === "Category F" ? "text-stone-700 bg-stone-300" : ""
               }`}
             >
-              Willard Batteries
+              Batteries
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category G")}

@@ -148,7 +148,7 @@ class ProductsTab extends Component {
                   : ""
               }`}
             >
-              CMC
+              CIMC
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category D")}
@@ -178,7 +178,7 @@ class ProductsTab extends Component {
                   : ""
               }`}
             >
-              Willard Batteries
+              Batteries
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category G")}

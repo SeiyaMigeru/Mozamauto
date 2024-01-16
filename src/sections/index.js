@@ -28,11 +28,13 @@ import ContactUsForm4 from './ContactUsForm4';
 import MozamEvents from './MozamEvents';
 import MozamNewsHero from './MozamNewsHero';
 import InfoModal from './InfoModal';
+import SuccessfullModal from './SuccessfullModal';
+import FailedModal from './FailedModal';
 
 export {
     CustomerReviews, Footer, Hero, PopularProducts, Services, Subscribe, SuperQuality,
     AboutUsHero, VM, Brands, WhoIsMozam, LeadersOfMozam, AppointmentHero,
     Calendar, ContactUsForm, ContactUsForm1, ContactUsForm3, ContactUsForm2, ContacUsHero,
     PartnersHero, PartnerSection1, PartnerSection2, PartnerSection3, ProductsHero, ProductsTab,
-     HomeHero, ContactUsForm4, MozamEvents, MozamNewsHero, InfoModal
+     HomeHero, ContactUsForm4, MozamEvents, MozamNewsHero, InfoModal, SuccessfullModal, FailedModal
 }

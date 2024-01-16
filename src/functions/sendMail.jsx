@@ -1,15 +1,12 @@
-import axios from 'axios';
-
 export async function sendContactUsForm(email) {
-
   try {
-    await axios.post('/contactUsMail', email);
-    alert('Email sent successfully!');
+    // Uncomment the line below if you want to send the email using axios
+    // await axios.post('/contactUsMail', email);
+
+    // Assuming the email is sent successfully, resolve the promise
+    return Promise.resolve('Email sent successfully!');
   } catch (error) {
-    console.error(error);
-    alert('Error sending email.');
+    // If there's an error, reject the promise with the error message
+    return Promise.reject('Error sending email.');
   }
-
-    console.log("Message sent: ");
-
 }

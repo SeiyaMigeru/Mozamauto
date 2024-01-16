@@ -1,10 +1,13 @@
 import FloatingIcon from '../components/FloatingIcon';
 import Nav from '../components/Nav';
-import { Footer, ContactUsForm, ContacUsHero, } from '../sections';
+import { Footer, ContactUsForm, ContacUsHero, SuccessfullModal} from '../sections';
 import React, { useState, useEffect } from "react";
+import { sendContactUsForm } from '../functions/sendMail';
+
 
 const ContactUs = () => {
   const [isFloatingIconFixed, setIsFloatingIconFixed] = useState(true);
+  const [isModalVisible, setModalVisibility] = useState(false);
 
   const checkFloatingIconPosition = () => {
     const footer = document.querySelector(".footer-container");
@@ -18,9 +21,6 @@ const ContactUs = () => {
     }
 
     const scrollPosition = window.scrollY + window.innerHeight;
-
-    console.log("Footer Position:", footerPosition);
-    console.log("Scroll Position:", scrollPosition);
 
     if (scrollPosition >= footerPosition) {
       setIsFloatingIconFixed(false);
@@ -36,14 +36,34 @@ const ContactUs = () => {
       window.removeEventListener("scroll", checkFloatingIconPosition);
     };
   }, []);
+
+  const submitForm = async (formData) => {
+    try {
+      console.log("Submitting form data:", formData);
+      await sendContactUsForm(formData);
+      console.log("Form submission successful");
+      setModalVisibility(true);
+      console.log("isModalVisible:", isModalVisible);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      // Handle error if needed
+    }
+  };
+  
+
+  const closeModal = () => {
+    setModalVisibility(false);
+  };
+
   return (
     <main className="relative">
       <Nav/>
+      <SuccessfullModal isVisible={isModalVisible} closeModal={closeModal}/>
       <section className="padding-x ">
         <ContacUsHero/>
       </section>
       <section className='padding'>
-        <ContactUsForm/>
+        <ContactUsForm submitForm={submitForm}/>
         <FloatingIcon isFixed={isFloatingIconFixed} />
       </section>
       <section className="sm:px-16 px-8 sm:pt-6 pt-3 pb-8 bg-black">

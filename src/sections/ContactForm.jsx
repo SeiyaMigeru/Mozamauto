@@ -39,7 +39,7 @@ const ContactForm = ({formTitle, detailsLabel, submitFormLabel, destination}) =>
     <div class=" bg-white flex flex-col border rounded-xl p-4 sm:p-6 lg:p-10 ">
       <h2 class="text-xl font-semibold text-gray-800 ">{formTitle} </h2>
 
-      <form>
+      <form             onClick={submitForm}>
         <div class="mt-6 grid gap-4 lg:gap-6">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
             <div>
@@ -145,7 +145,8 @@ const ContactForm = ({formTitle, detailsLabel, submitFormLabel, destination}) =>
 
         <div class="mt-6 grid">
           <button
-            onClick={submitForm}
+            type="submit"
+
             class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-stone-600 text-white hover:bg-stone-700 disabled:opacity-50 disabled:pointer-events-none"
           >
             {submitFormLabel}

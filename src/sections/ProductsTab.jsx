@@ -77,7 +77,7 @@ class ProductsTab extends Component {
 
     return (
       <div className="flex">
-        <div className="w-1/4 p-4">
+        <div className="flex flex-col items-center w-1/4 p-4">
           <h2 className="text-2xl font-palanquin font-bold mb-4">Mozam Products</h2>
           <div class="my-6 py-2 px-3">
             <div class="relative max-w-xs">
@@ -88,7 +88,7 @@ class ProductsTab extends Component {
                 type="text"
                 name="hs-table-search"
                 id="hs-table-search"
-                class="py-2 ps-9 block w-3/4 border border-stone-200 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-90 disabled:pointer-events-none"
+                class="py-2 ps-9 block border border-stone-200 shadow-sm rounded-lg text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-90 disabled:pointer-events-none"
                 placeholder="Search for items"
               />
               <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none ps-3">
@@ -114,7 +114,7 @@ class ProductsTab extends Component {
           <ul>
             <li
               onClick={() => this.handleCategoryClick(null)}
-              className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === null ? "text-stone-700 bg-stone-300" : ""
               }`}
             >
@@ -122,7 +122,7 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category A")}
-              className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category A"
                   ? "text-stone-700 bg-stone-300"
                   : ""
@@ -132,7 +132,7 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category B")}
-              className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category B"
                   ? "text-stone-700 bg-stone-300"
                   : ""
@@ -142,7 +142,7 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category C")}
-              className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category C"
                   ? "text-stone-700 bg-stone-300"
                   : ""
@@ -152,7 +152,7 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category D")}
-              className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category D"
                   ? "text-stone-700 bg-stone-300"
                   : ""
@@ -162,7 +162,7 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category E")}
-              className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category E"
                   ? "text-stone-700 bg-stone-300"
                   : ""
@@ -172,7 +172,7 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category F")}
-              className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category F"
                   ? "text-stone-700 bg-stone-300"
                   : ""
@@ -182,7 +182,7 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category G")}
-              className={`m-2 w-1/2 pl-3 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category G"
                   ? "text-stone-700 bg-stone-300"
                   : ""

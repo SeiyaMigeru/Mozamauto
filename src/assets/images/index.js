@@ -8,7 +8,7 @@ import product4 from './Product4.jpg';
 import part from './part.png';
 import customer1 from './Customer1.jpg';
 import customer2 from './Customer2.jpg';
-import BGHero from './BGHero.png';
+import BGHero from './BGHero.jpg';
 import FirenzaTire1 from './FirenzaTire1.png';
 import FirenzaTire2 from './FirenzaTire2.png';
 

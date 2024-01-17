@@ -63,6 +63,34 @@
   visibility: visible;
 }
 
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeInAnimation 1s ease-in-out;
+}
+
+@keyframes slideUpAnimation {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideUp {
+  animation: slideUpAnimation 1s ease-in-out;
+}
+
 @layer components {
   .max-container {
     max-width: 1440px;

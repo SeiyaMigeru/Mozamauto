@@ -39,10 +39,10 @@ const ContactUs = () => {
 
   const submitForm = async (formData) => {
     try {
-      console.log("Submitting form data:", formData);
-      await sendContactUsForm(formData);
-      console.log("Form submission successful");
+      var result = await sendContactUsForm(formData);
+
       setModalVisibility(true);
+
       console.log("isModalVisible:", isModalVisible);
     } catch (error) {
       console.error("Form submission error:", error);
@@ -54,6 +54,10 @@ const ContactUs = () => {
   const closeModal = () => {
     setModalVisibility(false);
   };
+
+  useEffect(() => {
+    console.log(isModalVisible);
+  }, [isModalVisible]);
 
   return (
     <main className="relative">

@@ -5,7 +5,7 @@ import ContactUsForm3 from "./ContactUsForm3";
 import ContactUsForm4 from "./ContactUsForm4";
 import ContactForm from "./ContactForm";
 
-const ContactUsForm = () => {
+const ContactUsForm = ({submitForm}) => {
   const [activeTab, setActiveTab] = useState(1);
 
   const handleTabClick = (tabNumber) => {
@@ -94,19 +94,19 @@ const ContactUsForm = () => {
 
               <div>
                 <div id="tabs-with-card-1" role="tabpanel" className={activeTab === 1 ? '' : 'hidden'} aria-labelledby="tabs-with-card-item-1">
-                  <ContactForm formTitle={"Information Desk"} destination={"information"} detailsLabel={"Details"} submitFormLabel={"Send Inquiry"} />
+                  <ContactForm submitForm={submitForm} formTitle={"Information Desk"} destination={"information"} detailsLabel={"Details"} submitFormLabel={"Send Inquiry"} />
                 </div>
     
                 <div id="tabs-with-card-2" class="hidden" className={activeTab === 2 ? '' : 'hidden'} role="tabpanel" aria-labelledby="tabs-with-card-item-2">
-                  <ContactForm formTitle={"Service Department"} destination={"service"} detailsLabel={"Let us know about the trucks condition"} submitFormLabel={"Send Inquiry"} />
+                  <ContactForm submitForm={submitForm} formTitle={"Service Department"} destination={"service"} detailsLabel={"Let us know about the trucks condition"} submitFormLabel={"Send Inquiry"} />
                 </div>
     
                 <div id="tabs-with-card-3" class="hidden" className={activeTab === 3 ? '' : 'hidden'} role="tabpanel" aria-labelledby="tabs-with-card-item-3">
-                  <ContactForm formTitle={"Part-Sales Department"} destination={"partSales"} detailsLabel={"Provide a summary of what you are looking for"} submitFormLabel={"Request Quotation"} />
+                  <ContactForm submitForm={submitForm} formTitle={"Part-Sales Department"} destination={"partSales"} detailsLabel={"Provide a summary of what you are looking for"} submitFormLabel={"Request Quotation"} />
                 </div>
 
                 <div id="tabs-with-card-4" class="hidden" className={activeTab === 4 ? '' : 'hidden'} role="tabpanel" aria-labelledby="tabs-with-card-item-4">
-                  <ContactForm formTitle={"Sales Department"} destination={"sales"} detailsLabel={"Provide a summary of what you are looking for"} submitFormLabel={"Request Quotation"} />
+                  <ContactForm submitForm={submitForm} formTitle={"Sales Department"} destination={"sales"} detailsLabel={"Provide a summary of what you are looking for"} submitFormLabel={"Request Quotation"} />
                 </div>
               </div>
 

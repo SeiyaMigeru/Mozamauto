@@ -6,7 +6,7 @@ import {
   Services,
   Subscribe,
   SuperQuality,
-  HomeHero
+  NewHero
 } from "../sections";
 import FloatingIcon from "../components/FloatingIcon";
 import Nav from "../components/Nav";
@@ -47,9 +47,9 @@ const HomePage = () => {
   }, []);
   return (
     <main className="relative">
-      <Nav />
+      <Nav />      
       <section className="padding">
-        <Hero />
+        <NewHero />
       </section>
       <section className="padding">
         <PopularProducts />

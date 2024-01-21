@@ -30,11 +30,7 @@ export const products = [
     {imgURL:product4, name:"Sinotruk Howo TX Series 6x4"},
 ];
 
-export const services = [
-    {imgURL: fastTruck, label:"Outstanding Service", subtext:"We are made up of experienced professionals that are equipped with excellent workmanship to do excellent work in enabling you to get back on your journey."},
-    {imgURL: passion, label:"High-Quality Parts", subtext:"We take pride in offering a wide variety of premium products, each of which is a testament to quality and endurance."},
-    {imgURL: support, label:"Passionate Teams", subtext:"Our dedicated team of passionate specialists works relentlessly to bring you the best selection, driven by a shared dedication to quality."},
-];
+
 
 export const reviews = [
     {imgURL: customer1, customerName:"Jonathan Davis", rating:4.5,feedback:"Absolutely thrilled with my purchase! The quality exceeded my expectations, and the customer service from start to finish was impeccable."},

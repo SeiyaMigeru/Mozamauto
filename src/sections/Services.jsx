@@ -1,10 +1,15 @@
+import { useContext, useEffect, useState } from "react"
 import ServiceCard from "../components/ServiceCard"
-import { services } from "../constants"
+
+import { LanguageContext } from "../language/LanguageContext";
+import { services } from "../constants/content";
 
 const Services = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <section className="max-container flex justify-center flex-wrap gap-9">
-      {services.map ((service) => (
+      {services[language].map ((service) => (
         <ServiceCard key={service.label}
         {...service}/>
       ))}

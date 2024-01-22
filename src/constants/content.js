@@ -10,8 +10,8 @@ const heroContent = {
     },
 
     es: {
-        tagline: 'Spanish Driven To <br /> Perfection',
-        shopLink: 'Spanish Shop now',
+        tagline: 'Impulsado a <br /> Perfección',
+        shopLink: 'Compra ahora',
         additionalText: `Spanish Discover the road ahead with <b>Mozamauto</b>. Our collection
         of powerful trucks is your ticket to unmatched performance,
         combining toughness and innovation`

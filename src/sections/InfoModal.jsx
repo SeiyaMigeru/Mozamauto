@@ -7,17 +7,16 @@ const InfoModal = ({ isOpen, onClose, truck }) => {
     setModalVisible(isOpen);
   }, [isOpen]);
 
-
   if (!isOpen) {
     return null;
   }
 
   return (
     <div
-  className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-20 modal-overlay ${
-    modalVisible ? "visible" : ""
-  }`}
->
+      className={`fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-20 modal-overlay ${
+        modalVisible ? "visible" : ""
+      }`}
+    >
       <div className="bg-white p-6 w-1/2 rounded-md shadow-md max-h-[80vh] overflow-y-auto">
         <div className="flex items-center justify-between mb-4">
           <h2 className=" font-montserrat text-xl font-bold">{truck.name}</h2>
@@ -112,15 +111,15 @@ const InfoModal = ({ isOpen, onClose, truck }) => {
                 </div>
               </form>
             </div>
+            <div className="justify-center flex mt-4">
+              <button
+                type="submit"
+                class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-stone-600 text-white hover:bg-stone-700 disabled:opacity-50 disabled:pointer-events-none"
+              >
+                Confirm Order
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="justify-center flex mt-4">
-          <button
-            type="submit"
-            class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-stone-600 text-white hover:bg-stone-700 disabled:opacity-50 disabled:pointer-events-none"
-          >
-            Confirm Order
-          </button>
         </div>
       </div>
     </div>

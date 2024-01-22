@@ -77,7 +77,7 @@ class ProductsTab extends Component {
 
     return (
       <div className="flex">
-        <div className="flex flex-col items-center w-1/4 p-4">
+        <div className="flex flex-col items-center w-1/4 p-4 max-w-sm">
           <h2 className="text-2xl font-palanquin font-bold mb-4">Mozam Products</h2>
           <div class="my-6 py-2 px-3">
             <div class="relative max-w-xs">
@@ -193,7 +193,7 @@ class ProductsTab extends Component {
           </ul>
         </div>
         <div className=" md:mx-auto">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 sm:grid-cols-5 gap-2">
             {filteredTrucks.length === 0 ? (
               this.isCategoryEmpty(selectedCategory) ? (
                 <div className="flex items-center justify-center bg-white p-4 h-full">

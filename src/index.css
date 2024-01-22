@@ -12,6 +12,10 @@
   scroll-behavior: smooth;
 }
 
+.border-none-input {
+  border: none !important;
+}
+
 .slide-enter {
   transform: translateX(100%);
   opacity: 0;

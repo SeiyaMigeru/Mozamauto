@@ -10,7 +10,7 @@ const AppointmentHero = () => {
     >
       <h1 className="mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold">
          Set your{" "}
-        <span className="text-stone-500 inline-block mt-3">Appointment with us!</span>
+        <span className="text-gray-500 inline-block mt-3">Appointment with us!</span>
       </h1>
     </div>
   </section>

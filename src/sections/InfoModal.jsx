@@ -114,7 +114,7 @@ const InfoModal = ({ isOpen, onClose, truck }) => {
             <div className="justify-center flex mt-4">
               <button
                 type="submit"
-                class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-stone-600 text-white hover:bg-stone-700 disabled:opacity-50 disabled:pointer-events-none"
+                class="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-600 text-white hover:bg-gray-700 disabled:opacity-50 disabled:pointer-events-none"
               >
                 Confirm Order
               </button>

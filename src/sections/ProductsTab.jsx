@@ -114,17 +114,17 @@ class ProductsTab extends Component {
           <ul>
             <li
               onClick={() => this.handleCategoryClick(null)}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === null ? "text-stone-700 bg-stone-300" : ""
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
+                selectedCategory === null ? "text-gray-700 bg-gray-300" : ""
               }`}
             >
               All
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category A")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category A"
-                  ? "text-stone-700 bg-stone-300"
+                  ? "text-gray-700 bg-gray-300"
                   : ""
               }`}
             >
@@ -132,9 +132,9 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category B")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category B"
-                  ? "text-stone-700 bg-stone-300"
+                  ? "text-gray-700 bg-gray-300"
                   : ""
               }`}
             >
@@ -142,9 +142,9 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category C")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category C"
-                  ? "text-stone-700 bg-stone-300"
+                  ? "text-gray-700 bg-gray-300"
                   : ""
               }`}
             >
@@ -152,9 +152,9 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category D")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category D"
-                  ? "text-stone-700 bg-stone-300"
+                  ? "text-gray-700 bg-gray-300"
                   : ""
               }`}
             >
@@ -162,9 +162,9 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category E")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category E"
-                  ? "text-stone-700 bg-stone-300"
+                  ? "text-gray-700 bg-gray-300"
                   : ""
               }`}
             >
@@ -172,9 +172,9 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category F")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category F"
-                  ? "text-stone-700 bg-stone-300"
+                  ? "text-gray-700 bg-gray-300"
                   : ""
               }`}
             >
@@ -182,9 +182,9 @@ class ProductsTab extends Component {
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category G")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-stone-200 font-montserrat shadow cursor-pointer ${
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === "Category G"
-                  ? "text-stone-700 bg-stone-300"
+                  ? "text-gray-700 bg-gray-300"
                   : ""
               }`}
             >
@@ -205,7 +205,7 @@ class ProductsTab extends Component {
             ) : (
               filteredTrucks.map((truck) => (
                 <div
-                  className={`relative flex items-center flex-col justify-center bg-white rounded shadow-lg cursor-pointer hover:bg-stone-200 max-w-sm`}
+                  className={`relative flex items-center flex-col justify-center bg-white rounded shadow-lg cursor-pointer hover:bg-gray-200 max-w-sm`}
                   onClick={() => this.handleCardClick(truck.id)}
                 >
                   <img className="" src={truck.img} width={300} height={300} />

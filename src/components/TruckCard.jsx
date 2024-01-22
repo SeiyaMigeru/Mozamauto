@@ -10,7 +10,7 @@ const TruckCard = ({ imgURL, changeTruckImage, bigTruckImage }) => {
     <div
       className={`border-2 rounded-xl
     ${
-      bigTruckImage === imgURL.bigTruck ? " border-orange-950" : "border-transparent"
+      bigTruckImage === imgURL.bigTruck ? " border-gray-950" : "border-transparent"
     } cursor-pointer max-sm:flex-1`} onClick={handleClick}
     >
         <div className="flex justify-center items-center bg-card bg-center

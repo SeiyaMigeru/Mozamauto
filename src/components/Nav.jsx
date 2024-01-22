@@ -54,7 +54,7 @@ const Nav = () => {
 
           <a
             href="/appointment"
-            className="font-montserrat leading-normal text-lg ml-2 rounded-full flex justify-center items-center px-4 py-2 border bg-stone-500 hover:bg-stone-700 text-white border-stone-500"
+            className="font-montserrat leading-normal text-lg ml-2 rounded-full flex justify-center items-center px-4 py-2 border bg-gray-500 hover:bg-gray-700 text-white border-gray-500"
           >
             {" "}
             Book Appointment{" "}

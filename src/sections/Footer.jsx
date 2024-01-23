@@ -15,9 +15,10 @@ const Footer = () => {
 
       {/* Description */}
       <p className="mt-6 text-sm text-center justify-self-center leading-7 font-montserrat text-white-400 sm:max-w-sm col-span-1 row-span-1">
-      CHOOSE MOZAM AUTO. 
-      CHOOSE TO BE DRIVEN TO PERFECTION
+      CHOOSE MOZAM AUTO.
+      <p><span>CHOOSE TO BE <b>DRIVEN TO PERFECTION.</b></span></p>
       </p>
+      
 
       {/* Social Media Icons */}
       <div className="flex items-center gap-5 mt-8 col-span-1 row-span-1 justify-self-end">

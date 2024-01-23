@@ -18,6 +18,7 @@ const Footer = () => {
         CHOOSE MOZAM AUTO. <br />
         CHOOSE TO BE <b>DRIVEN TO PERFECTION</b>
       </p>
+      
 
       {/* Social Media Icons */}
       <div className="flex items-center gap-5 mt-8 col-span-1 row-span-1 justify-self-end">

@@ -1,7 +1,13 @@
+import { useContext } from "react";
 import { copyrightSign, footerLogo } from "../assets/icons";
 import { socialmedia } from "../constants";
+import { LanguageContext } from "../language/LanguageContext";
+import { footerContent } from "../constants/homeContent";
 
 const Footer = () => {
+  const {language} = useContext(LanguageContext);
+
+
   const googleMapsLocationURL = "https://maps.app.goo.gl/DKhmj7NGojxYcAeGA";
   const googleMapsLocationURL2 = "https://maps.app.goo.gl/azGxRwDoFjyuVQGs8"
   return (
@@ -14,10 +20,7 @@ const Footer = () => {
       </div>
 
       {/* Description */}
-      <p className="mt-6 text-sm text-center justify-self-center leading-7 font-montserrat text-white-400 sm:max-w-sm col-span-1 row-span-1">
-        CHOOSE MOZAM AUTO. <br />
-        CHOOSE TO BE <b>DRIVEN TO PERFECTION</b>
-      </p>
+      <p className="mt-6 text-sm text-center justify-self-center leading-7 font-montserrat text-white-400 sm:max-w-sm col-span-1 row-span-1" dangerouslySetInnerHTML={{__html: footerContent[language].footerTagline}} />
       
 
       {/* Social Media Icons */}
@@ -41,7 +44,7 @@ const Footer = () => {
           height={20}
           className="rounded-full m-0"
         />
-        <p>Copyright. All Rights Reserved</p>
+        <p>{footerContent[language].copyright}</p>
       </div>
       <div className="flex flex-col items-center">
         <p className="text-white font-montserrat text-xs font-bold text-center">Beira</p>
@@ -65,7 +68,7 @@ const Footer = () => {
       </div>
 
       <p className="font-montserrat text-white col-span-1 row-span-2 cursor-pointer items-center flex mt-10 justify-self-end">
-        Terms & Conditions
+      {footerContent[language].termsAndCondi}
       </p>
     </footer>
   );

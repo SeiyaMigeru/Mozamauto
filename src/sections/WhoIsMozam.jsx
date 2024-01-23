@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { LanguageContext } from '../language/LanguageContext'
+import { whoIsMozamContent } from '../constants/aboutUsContent';
 
 const WhoisMozam = () => {
+  const {language} = useContext(LanguageContext);
+
   return (
 
+    
 
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
 
@@ -16,13 +21,8 @@ const WhoisMozam = () => {
           <div class="space-y-6 sm:space-y-8">
 
             <div class="space-y-2 md:space-y-4">
-              <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 ">
-              Who is Mozam Auto?
-              </h2>
-              <p class="text-gray-500">
-              We are a medium-sized company in the initial phases of the project, where we have formed partnerships with the manufacturers of  truck, industrial truck, oil, and tire offering a diversified products representing the Chinese brand in the national territory, initially in the provinces of Sofala, Tete, and Manica in central Mozambique.
-              To ensure our clients' satisfaction, we want to operate in the trade of large cargo trucks (articulated and other), including maintenance and repair.
-              </p>
+              <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 " dangerouslySetInnerHTML={{__html: whoIsMozamContent[language].header}} />
+              <p class="text-gray-500" dangerouslySetInnerHTML={{__html: whoIsMozamContent[language].content}} />
             </div>
 
     
@@ -33,9 +33,7 @@ const WhoisMozam = () => {
                   <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                 </span>
     
-                <span class="text-sm sm:text-base text-gray-500">
-                  <span class="font-bold">Outstanding</span> Service
-                </span>
+                <span class="text-sm sm:text-base text-gray-500" dangerouslySetInnerHTML={{__html: whoIsMozamContent[language].outstanding}} />
               </li>
     
               <li class="flex space-x-3">
@@ -43,9 +41,7 @@ const WhoisMozam = () => {
                   <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                 </span>
     
-                <span class="text-sm sm:text-base text-gray-500">
-                   <span class="font-bold">High-Quality</span> Parts
-                </span>
+                <span class="text-sm sm:text-base text-gray-500" dangerouslySetInnerHTML={{__html: whoIsMozamContent[language].highQuality}} />
               </li>
     
               <li class="flex space-x-3">
@@ -53,9 +49,7 @@ const WhoisMozam = () => {
                   <svg class="flex-shrink-0 h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                 </span>
     
-                <span class="text-sm sm:text-base text-gray-500">
-                <span class="font-bold">Passionate</span> Teams
-                </span>
+                <span class="text-sm sm:text-base text-gray-500" dangerouslySetInnerHTML={{__html: whoIsMozamContent[language].passionate}} />
               </li>
             </ul>
 

@@ -1,4 +1,5 @@
-import { facebook, fastTruck, passion, support, instagram, twitter } from '../assets/icons'
+import { fastTruck, passion, support} from '../assets/icons'
+import { customer1, customer2 } from '../assets/images'
 
 const heroContent = {
     en: {
@@ -62,4 +63,42 @@ const services = {
     ]
 }
 
-export {heroContent, popularProductContent, superQualityContent, services}
+const comments = {
+    en: [
+        {imgURL: customer1, customerName:"Jonathan Davis", rating:4.5,feedback:"Absolutely thrilled with my purchase! The quality exceeded my expectations, and the customer service from start to finish was impeccable."},
+        {imgURL: customer2, customerName:"Marcus Turner", rating:4.5,feedback:"Kudos to the team at MozamAuto! The product not only met but surpassed my requirements, and the swift and helpful assistance I received from customer support made the entire experience truly exceptional."},
+    ],
+    es: [
+        {imgURL: customer1, customerName:"Jonathan Davis", rating:4.5,feedback:"Absolutely thrilled with my purchase! The quality exceeded my expectations, and the customer service from start to finish was impeccable."},
+        {imgURL: customer2, customerName:"Marcus Turner", rating:4.5,feedback:"Kudos to the team at MozamAuto! The product not only met but surpassed my requirements, and the swift and helpful assistance I received from customer support made the entire experience truly exceptional."},
+    ]
+}
+
+
+const subscribeContent = {
+    en: {
+        share: `Share your ideas with us. <span class="text-stone-500">That is how we improve.</span>`,
+        emailUs: 'Email Us'
+    },
+    es: {
+        share: `Share your ideas with us. <span class="text-stone-500">That is how we improve.</span>`,
+        emailUs: 'Email Us'
+    }
+}
+
+const footerContent = {
+    en: {
+        footerTagline: `CHOOSE MOZAM AUTO. <br />
+        CHOOSE TO BE <b>DRIVEN TO PERFECTION</b>`,
+        copyright: `Copyright. All Rights Reserved`,
+        termsAndCondi: `Terms & Conditions`
+    },
+    es: {
+        footerTagline: `CHOOSE MOZAM AUTO. <br />
+        CHOOSE TO BE <b>DRIVEN TO PERFECTION</b>`,
+        copyright: `Copyright. All Rights Reserved`,
+        termsAndCondi: `Terms & Conditions`
+    }
+}
+
+export {heroContent, popularProductContent, superQualityContent, services, comments, subscribeContent, footerContent}

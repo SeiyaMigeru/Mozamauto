@@ -1,12 +1,15 @@
+import { useContext } from "react";
 import Button from "../components/Button";
+import { LanguageContext } from "../language/LanguageContext";
+import { subscribeContent } from "../constants/homeContent";
 
 const Subscribe = () => {
+  const {language} = useContext(LanguageContext);
+
+
   return (
     <section className="max-container flex justify-between items-center max-lg:flex-col gap-10">
-      <h3 className="text-4xl leading-[68px] lg:max-w-md font-palanquin font-bold">
-        Share your ideas with us.
-        <span className="text-stone-500">That is how we improve.</span>
-      </h3>
+      <h3 className="text-4xl leading-[68px] lg:max-w-md font-palanquin font-bold" dangerouslySetInnerHTML={{__html: subscribeContent[language].share}} />
 
       <div className="lg:max-w-[40%] w-full flex items-center flex-col gap-5 p-4 justify-between">
         <div className="w-full">
@@ -29,7 +32,7 @@ const Subscribe = () => {
             className="w-[50%] focus:outline-none focus:ring-0"
           />
           <div className="flex max-sm:justify-end items-center max-sm:w-full">
-            <Button label="Email Us" fullWidth />
+            <Button label={subscribeContent[language].emailUs} fullWidth />
           </div>
         </div>
       </div>

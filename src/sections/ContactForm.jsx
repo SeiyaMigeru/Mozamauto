@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState, useEffect} from "react";
 import { sendContactUsForm } from "../functions/sendMail";
+import { LanguageContext } from "../language/LanguageContext";
+import { formTemplateContent } from "../constants/contactUsContent";
 
 
 const ContactForm = ({submitForm, formTitle, detailsLabel, submitFormLabel, destination}) => {
 
-  
+  const { language } = useContext(LanguageContext);
 
   const [formData, setFormData] = useState({
     first_name: "",
@@ -45,7 +47,7 @@ const ContactForm = ({submitForm, formTitle, detailsLabel, submitFormLabel, dest
                 for="hs-firstname-hire-us-1"
                 class="block mb-2 text-sm text-gray-700 font-medium "
               >
-                First Name
+                {formTemplateContent[language].firstName}
               </label>
               <input
                 type="text"
@@ -61,7 +63,7 @@ const ContactForm = ({submitForm, formTitle, detailsLabel, submitFormLabel, dest
                 for="hs-lastname-hire-us-1"
                 class="block mb-2 text-sm text-gray-700 font-medium "
               >
-                Last Name
+                {formTemplateContent[language].lastName}
               </label>
               <input
                 type="text"
@@ -78,7 +80,7 @@ const ContactForm = ({submitForm, formTitle, detailsLabel, submitFormLabel, dest
               for="hs-work-email-hire-us-1"
               class="block mb-2 text-sm text-gray-700 font-medium "
             >
-              Work Email
+              {formTemplateContent[language].email}
             </label>
             <input
               type="email"
@@ -96,7 +98,7 @@ const ContactForm = ({submitForm, formTitle, detailsLabel, submitFormLabel, dest
                 for="hs-company-hire-us-1"
                 class="block mb-2 text-sm text-gray-700 font-medium "
               >
-                Company Name
+                {formTemplateContent[language].companyName}
               </label>
               <input
                 type="text"
@@ -112,7 +114,7 @@ const ContactForm = ({submitForm, formTitle, detailsLabel, submitFormLabel, dest
                 for="hs-company-website-hire-us-1"
                 class="block mb-2 text-sm text-gray-700 font-medium "
               >
-                Contact Number
+                {formTemplateContent[language].number}
               </label>
               <input
                 type="text"
@@ -155,7 +157,7 @@ const ContactForm = ({submitForm, formTitle, detailsLabel, submitFormLabel, dest
 
       <div class="mt-3 text-center">
         <p class="text-sm text-gray-500">
-        We'll get back to you within 24-48 hours.
+          {formTemplateContent[language].wellGetBack}
         </p>
       </div>
     </div>

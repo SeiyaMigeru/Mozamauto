@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { BGHero } from "../assets/images";
 import { LanguageContext } from "../language/LanguageContext";
-import { heroContent } from "../constants/content";
+import { heroContent } from "../constants/homeContent";
 
 const NewHero = () => {
     const [fadeIn, setFadeIn] = useState(false);

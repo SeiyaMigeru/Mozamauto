@@ -15,7 +15,7 @@ const Lang = () => {
       <div className="border-l h-6 border-gray-400"></div>
 
       <button onClick={() => changeLanguage('es')} className="text-gray-700 text-xs font-montserrat hover:text-gray-900 border-b-2 border-transparent hover:border-gray-500">
-        Spanish
+        Portuguese
       </button>
     </div>
   );

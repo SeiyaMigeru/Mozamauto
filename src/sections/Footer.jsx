@@ -44,7 +44,7 @@ const Footer = () => {
         <p>Copyright. All Rights Reserved</p>
       </div>
       <div className="flex flex-col items-center">
-        <p className="text-white font-montserrat text-xs font-bold text-center">Beira</p>
+        <p className="text-white font-montserrat text-xs font-bold text-center tracking-[10px] uppercase">Beira</p>
         <a
           className="mb-3 text-xs underline leading-7 font-montserrat text-white-400 sm:max-w-sm text-center"
           href={googleMapsLocationURL}
@@ -53,7 +53,7 @@ const Footer = () => {
         >
           Antiga Estrada N6 Munhava Casquinha Beira Sofala 2100
         </a>
-        <p className="text-white font-montserrat text-xs font-bold text-center">Maputo</p>
+        <p className="text-white font-montserrat text-xs font-bold text-center tracking-[10px] uppercase">Maputo</p>
         <a
           className="text-xs underline leading-7 font-montserrat text-white-400 sm:max-w-sm text-center"
           href={googleMapsLocationURL2}

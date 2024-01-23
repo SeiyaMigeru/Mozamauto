@@ -15,7 +15,7 @@ const Nav = () => {
   };
 
   return (
-    <header className="padding-x py-8 fixed z-10 w-full">
+    <header className="padding-x py-8 fixed z-20 w-full">
       <nav className="flex bg-white rounded-xl px-2 justify-between gap-10 items-center max-container">
         <div className="flex">
           <a href="/" className="mr-4">

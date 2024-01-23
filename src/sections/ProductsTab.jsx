@@ -75,7 +75,7 @@ class ProductsTab extends Component {
 
     return (
       <div className="flex">
-        <div className="flex flex-col items-center p-4 max-w-md">
+        <div className="flex flex-col items-center p-4 w-fit">
           <h2 className="text-2xl font-palanquin font-bold mb-4">Mozam Products</h2>
           <div class="my-6 py-2 px-3">
             <div class="relative max-w-xs">
@@ -112,7 +112,7 @@ class ProductsTab extends Component {
           <ul>
             <li
               onClick={() => this.handleCategoryClick(null)}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
+              className={` min-w-[250px] m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
                 selectedCategory === null ? "text-gray-700 bg-gray-300" : ""
               }`}
             >
@@ -190,8 +190,8 @@ class ProductsTab extends Component {
             </li>
           </ul>
         </div>
-        <div className=" md:mx-auto">
-          <div className="grid grid-cols-4 sm:grid-cols-5 gap-2">
+        <div className="ml-4">
+          <div className="grid grid-cols-4 sm:grid-cols-4 gap-3">
             {filteredTrucks.length === 0 ? (
               this.isCategoryEmpty(selectedCategory) ? (
                 <div className="flex items-center justify-center bg-white p-4 h-full">

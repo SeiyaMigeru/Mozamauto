@@ -8,7 +8,7 @@ const Subscribe = () => {
         <span className="text-stone-500">That is how we improve.</span>
       </h3>
 
-      <div className="lg:max-w-[40%] w-full flex items-center flex-col gap-5 p-4 sm:border sm:border-slate-gray rounded justify-between">
+      <div className="lg:max-w-[40%] w-full flex items-center flex-col gap-5 p-4 justify-between">
         <div className="w-full">
           <label
             for="hs-about-hire-us-1"

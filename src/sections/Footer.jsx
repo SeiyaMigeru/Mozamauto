@@ -3,7 +3,7 @@ import { socialmedia } from "../constants";
 
 const Footer = () => {
   const googleMapsLocationURL = "https://maps.app.goo.gl/DKhmj7NGojxYcAeGA";
-
+  const googleMapsLocationURL2 = "https://maps.app.goo.gl/azGxRwDoFjyuVQGs8"
   return (
     <footer className="footer-container max-container grid grid-cols-3 grid-rows-2 gap-8">
       {/* Logo */}
@@ -55,11 +55,11 @@ const Footer = () => {
         <p className="text-white font-montserrat text-xs font-bold text-center">Maputo</p>
         <a
           className="text-xs underline leading-7 font-montserrat text-white-400 sm:max-w-sm text-center"
-          href={googleMapsLocationURL}
+          href={googleMapsLocationURL2}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Antiga Estrada N6 Munhava Casquinha Beira Sofala 2100
+          Av. Samora Machel EN4, Tchumene, Matola
         </a>
       </div>
 

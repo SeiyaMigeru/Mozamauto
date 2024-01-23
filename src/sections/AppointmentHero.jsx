@@ -1,4 +1,10 @@
+import { useContext } from "react"
+import { LanguageContext } from "../language/LanguageContext"
+import { apppointmentHeroContent } from "../constants/appointmentContent";
+
 const AppointmentHero = () => {
+  const {language} = useContext(LanguageContext);
+
   return (
     <section
     className="w-full  flex xl:flex-row flex-col justify-center
@@ -8,10 +14,7 @@ const AppointmentHero = () => {
       className="relative xl:w-3/5 flex flex-col justify-center items-start w-full
         max-xl:padding-x pt-28 text-center"
     >
-      <h1 className="mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold">
-         Set your{" "}
-        <span className="text-gray-500 inline-block mt-3">Appointment with us!</span>
-      </h1>
+      <h1 className="mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold" dangerouslySetInnerHTML={{__html: apppointmentHeroContent[language].header}} />
     </div>
   </section>
   )

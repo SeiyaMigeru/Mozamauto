@@ -5,7 +5,7 @@ import { trucks, statistics } from "../constants";
 import { useState } from "react";
 import Button from "../components/Button";
 import { LanguageContext } from "../language/LanguageContext";
-import { superQualityContent } from "../constants/content";
+import { superQualityContent } from "../constants/homeContent";
 
 const SuperQuality = () => {
   const { language } = useContext(LanguageContext);

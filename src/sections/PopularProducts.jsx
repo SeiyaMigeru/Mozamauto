@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import PopularProductCard from '../components/PopularProductCard';
 import { products } from '../constants';
-import { popularProductContent } from '../constants/content';
+import { popularProductContent } from '../constants/homeContent';
 import { LanguageContext } from '../language/LanguageContext';
 
 const PopularProducts = () => {

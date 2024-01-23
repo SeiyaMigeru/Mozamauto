@@ -62,7 +62,7 @@ const ContactUs = () => {
   return (
     <main className="relative">
       <Nav/>
-      <SuccessfullModal isVisible={isModalVisible} closeModal={closeModal}/>
+      
       <section className="padding-x ">
         <ContacUsHero/>
       </section>
@@ -70,6 +70,12 @@ const ContactUs = () => {
         <ContactUsForm submitForm={submitForm}/>
         <FloatingIcon isFixed={isFloatingIconFixed} />
       </section>
+
+
+      {/* Gumagana na to check mo, nilagay ko lang muna dito. Di siya mapindot pag asa taas eh. Pag natapos mo yung css siguro mapipndot na siya kasi nasa ibabaw na */}
+      {isModalVisible && <SuccessfullModal closeModal={closeModal}/>}
+
+
       <section className="sm:px-16 px-8 sm:pt-6 pt-3 pb-8 bg-black">
         <Footer />
       </section>

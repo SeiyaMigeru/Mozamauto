@@ -1,10 +1,9 @@
 import React from 'react';
 
-const SuccessfullModal = ({ isVisible, closeModal }) => {
-  console.log('Is Modal Visible:', isVisible);
+const SuccessfullModal = ({closeModal }) => {
 
   return (
-    <div className={`modal ${isVisible ? 'visible' : 'hidden'}`}>
+    <div className="modal">
       <div className="modal-content">
         <p>Success! Your form has been submitted.</p>
         <button onClick={closeModal}>Close</button>

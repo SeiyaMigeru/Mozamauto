@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../language/LanguageContext";
+import { brandsContent } from "../constants/aboutUsContent";
 
 const Brands = () => {
+  const {language} = useContext(LanguageContext);
+
   return (
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div class="sm:w-1/2 xl:w-1/3 mx-auto text-center mb-6 md:mb-12">
         <h2 class="text-xl font-semibold md:text-2xl md:leading-tight text-gray-800 ">
-          Trusted by Open Source, enterprise, and more than 99,000 of you
+          {brandsContent[language].header}
         </h2>
       </div>
 

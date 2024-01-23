@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import ContactUsForm1 from "./ContactUsForm1";
 import ContactUsForm2 from "./ContactUsForm2";
 import ContactUsForm3 from "./ContactUsForm3";
 import ContactUsForm4 from "./ContactUsForm4";
 import ContactForm from "./ContactForm";
+import { LanguageContext } from "../language/LanguageContext";
+import { formSelectorContent, formsContent } from "../constants/contactUsContent";
 
 const ContactUsForm = ({ submitForm }) => {
   const [activeTab, setActiveTab] = useState(1);
+  const { language } = useContext(LanguageContext);
 
   const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);
@@ -18,7 +21,7 @@ const ContactUsForm = ({ submitForm }) => {
         <div class="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
           <div class="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2">
             <h2 class="text-2xl text-gray-800 font-bold sm:text-3xl ">
-              Select the Department to which you want to address your concerns.
+              {formSelectorContent[language].mainHeading}
             </h2>
 
             <nav
@@ -60,11 +63,10 @@ const ContactUsForm = ({ submitForm }) => {
                   </svg>
                   <span class="grow ms-6">
                     <span class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 ">
-                      Information Desk
+                      {formSelectorContent[language].informationHeading}
                     </span>
                     <span class="block mt-1 text-gray-800 ">
-                      For inquiries regarding the company's operating hours,
-                      feedback, appointment confirmation and complaints.
+                      {formSelectorContent[language].informationCaption}
                     </span>
                   </span>
                 </span>
@@ -101,11 +103,10 @@ const ContactUsForm = ({ submitForm }) => {
                   </svg>
                   <span class="grow ms-6">
                     <span class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 ">
-                      Service Department
+                      {formSelectorContent[language].serviceHeading}
                     </span>
                     <span class="block mt-1 text-gray-800 ">
-                      For truck maintenance, part replacement, service team
-                      availability, and gate pass requests.
+                      {formSelectorContent[language].serviceCaption}
                     </span>
                   </span>
                 </span>
@@ -149,11 +150,10 @@ const ContactUsForm = ({ submitForm }) => {
                         activeTab === 3 ? "" : "text-blue-600"
                       }`}
                     >
-                      Part-Sales Department
+                      {formSelectorContent[language].partsHeading}
                     </span>
                     <span class="block mt-1 text-gray-800">
-                      Request a quote for truck components from our reputable
-                      suppliers and manufacturers.
+                      {formSelectorContent[language].partsCaption}
                     </span>
                   </span>
                 </span>
@@ -193,11 +193,10 @@ const ContactUsForm = ({ submitForm }) => {
                   </svg>
                   <span class="grow ms-6">
                     <span class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800  ">
-                      Sales Department
+                      {formSelectorContent[language].salesHeading}
                     </span>
                     <span class="block mt-1 text-gray-800 ">
-                      For truck, trailer, industrial truck, oil, and tire
-                      quotations.
+                      {formSelectorContent[language].salesCaption}
                     </span>
                   </span>
                 </span>
@@ -216,10 +215,10 @@ const ContactUsForm = ({ submitForm }) => {
                 >
                   <ContactForm
                     submitForm={submitForm}
-                    formTitle={"Information Desk"}
+                    formTitle=  {formsContent[language].information.formTitle}
                     destination={"information"}
-                    detailsLabel={"Details"}
-                    submitFormLabel={"Send Inquiry"}
+                    detailsLabel={formsContent[language].information.detailsLabel}
+                    submitFormLabel={formsContent[language].information.submitFormLabel}
                   />
                 </div>
 
@@ -232,10 +231,10 @@ const ContactUsForm = ({ submitForm }) => {
                 >
                   <ContactForm
                     submitForm={submitForm}
-                    formTitle={"Service Department"}
+                    formTitle={formsContent[language].service.formTitle}
                     destination={"service"}
-                    detailsLabel={"Let us know about the trucks condition"}
-                    submitFormLabel={"Send Inquiry"}
+                    detailsLabel={formsContent[language].service.detailsLabel}
+                    submitFormLabel={formsContent[language].service.submitFormLabel}
                   />
                 </div>
 
@@ -248,12 +247,10 @@ const ContactUsForm = ({ submitForm }) => {
                 >
                   <ContactForm
                     submitForm={submitForm}
-                    formTitle={"Part-Sales Department"}
+                    formTitle={formsContent[language].parts.formTitle}
                     destination={"partSales"}
-                    detailsLabel={
-                      "Provide a summary of what you are looking for"
-                    }
-                    submitFormLabel={"Request Quotation"}
+                    detailsLabel={formsContent[language].parts.detailsLabel}
+                    submitFormLabel={formsContent[language].parts.submitFormLabel}
                   />
                 </div>
 
@@ -266,12 +263,10 @@ const ContactUsForm = ({ submitForm }) => {
                 >
                   <ContactForm
                     submitForm={submitForm}
-                    formTitle={"Sales Department"}
+                    formTitle={formsContent[language].sales.formTitle}
                     destination={"sales"}
-                    detailsLabel={
-                      "Provide a summary of what you are looking for"
-                    }
-                    submitFormLabel={"Request Quotation"}
+                    detailsLabel={formsContent[language].sales.detailsLabel}
+                    submitFormLabel={formsContent[language].sales.submitFormLabel}
                   />
                 </div>
               </div>

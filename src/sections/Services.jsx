@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react"
 import ServiceCard from "../components/ServiceCard"
 
 import { LanguageContext } from "../language/LanguageContext";
-import { services } from "../constants/content";
+import { services } from "../constants/homeContent";
 
 const Services = () => {
   const { language } = useContext(LanguageContext);

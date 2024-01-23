@@ -9,8 +9,6 @@ class ProductsTab extends Component {
       selectedCategory: null,
       truckData: [
         // Your truck data here, each truck should have a category attribute
-        { id: 1, name: "Truck 1", category: "Category A" },
-        { id: 2, name: "Truck 2", category: "Category B" },
         {
           id: 3,
           name: "Firenza Tire 1",
@@ -77,7 +75,7 @@ class ProductsTab extends Component {
 
     return (
       <div className="flex">
-        <div className="flex flex-col items-center w-1/4 p-4 max-w-sm">
+        <div className="flex flex-col items-center p-4 max-w-md">
           <h2 className="text-2xl font-palanquin font-bold mb-4">Mozam Products</h2>
           <div class="my-6 py-2 px-3">
             <div class="relative max-w-xs">

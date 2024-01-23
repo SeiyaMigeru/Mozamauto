@@ -15,8 +15,8 @@ const Footer = () => {
 
       {/* Description */}
       <p className="mt-6 text-sm text-center justify-self-center leading-7 font-montserrat text-white-400 sm:max-w-sm col-span-1 row-span-1">
-      CHOOSE MOZAM AUTO. 
-      CHOOSE TO BE DRIVEN TO PERFECTION
+        CHOOSE MOZAM AUTO. <br />
+        CHOOSE TO BE <b>DRIVEN TO PERFECTION</b>
       </p>
 
       {/* Social Media Icons */}
@@ -32,27 +32,40 @@ const Footer = () => {
       </div>
 
       {/* Copyright and Address */}
-        <div className="flex justify-start col-span-1 row-span-2 text-white items-center gap-2 font-montserrat cursor-pointer mt-10">
-          <img
-            src={copyrightSign}
-            alt="Copyright Sign"
-            width={20}
-            height={20}
-            className="rounded-full m-0"
-          />
-          <p>Copyright. All Rights Reserved</p>
-        </div>
+      <div className="flex justify-start col-span-1 row-span-2 text-white items-center gap-2 font-montserrat cursor-pointer mt-10">
+        <img
+          src={copyrightSign}
+          alt="Copyright Sign"
+          width={20}
+          height={20}
+          className="rounded-full m-0"
+        />
+        <p>Copyright. All Rights Reserved</p>
+      </div>
+      <div className="flex flex-col items-center">
+        <p className="text-white font-montserrat text-xs font-bold text-center">Beira</p>
         <a
-          className="flex col-span-1 row-span-2 text-xs mt-5 text-center underline leading-7 font-montserrat justify-self-center text-white-400 sm:max-w-sm "
+          className="mb-3 text-xs underline leading-7 font-montserrat text-white-400 sm:max-w-sm text-center"
           href={googleMapsLocationURL}
           target="_blank"
           rel="noopener noreferrer"
         >
-          AAntiga Estrada N6 Munhava Casquinha Beira Sofala 2100
+          Antiga Estrada N6 Munhava Casquinha Beira Sofala 2100
         </a>
-        <p className="font-montserrat text-white col-span-1 row-span-2 cursor-pointer items-center flex mt-10 justify-self-end">
-          Terms & Conditions
-        </p>
+        <p className="text-white font-montserrat text-xs font-bold text-center">Maputo</p>
+        <a
+          className="text-xs underline leading-7 font-montserrat text-white-400 sm:max-w-sm text-center"
+          href={googleMapsLocationURL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Antiga Estrada N6 Munhava Casquinha Beira Sofala 2100
+        </a>
+      </div>
+
+      <p className="font-montserrat text-white col-span-1 row-span-2 cursor-pointer items-center flex mt-10 justify-self-end">
+        Terms & Conditions
+      </p>
     </footer>
   );
 };

@@ -1,4 +1,4 @@
-import  DatePicker  from "../components/DatePicker";
+import DatePicker from "../components/DatePicker";
 
 const Calendar = () => {
   return (
@@ -6,7 +6,7 @@ const Calendar = () => {
       <div class="grid md:grid-cols-2 items-center gap-12">
         <div>
           <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight ">
-          A SERVICE YOUR TRUCK TRULY DESERVE!
+            A SERVICE YOUR TRUCK TRULY DESERVE!
           </h1>
           <p class="mt-1 md:text-lg text-gray-800 ">
             Experience it first hand here in Mozam Auto
@@ -33,7 +33,9 @@ const Calendar = () => {
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-gray-600 ">Trouble-free Appointment Setting</span>
+                <span class="text-gray-600 ">
+                  Trouble-free Appointment Setting
+                </span>
               </li>
 
               <li class="flex space-x-3">
@@ -51,7 +53,9 @@ const Calendar = () => {
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-gray-600 ">Fast & Time-mannered responses</span>
+                <span class="text-gray-600 ">
+                  Fast & Time-mannered responses
+                </span>
               </li>
 
               <li class="flex space-x-3">
@@ -73,8 +77,6 @@ const Calendar = () => {
               </li>
             </ul>
           </div>
-
-          
 
           <div class="mt-10 flex items-center gap-x-5">
             <div class="flex -space-x-2">
@@ -115,16 +117,44 @@ const Calendar = () => {
 
         <div class="relative">
           <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-10 ">
-            <h2 class="text-xl font-semibold text-gray-800 ">
-              Choose a date
-            </h2>
+            <h2 class="text-xl font-semibold text-gray-800 ">Choose a date</h2>
 
             <form>
               <div class="mt-6 grid gap-4 lg:gap-6">
                 <div class="grid grid-cols-1  gap-4 lg:gap-6">
-                  <DatePicker/>
+                  <DatePicker />
                 </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                  <div>
+                    <label
+                      for="hs-company-hire-us-1"
+                      class="block mb-2 text-sm text-gray-700 font-medium "
+                    >
+                      Company Name
+                    </label>
+                    <input
+                      type="text"
+                      name="company_name"
+                      id="hs-company-hire-us-1"
+                      class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm outline outline-1 focus:outline-2 focus:outline-stone-500 focus:ring-stone-500  disabled:opacity-50 disabled:pointer-events-none "
+                    />
+                  </div>
 
+                  <div>
+                    <label
+                      for="hs-company-website-hire-us-1"
+                      class="block mb-2 text-sm text-gray-700 font-medium "
+                    >
+                      Contact Number
+                    </label>
+                    <input
+                      type="text"
+                      name="company_contact"
+                      id="hs-company-website-hire-us-1"
+                      class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm outline outline-1 focus:outline-2 focus:outline-stone-500 focus:ring-stone-500 disabled:opacity-50 disabled:pointer-events-none "
+                    />
+                  </div>
+                </div>
                 <div>
                   <label
                     for="hs-work-email-hire-us-1"
@@ -138,10 +168,22 @@ const Calendar = () => {
                     id="hs-work-email-hire-us-1"
                     autocomplete="email"
                     placeholder="johndoe@gmail.com"
-                    class="py-3 px-4 block w-full outline outline-1 outline-gray-200 rounded-lg text-sm focus:outline-stone-500 focus:ring-stone-500 disabled:opacity-50 disabled:pointer-events-none "
+                    class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm outline outline-1 focus:outline-2 focus:outline-stone-500 focus:ring-stone-500 disabled:opacity-50 disabled:pointer-events-none"
                   />
                 </div>
-
+                <div className="w-full">
+                  <label
+                    for="hs-about-hire-us-1"
+                    class="block mb-2 text-sm text-gray-700 font-medium "
+                  ></label>
+                  <textarea
+                    id="hs-about-hire-us-1"
+                    name="details"
+                    rows="4"
+                    placeholder="Comments"
+                    class="py-3 px-4 block w-full border-gray-200 rounded-xl text-sm outline outline-1 focus:outline-2 focus:outline-stone-500 focus:ring-stone-500 disabled:opacity-50 disabled:pointer-events-none "
+                  ></textarea>
+                </div>
               </div>
 
               <div class="mt-6 grid">

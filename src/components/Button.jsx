@@ -1,6 +1,6 @@
-const Button = ({label, iconURL, fullWidth}) => {
+const Button = ({onClick, label, iconURL, fullWidth}) => {
   return (
-    <button className="flex justify-center items-center gap-2 px-7
+    <button onClick={onClick} className="flex justify-center items-center gap-2 px-7
     py-4 border font-montserrat text-lg leading-none hover:bg-gray-700 bg-gray-500 rounded-full
     text-white border-gray-500 ${fullWidth && 'w-full'}">
         {label}

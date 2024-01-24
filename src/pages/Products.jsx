@@ -30,6 +30,7 @@ const Products = () => {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     checkFloatingIconPosition();
     window.addEventListener("scroll", checkFloatingIconPosition);
     return () => {

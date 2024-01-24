@@ -1,12 +1,16 @@
 import React, { useContext } from "react";
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import { sendContactUsForm } from "../functions/sendMail";
 import { LanguageContext } from "../language/LanguageContext";
 import { formTemplateContent } from "../constants/contactUsContent";
 
-
-const ContactForm = ({submitForm, formTitle, detailsLabel, submitFormLabel, destination}) => {
-
+const ContactForm = ({
+  submitForm,
+  formTitle,
+  detailsLabel,
+  submitFormLabel,
+  destination,
+}) => {
   const { language } = useContext(LanguageContext);
 
   const [formData, setFormData] = useState({
@@ -16,24 +20,41 @@ const ContactForm = ({submitForm, formTitle, detailsLabel, submitFormLabel, dest
     company_name: "",
     company_contact: "",
     details: "",
-    destination: destination
+    destination: destination,
   });
+
+  const [isFormValid, setIsFormValid] = useState(false);
 
   useEffect(() => {
     console.log(formData);
   }, []);
 
-  const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
+  const onChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    validateForm();
+    let value = e.target.value;
+
+    // If the field is company_contact and the value is not numeric, replace non-numeric characters
+    if (e.target.name === "company_contact" && !/^\d*$/.test(value)) {
+      value = value.replace(/\D/g, ""); // Remove non-numeric characters
+    }
+  };
+
+  const validateForm = () => {
+    const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email);
+    const isFormEmpty = Object.values(formData).some((value) => value === "");
+    setIsFormValid(!isFormEmpty && isEmailValid);
+  };
 
   const handleClick = (event) => {
     event.preventDefault();
 
     console.log(formData);
 
-    submitForm(formData);
-  }
-
-
+    if (isFormValid) {
+      submitForm(formData);
+    }
+  };
 
   return (
     <div class=" bg-white flex flex-col border rounded-xl p-4 sm:p-6 lg:p-10 ">
@@ -117,7 +138,8 @@ const ContactForm = ({submitForm, formTitle, detailsLabel, submitFormLabel, dest
                 {formTemplateContent[language].number}
               </label>
               <input
-                type="text"
+                type="tel"
+                pattern="[0-9]*"
                 name="company_contact"
                 id="hs-company-website-hire-us-1"
                 onChange={onChange}
@@ -131,7 +153,7 @@ const ContactForm = ({submitForm, formTitle, detailsLabel, submitFormLabel, dest
               for="hs-about-hire-us-1"
               class="block mb-2 text-sm text-gray-700 font-medium "
             >
-            {detailsLabel}
+              {detailsLabel}
             </label>
             <textarea
               id="hs-about-hire-us-1"
@@ -147,16 +169,16 @@ const ContactForm = ({submitForm, formTitle, detailsLabel, submitFormLabel, dest
           <button
             onClick={handleClick}
             type="submit"
-
-            class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-600 text-white hover:bg-gray-700 disabled:opacity-50 disabled:pointer-events-none"
+            disabled={!isFormValid}
+            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-600 text-white hover:bg-gray-700 disabled:opacity-50 disabled:pointer-events-none"
           >
             {submitFormLabel}
           </button>
         </div>
       </form>
 
-      <div class="mt-3 text-center">
-        <p class="text-sm text-gray-500">
+      <div className="mt-3 text-center">
+        <p className="text-sm text-gray-500">
           {formTemplateContent[language].wellGetBack}
         </p>
       </div>

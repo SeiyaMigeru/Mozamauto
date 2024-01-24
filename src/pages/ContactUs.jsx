@@ -1,13 +1,15 @@
 import FloatingIcon from '../components/FloatingIcon';
 import Nav from '../components/Nav';
-import { Footer, ContactUsForm, ContacUsHero, SuccessfullModal} from '../sections';
+import { Footer, ContactUsForm, ContacUsHero, SuccessfullModal, FailedModal} from '../sections';
 import React, { useState, useEffect } from "react";
 import { sendContactUsForm } from '../functions/sendMail';
+import GeneralModal from '../sections/GeneralModal';
 
 
 const ContactUs = () => {
   const [isFloatingIconFixed, setIsFloatingIconFixed] = useState(true);
   const [isModalVisible, setModalVisibility] = useState(false);
+  const [status, setStatus] = useState("loading");
 
   const checkFloatingIconPosition = () => {
     const footer = document.querySelector(".footer-container");
@@ -38,20 +40,31 @@ const ContactUs = () => {
   }, []);
 
   const submitForm = async (formData) => {
+    setModalVisibility(true);
+
     try {
       var result = await sendContactUsForm(formData);
+      setStatus("loading");
 
-      setModalVisibility(true);
+      console.log(result);
+
+      if (result.data.message === "success") {
+        setStatus("success");
+      } else {
+        setStatus("failed");
+      }
+
 
       console.log("isModalVisible:", isModalVisible);
     } catch (error) {
       console.error("Form submission error:", error);
-      // Handle error if needed
+      setStatus("failed");
     }
   };
   
 
   const closeModal = () => {
+    setStatus("loading");
     setModalVisibility(false);
   };
 
@@ -73,7 +86,7 @@ const ContactUs = () => {
 
 
       {/* Gumagana na to check mo, nilagay ko lang muna dito. Di siya mapindot pag asa taas eh. Pag natapos mo yung css siguro mapipndot na siya kasi nasa ibabaw na */}
-      {isModalVisible && <SuccessfullModal closeModal={closeModal}/>}
+      <GeneralModal isVisible={isModalVisible} status={status} closeModal={closeModal} />
 
 
       <section className="sm:px-16 px-8 sm:pt-6 pt-3 pb-8 bg-black">

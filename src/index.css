@@ -95,6 +95,19 @@
   animation: slideUpAnimation 1s ease-in-out;
 }
 
+@keyframes slideDown {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.modal-content {
+  animation: slideDown .5s ease-in-out;
+}
+
 @layer components {
   .max-container {
     max-width: 1440px;

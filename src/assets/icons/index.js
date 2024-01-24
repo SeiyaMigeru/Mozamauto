@@ -10,9 +10,11 @@ import copyrightSign from './copyright-sign.svg'
 import facebook from './facebook.svg'
 import instagram from './instagram.svg'
 import twitter from './twitter.svg'
-import PhoneIcon from './Phone.png';
+import PhoneIcon from './Phone.png'
+import Success from './success.png'
+import Failed from './failed.png'
 
 export {
     headerLogo, hamburger, arrowRight, star, fastTruck, passion, support,
-    footerLogo, copyrightSign, facebook, instagram, twitter, PhoneIcon
+    footerLogo, copyrightSign, facebook, instagram, twitter, PhoneIcon, Success, Failed
 }

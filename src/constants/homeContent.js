@@ -11,11 +11,11 @@ const heroContent = {
     },
 
     es: {
-        tagline: 'Impulsado a <br /> Perfección',
-        shopLink: 'Compra ahora',
-        additionalText: `Spanish Discover the road ahead with <b>Mozamauto</b>. Our collection
-        of powerful trucks is your ticket to unmatched performance,
-        combining toughness and innovation`
+        tagline: 'Guiado pela <br />  Perfeição',
+        shopLink: 'Compre Agora',
+        additionalText: `
+        Descubra o caminho à frente com a <b> Mozamauto </b>. Nossa coleção de caminhões potentes 
+        é o seu bilhete para um desempenho incomparável, combinando robustez e inovação.`
     }
 }
 
@@ -25,8 +25,8 @@ const popularProductContent = {
         caption: `Explore the pinnacle of power and performance with our curated selection of top-tier trucks.`,
     },
     es: {
-        header: `OUR <span class='text-stone-500'>EXPENDABLE</span> TRUCKS`,
-        caption: `Explore the pinnacle of power and performance with our curated selection of top-tier trucks.`
+        header: `Nosso  Caminhão <span class='text-stone-500'>Expansível</span>`,
+        caption: `Explore o ápice de potência e desempenho com nossa seleção cuidadosamente escolhida de caminhões de primeira linha.`
     }
 }
 
@@ -41,12 +41,9 @@ const superQualityContent = {
         shopLink: 'Shop now',
     },
     es: {
-        header: `<span>Try the</span>
-        <br />
-        <span class="text-stone-500 inline-block mt-3">Excellence of our</span> Truck Parts`,
-        caption: `Elevate your adventure with confidence, knowing that your vehicle is outfitted with the best-in-class equipment available. 
-        Explore our best-selling items. Be <span class="text-lg font-palanquin font-bold">DRIVEN TO PERFECTION.</span>`,
-        shopLink: 'Shop now',
+        header: `<span class="text-stone-500 inline-block mt-3">Experimente a excelência</span> das peças do nosso caminhão`,
+        caption: `Eleve sua aventura com confiança, sabendo que seu veículo está equipado com os melhores equipamentos disponíveis. Explore nossos itens mais vendidos. <span class="text-lg font-palanquin font-bold">Seja impulsionado para a perfeição.</span>`,
+        shopLink: 'Compre Agora',
     }
 }
 
@@ -57,9 +54,9 @@ const services = {
         {imgURL: support, label:"Passionate Teams", subtext:"Our dedicated team of passionate specialists works relentlessly to bring you the best selection, driven by a shared dedication to quality."},
     ],
     es:[
-        {imgURL: fastTruck, label:"Spanish Outstanding Service", subtext:"We are made up of experienced professionals that are equipped with excellent workmanship to do excellent work in enabling you to get back on your journey."},
-        {imgURL: passion, label:"High-Quality Parts", subtext:"We take pride in offering a wide variety of premium products, each of which is a testament to quality and endurance."},
-        {imgURL: support, label:"Passionate Teams", subtext:"Our dedicated team of passionate specialists works relentlessly to bring you the best selection, driven by a shared dedication to quality."},
+        {imgURL: fastTruck, label:"Serviço Excepcional", subtext:"Somos compostos por profissionais experientes equipados com excelente habilidade para realizar um trabalho excepcional, permitindo que você retome sua jornada."},
+        {imgURL: passion, label:"Peças de Alta Qualidade", subtext:"Orgulhamo-nos de oferecer uma ampla variedade de produtos premium, cada um dos quais é um testemunho de qualidade e durabilidade."},
+        {imgURL: support, label:"Equipes Apaixonadas", subtext:"Nossa equipe dedicada de especialistas apaixonados trabalha incansavelmente para trazer a você a melhor seleção, impulsionada por um compromisso compartilhado com a qualidade."},
     ]
 }
 
@@ -81,8 +78,8 @@ const subscribeContent = {
         emailUs: 'Email Us'
     },
     es: {
-        share: `Share your ideas with us. <span class="text-stone-500">That is how we improve.</span>`,
-        emailUs: 'Email Us'
+        share: `Compartilhe suas ideias conosco. <span class="text-stone-500">É assim que melhoramos.</span>`,
+        emailUs: 'Envie-nos um e-mail.'
     }
 }
 
@@ -94,10 +91,11 @@ const footerContent = {
         termsAndCondi: `Terms & Conditions`
     },
     es: {
-        footerTagline: `CHOOSE MOZAM AUTO. <br />
-        CHOOSE TO BE <b>DRIVEN TO PERFECTION</b>`,
+        footerTagline: `
+        ESCOLHA MOZAM AUTO.<br />
+        Escolha Ser <b>IMPULSIONADO PARA A PERFEIÇÃO</b>`,
         copyright: `Copyright. All Rights Reserved`,
-        termsAndCondi: `Terms & Conditions`
+        termsAndCondi: `Termos e Condições`
     }
 }
 

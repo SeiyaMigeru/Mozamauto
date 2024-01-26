@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import FloatingIcon from "../components/FloatingIcon";
 import Nav from "../components/Nav";
 import { Footer, ProductsHero, ProductsTab } from "../sections";
+import ProductSection from "../sections/ProductSection";
 
 const Products = () => {
   const [isFloatingIconFixed, setIsFloatingIconFixed] = useState(true);
@@ -45,7 +46,7 @@ const Products = () => {
         <ProductsHero />
       </section>
       <section className="padding">
-        <ProductsTab />
+        <ProductSection />
         <FloatingIcon isFixed={isFloatingIconFixed} />
       </section>
       <section className="sm:px-16 px-8 sm:pt-6 pt-3 pb-8 bg-black">

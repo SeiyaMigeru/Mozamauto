@@ -112,79 +112,71 @@ class ProductsTab extends Component {
           <ul>
             <li
               onClick={() => this.handleCategoryClick(null)}
-              className={` min-w-[250px] m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === null ? "text-gray-700 bg-gray-300" : ""
-              }`}
+              className={` min-w-[250px] m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === null ? "text-gray-700 bg-gray-300" : ""
+                }`}
             >
               All
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category A")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category A"
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "Category A"
                   ? "text-gray-700 bg-gray-300"
                   : ""
-              }`}
+                }`}
             >
               Shacman
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category B")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category B"
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "Category B"
                   ? "text-gray-700 bg-gray-300"
                   : ""
-              }`}
+                }`}
             >
               Lovol
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category C")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category C"
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "Category C"
                   ? "text-gray-700 bg-gray-300"
                   : ""
-              }`}
+                }`}
             >
               CIMC
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category D")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category D"
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "Category D"
                   ? "text-gray-700 bg-gray-300"
                   : ""
-              }`}
+                }`}
             >
               Firenza
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category E")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category E"
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "Category E"
                   ? "text-gray-700 bg-gray-300"
                   : ""
-              }`}
+                }`}
             >
               Fuchs Oil
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category F")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category F"
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "Category F"
                   ? "text-gray-700 bg-gray-300"
                   : ""
-              }`}
+                }`}
             >
               Batteries
             </li>
             <li
               onClick={() => this.handleCategoryClick("Category G")}
-              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${
-                selectedCategory === "Category G"
+              className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "Category G"
                   ? "text-gray-700 bg-gray-300"
                   : ""
-              }`}
+                }`}
             >
               Parts & Accessories
             </li>

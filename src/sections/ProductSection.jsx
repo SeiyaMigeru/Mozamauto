@@ -56,11 +56,9 @@ const ProductSection = () => {
     }
 
     const handleCardClick = (product_id) => {
-        const products = shownProducts.find((_product) =>  _product.id === product_id);
+        const product = shownProducts.find((_product) =>  _product.id === product_id);
 
-        setShownProducts(
-            products.filter((prodct) => prodct.category === selectedCategory)
-        )
+        setSelectedTruck(product);
 
         setIsInfoModalShown(true);
         // 

@@ -1,18 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { allProducts } from "../functions/products";
 import ProductCard from "../components/ProductCard";
 import { FirenzaTire2 } from "../assets/images";
 import InfoModal from "./InfoModal";
 import GeneralModal from "./GeneralModal";
 import { sendContactUsForm, sendOrderForm } from "../functions/sendMail";
+import { ModalContext } from "../components/ModalProvider";
 
 const ProductSection = () => {
     const [selectedCategory, setSelectedCategory] = useState("all");
     const [shownProducts, setShownProducts] = useState(allProducts);
     const [isInfoModalShown, setIsInfoModalShown] = useState(false);
     const [selectedTruck, setSelectedTruck] = useState(allProducts[0]);
-    const [isGeneralModalShown, setIsGeneralModalShown] = useState(false);
-    const [status, setStatus] = useState("loading");
+    const {isModalVisible, status, openModal, closeModal, updateStatus} = useContext(ModalContext);
 
 
     const changeCategory = (category) => {
@@ -28,12 +28,6 @@ const ProductSection = () => {
         // 
     }
 
-    const closeModal = () => {
-        setStatus("loading");
-        setIsGeneralModalShown(false);
-      };
-
-
     useEffect(() => {
         if (selectedCategory === "all") {
             setShownProducts(allProducts);
@@ -46,30 +40,20 @@ const ProductSection = () => {
 
     }, [selectedCategory]);
 
-    useEffect(() => {
-        console.log(shownProducts);
-    }, [shownProducts]);
-
     const submitForm = async (formData) => {
-        setIsGeneralModalShown(true);
+        openModal();
     
         try {
-          var result = await sendOrderForm(formData);
-          setStatus("loading");
-    
-          console.log(result);
-    
+          var result = await sendOrderForm(formData);    
           if (result.data.message === "success") {
-            setStatus("success");
+            updateStatus("success");
           } else {
-            setStatus("failed");
+            updateStatus("failed");
           }
     
-    
-          console.log("isModalVisible:", isModalVisible);
         } catch (error) {
           console.error("Form submission error:", error);
-          setStatus("failed");
+          updateStatus("failed");
         }
       };
 
@@ -203,7 +187,7 @@ const ProductSection = () => {
                     submitForm={submitForm}
                 />}
 
-                <GeneralModal isVisible={isGeneralModalShown} status={status} closeModal={closeModal} />
+                <GeneralModal isVisible={isModalVisible} status={status} closeModal={closeModal} />
             </div>
         </div>
     )

@@ -5,52 +5,61 @@ import {
   calendarContent,
   datePickerFormContent,
 } from "../constants/appointmentContent";
+import { getAppointments } from "../functions/sendMail";
 
-const Calendar = () => {
+const Calendar = ({submitForm}) => {
   const { language } = useContext(LanguageContext);
+  const [chosenDate, setChosenDate] = useState(new Date());
+  const [isFormValid, setIsFormValid] = useState(false);
+  
+
   const [formData, setFormData] = useState({
     company_name: "",
     company_contact: "",
     email: "",
     details: "",
+    date: chosenDate
   });
 
-  const [isFormValid, setIsFormValid] = useState(false);
+  useEffect(() => {
+    const originalYear = chosenDate.getFullYear();
+    const originalMonth = chosenDate.getMonth() + 1; // Adding 1 since months are 0-indexed
+    const originalDay = chosenDate.getDate();
+
+    const formattedDate = `${originalYear}-${originalMonth.toString().padStart(2, '0')}-${originalDay.toString().padStart(2, '0')}`
+    setFormData(prevState => ({ ...prevState, date: formattedDate }));
+  }, [chosenDate]);
 
   useEffect(() => {
-    validateForm();
+    console.log(formData.date)
   }, [formData]);
 
+
   const onChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    validateForm();
     let value = e.target.value;
-  
-    // Validation for company_contact (allow only numeric values)
-    if (e.target.name === "company_contact") {
+
+    // If the field is company_contact and the value is not numeric, replace non-numeric characters
+    if (e.target.name === "company_contact" && !/^\d*$/.test(value)) {
       value = value.replace(/\D/g, ""); // Remove non-numeric characters
     }
-  
-    // Validation for email field
-    if (e.target.name === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-      // Check if the entered value is a valid email address
-      return;
-    }
-  
-    setFormData({ ...formData, [e.target.name]: value });
-    validateForm();
   };
 
   const validateForm = () => {
-    const requiredFields = ["company_name", "company_contact", "email"];
-    const isFormEmpty = requiredFields.some(
-      (field) => formData[field].trim() === ""
-    );
-
-    setIsFormValid(!isFormEmpty);
+    const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email);
+    const isFormEmpty = Object.values(formData).some((value) => value === "");
+    setIsFormValid(!isFormEmpty && isEmailValid);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
+  const handleClick = (event) => {
+    event.preventDefault();
+
+    console.log(formData);
+
+    if (isFormValid) {
+      submitForm(formData);
+    }
   };
 
   return (
@@ -175,10 +184,10 @@ const Calendar = () => {
               {datePickerFormContent[language].choseDate}
             </h2>
 
-            <form onSubmit={handleSubmit}>
+            <form>
               <div className="mt-6 grid gap-4 lg:gap-6">
                 <div className="grid grid-cols-1  gap-4 lg:gap-6">
-                  <DatePicker />
+                  <DatePicker setChosenDate={setChosenDate} />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                   <div>
@@ -251,6 +260,7 @@ const Calendar = () => {
 
               <div className="mt-6 grid">
                 <button
+                  onClick={handleClick}
                   type="submit"
                   className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-600 text-white hover:bg-gray-700 disabled:opacity-50 disabled:pointer-events-none "
                   disabled={!isFormValid}

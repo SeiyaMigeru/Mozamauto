@@ -2,31 +2,39 @@ import { LanguageContext } from "../language/LanguageContext";
 import { subscribeContent } from "../constants/homeContent";
 import { useContext, useEffect, useState  } from "react";
 
-const Subscribe = () => {
+const Subscribe = ({submitForm}) => {
   const {language} = useContext(LanguageContext);
+  const [formData, setFormData] = useState({
+    email: "",
+    details: "",
+  });
+
   const [isFormValid, setIsFormValid] = useState(false);
 
   useEffect(() => {
-    const textarea = document.getElementById("hs-about-hire-us-1");
-    const emailInput = document.querySelector(".email-input");
+    console.log(formData);
+  }, [formData]);
 
-    textarea.addEventListener("input", toggleButtonState);
-    emailInput.addEventListener("input", toggleButtonState);
+  const onChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    validateForm();
+  };
 
-    function toggleButtonState() {
-      const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim());
-      const isTextareaValid = textarea.value.trim() !== "";
-    
-      const formIsValid = isEmailValid && isTextareaValid;
-      setIsFormValid(formIsValid);
+  const validateForm = () => {
+    const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email);
+    const isFormEmpty = Object.values(formData).some((value) => value === "");
+    setIsFormValid(!isFormEmpty && isEmailValid);
+  };
+
+  const handleClick = (event) => {
+    event.preventDefault();
+
+    console.log(formData);
+
+    if (isFormValid) {
+      submitForm(formData);
     }
-
-    // Cleanup event listeners when component unmounts
-    return () => {
-      textarea.removeEventListener("input", toggleButtonState);
-      emailInput.removeEventListener("input", toggleButtonState);
-    };
-  }, []);
+  };
 
   return (
     <section className="max-container flex justify-between items-center max-lg:flex-col gap-10">
@@ -39,6 +47,7 @@ const Subscribe = () => {
           className="block mb-2 text-sm text-gray-700 font-medium"
         ></label>
         <textarea
+          onChange={onChange}
           id="hs-about-hire-us-1"
           name="details"
           rows="4"
@@ -48,12 +57,15 @@ const Subscribe = () => {
       </div>
       <div className="flex rounded-3xl outline outline-1 focus:outline-2 focus:outline-stone-500 focus:ring-stone-500 w-full justify-between p-3">
         <input
+        onChange={onChange}
           type="email"
+          name="email"
           placeholder="example@gmail.com"
           className="w-[50%] focus:outline-none focus:ring-0 email-input"
         />
       <div className={`flex justify-center items-center px-7 py-4 border font-montserrat text-lg leading-none rounded-full ${isFormValid ? 'bg-gray-500 hover:bg-gray-800' : 'bg-gray-400'}`}>
         <button
+        onClick={handleClick}
           type="button"
           className="email-button text-white"
           disabled={!isFormValid}

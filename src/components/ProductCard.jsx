@@ -1,8 +1,6 @@
 import { FirenzaTire2 } from "../assets/images";
 
 const ProductCard = ({product, handleCardClick}) => {
-
-    console.log("HGello");
     return (
         <div
             className={`relative flex items-center flex-col justify-center bg-white rounded shadow-lg cursor-pointer hover:bg-gray-200 max-w-sm`}

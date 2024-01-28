@@ -10,10 +10,15 @@ import {
 } from "../sections";
 import FloatingIcon from "../components/FloatingIcon";
 import Nav from "../components/Nav";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { ModalContext } from "../components/ModalProvider";
+import GeneralModal from "../sections/GeneralModal";
+import { sendSuggestionForm } from "../functions/sendMail";
 
 const HomePage = () => {
   const [isFloatingIconFixed, setIsFloatingIconFixed] = useState(true);
+
+  const {isModalVisible, status, openModal, closeModal, updateStatus} = useContext(ModalContext);
 
   const checkFloatingIconPosition = () => {
     const footer = document.querySelector(".footer-container");
@@ -35,6 +40,29 @@ const HomePage = () => {
       setIsFloatingIconFixed(false);
     } else {
       setIsFloatingIconFixed(true);
+    }
+  };
+
+  const submitForm = async (formData) => {
+    openModal();
+
+    try {
+      var result = await sendSuggestionForm(formData);
+      updateStatus("loading");
+
+      console.log(result);
+
+      if (result.data.message === "success") {
+        updateStatus("success");
+      } else {
+        updateStatus("failed");
+      }
+
+
+      console.log("isModalVisible:", isModalVisible);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      updateStatus("failed");
     }
   };
 
@@ -64,9 +92,12 @@ const HomePage = () => {
         <CustomerReviews />
       </section>
       <section className="padding sm:py-32 py-16 w-full">
-        <Subscribe />
+        <Subscribe submitForm={submitForm} />
         <FloatingIcon isFixed={isFloatingIconFixed} />
       </section>
+
+      <GeneralModal isVisible={isModalVisible} status={status} closeModal={closeModal} />
+
       <section className="sm:px-16 px-8 sm:pt-6 pt-3 pb-8 bg-black">
         <Footer />
       </section>

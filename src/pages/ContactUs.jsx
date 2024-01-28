@@ -1,15 +1,16 @@
 import FloatingIcon from '../components/FloatingIcon';
 import Nav from '../components/Nav';
 import { Footer, ContactUsForm, ContacUsHero, SuccessfullModal, FailedModal} from '../sections';
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { sendContactUsForm } from '../functions/sendMail';
 import GeneralModal from '../sections/GeneralModal';
+import { ModalContext } from '../components/ModalProvider';
 
 
 const ContactUs = () => {
   const [isFloatingIconFixed, setIsFloatingIconFixed] = useState(true);
-  const [isModalVisible, setModalVisibility] = useState(false);
-  const [status, setStatus] = useState("loading");
+
+  const {isModalVisible, status, openModal, closeModal, updateStatus} = useContext(ModalContext);
 
   const checkFloatingIconPosition = () => {
     const footer = document.querySelector(".footer-container");
@@ -40,33 +41,28 @@ const ContactUs = () => {
   }, []);
 
   const submitForm = async (formData) => {
-    setModalVisibility(true);
+    openModal();
 
     try {
       var result = await sendContactUsForm(formData);
-      setStatus("loading");
+      updateStatus("loading");
 
       console.log(result);
 
       if (result.data.message === "success") {
-        setStatus("success");
+        updateStatus("success");
       } else {
-        setStatus("failed");
+        updateStatus("failed");
       }
 
 
       console.log("isModalVisible:", isModalVisible);
     } catch (error) {
       console.error("Form submission error:", error);
-      setStatus("failed");
+      updateStatus("failed");
     }
   };
   
-
-  const closeModal = () => {
-    setStatus("loading");
-    setModalVisibility(false);
-  };
 
   useEffect(() => {
     console.log(isModalVisible);

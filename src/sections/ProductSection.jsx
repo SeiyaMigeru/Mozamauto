@@ -13,6 +13,42 @@ const ProductSection = () => {
     const [isInfoModalShown, setIsInfoModalShown] = useState(false);
     const [selectedTruck, setSelectedTruck] = useState(allProducts[0]);
     const {isModalVisible, status, openModal, closeModal, updateStatus} = useContext(ModalContext);
+    const [searchTerm, setSearchTerm] = useState("");
+
+
+    const searchProductByName = (products, searchName) => {
+        searchName = searchName.toLowerCase();
+        
+        return products.filter(product => product.name.toLowerCase().includes(searchName));
+    }
+
+    const filterProducts = (_products, searchName, category) => {
+        if (category === "all") {
+            const products = searchProductByName(_products, searchTerm);
+            return products;
+        } else {
+            return _products.filter((product) => 
+            product.category === category &&
+            product.name.toLowerCase().includes(searchName)
+            );
+      
+        }
+    }
+
+
+    const onChange = (e) => {
+        setSearchTerm(e.target.value);
+    }
+
+    useEffect(() => {
+        const products = filterProducts(allProducts, searchTerm, selectedCategory);
+        setShownProducts(products);
+    }, [searchTerm]);
+
+    useEffect(() => {
+        const products = filterProducts(allProducts, searchTerm, selectedCategory);
+        setShownProducts(products);
+    }, [selectedCategory]);
 
 
     const changeCategory = (category) => {
@@ -20,25 +56,17 @@ const ProductSection = () => {
     }
 
     const handleCardClick = (product_id) => {
-        const product = shownProducts.find((_product) =>  _product.id === product_id);
+        const products = shownProducts.find((_product) =>  _product.id === product_id);
 
+        setShownProducts(
+            products.filter((prodct) => prodct.category === selectedCategory)
+        )
 
-        setSelectedTruck(product);
         setIsInfoModalShown(true);
         // 
     }
 
-    useEffect(() => {
-        if (selectedCategory === "all") {
-            setShownProducts(allProducts);
-        } else {
-            setShownProducts(
-                allProducts.filter((prodct) => prodct.category === selectedCategory)
-            );
-        }
-
-
-    }, [selectedCategory]);
+    
 
     const submitForm = async (formData) => {
         openModal();
@@ -68,6 +96,7 @@ const ProductSection = () => {
                             Search
                         </label>
                         <input
+                            onChange={onChange}
                             type="text"
                             name="hs-table-search"
                             id="hs-table-search"

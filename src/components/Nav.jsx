@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { headerLogo, hamburger } from "../assets/icons";
+import { headerLogo, hamburger, headerLogoNew } from "../assets/icons";
 import { navLinks } from "../constants";
 import Lang from "./Lang";
 import { CSSTransition } from "react-transition-group";
@@ -15,11 +15,11 @@ const Nav = () => {
   };
 
   return (
-    <header className="padding-x py-8 fixed z-20 w-full">
+    <header className="padding-x pt-8 fixed z-20 w-full" style={{backgroundColor: 'rgba(255, 255, 255, 0.8)'}}>
       <nav className="flex bg-white rounded-xl px-2 justify-between gap-10 items-center max-container">
         <div className="flex">
           <a href="/" className="mr-4">
-            <img src={headerLogo} alt="Logo" width={130} height={29} />
+            <img src={headerLogo} alt="Logo" className="max-h-[90px]"/>
           </a>
           <Lang />
         </div>

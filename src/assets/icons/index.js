@@ -13,8 +13,10 @@ import twitter from './twitter.svg'
 import PhoneIcon from './Phone.png'
 import Success from './success.png'
 import Failed from './failed.png'
+import headerLogoNew from './headerLogo.png'
 
 export {
     headerLogo, hamburger, arrowRight, star, fastTruck, passion, support,
-    footerLogo, copyrightSign, facebook, instagram, twitter, PhoneIcon, Success, Failed
+    footerLogo, copyrightSign, facebook, instagram, twitter, PhoneIcon, Success, Failed,
+    headerLogoNew
 }

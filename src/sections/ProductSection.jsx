@@ -176,7 +176,7 @@ const ProductSection = () => {
                 </ul>
             </div>
             <div className="ml-4">
-                <div className="grid grid-cols-4 sm:grid-cols-4 gap-3">
+                <div className="grid grid-cols-4 sm:grid-cols-5 gap-3">
                     {
                         shownProducts.length === 0 ?
                             (<div className="flex items-center justify-center bg-white p-4 h-full">

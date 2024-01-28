@@ -24,11 +24,30 @@ import Partner5 from './Partner5.png';
 import Partner6 from './Partner6.png';
 import Partner7 from './Partner7.png';
 import Partner8 from './Partner8.png';
+import Shacman1 from './SHACMAN L3000 Cargo.png';
+import Shacman2 from './SHACMAN X3000.png';
+import Lovol1 from './LOVOL 1004.png';
+import Lovol2 from './LOVOL ARBOS.png';
+import Lovol3 from './LOVOL D904.png';
+import Lovol4 from './LOVOL GK120.png';
+import Lovol5 from './LOVOL m504.png';
+import Lovol6 from './LOVOL P SERIES 3504.png';
+import Lovol7 from './LOVOL RG70.png';
+import Lovol8 from './LOVOL RG108 PLUS.png';
+import Lovol9 from './LOVOL TN-2604.png';
+import Firenza1 from './SUMO FIRENZA SSD08.png';
+import Firenza2 from './SUMO FIRENZA SSM07__SSM07A.png';
+import Firenza3 from './SUMO FIRENZA SSM10.png';
+import Firenza4 from './SUMO FIRENZA SSR05A.png';
+import Firenza5 from './SUMO FIRENZA SSR055A.png';
+import Firenza6 from './SUMO FIRENZA SSR065.png';
 
 
 export {
     truck1,truck2,truck3, product1, product2, product3, product4, part,
     customer1, customer2, BGHero, FirenzaTire1, FirenzaTire2, Bank1, Bank2,
     Bank3, Bank4, Bank5, Partner1, Partner2, Partner3, Partner4, Partner5,
-    Partner6, Partner7, Partner8,
+    Partner6, Partner7, Partner8, Shacman1, Shacman2, Lovol1, Lovol2, Lovol3,
+    Lovol4, Lovol5, Lovol6, Lovol7, Lovol8, Lovol9, Firenza1, Firenza2, Firenza3,
+    Firenza4, Firenza5, Firenza6
 }

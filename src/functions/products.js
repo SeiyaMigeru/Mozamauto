@@ -1,283 +1,124 @@
+import { Firenza1, Firenza2, Firenza3, Firenza4, Firenza5, Firenza6, Lovol1, Lovol2, Lovol3, Lovol4, Lovol5, Lovol6, Lovol7, Lovol8, Lovol9, Shacman1, Shacman2 } from "../assets/images"
+
 export const allProducts = [
     {
       "id": 1,
       "category": "Shacman",
-      "name": "SHACMAN H3000S 6X4 Tractor Truck EuroII SX4255HT324R-380HP",
+      "name": "SHACMAN L3000 Cargo",
       "info": "",
-      "image": ""
+      "image": Shacman1
     },
     {
       "id": 2,
       "category": "Shacman",
-      "name": "SHACMAN L3000 4X2 Lorry Truck EuroII SX11858J451R-210HP",
+      "name": "SHACMAN X3000",
       "info": "",
-      "image": ""
+      "image": Shacman2
     },
     {
       "id": 3,
-      "category": "Shacman",
-      "name": "SHACMAN X3000 6X4 Tractor EuroII SX42554V324R-430HP",
+      "category": "Lovol",
+      "name": "LOVOL 1004",
       "info": "",
-      "image": ""
+      "image": Lovol1
     },
     {
       "id": 4,
-      "category": "Shacman",
-      "name": "SHACMAN X3000 6X4 Tractor EuroII SX42554W324CR-450HP Manual",
+      "category": "Lovol",
+      "name": "LOVOL Arbos",
       "info": "",
-      "image": ""
+      "image": Lovol2
     },
     {
       "id": 5,
-      "category": "Shacman",
-      "name": "SHACMAN X3000 6X4 Tractor EuroII SX42554W324CR-450HP",
+      "category": "Lovol",
+      "name": "LOVOL D904",
       "info": "",
-      "image": ""
+      "image": Lovol3
     },
     {
       "id": 6,
-      "category": "CIMC",
-      "name": "Skeleton Semi-Trailer",
+      "category": "Lovol",
+      "name": "LOVOL GK120",
       "info": "",
-      "image": ""
+      "image": Lovol4
     },
     {
       "id": 7,
-      "category": "CIMC",
-      "name": "Flatbed Semi-Trailer",
+      "category": "Lovol",
+      "name": "LOVOL M504",
       "info": "",
-      "image": ""
+      "image": Lovol5
     },
     {
       "id": 8,
-      "category": "CIMC",
-      "name": "Superlink Flatbed Semi Trailer",
+      "category": "Lovol",
+      "name": "LOVOL P Series 3504",
       "info": "",
-      "image": ""
+      "image": Lovol6
     },
     {
       "id": 9,
-      "category": "CIMC",
-      "name": "Sidewall Semi-Trailer",
+      "category": "Lovol",
+      "name": "LOVOL RG70",
       "info": "",
-      "image": ""
+      "image": Lovol7
     },
     {
       "id": 10,
-      "category": "CIMC",
-      "name": "Fence Semi-Trailer",
+      "category": "Lovol",
+      "name": "LOVOL RG108 Plus",
       "info": "",
-      "image": ""
+      "image": Lovol8
     },
     {
       "id": 11,
-      "category": "CIMC",
-      "name": "D-Shape Back Tipping Semi-Trailer",
+      "category": "Lovol",
+      "name": "LOVOL TN-2604",
       "info": "",
-      "image": ""
+      "image": Lovol9
     },
     {
       "id": 12,
-      "category": "CIMC",
-      "name": "U-Shape Back Tipping Semi Trailer",
+      "category": "Firenza",
+      "name": "SUMO FIRENZA SSD08",
       "info": "",
-      "image": ""
+      "image": Firenza1
     },
     {
       "id": 13,
-      "category": "CIMC",
-      "name": "Lowbed Semi-Trailer",
+      "category": "Firenza",
+      "name": "SUMO FIRENZA SSM07__SSM07A",
       "info": "",
-      "image": ""
+      "image": Firenza2
     },
     {
       "id": 14,
-      "category": "CIMC",
-      "name": "Side Tipping Semi-Trailer",
+      "category": "Firenza",
+      "name": "SUMO FIRENZA SSM10",
       "info": "",
-      "image": ""
+      "image": Firenza3
     },
     {
       "id": 15,
-      "category": "CIMC",
-      "name": "Superlink Side Tipping Semi-Trailer",
+      "category": "Firenza",
+      "name": "SUMO FIRENZA SSR05A",
       "info": "",
-      "image": ""
+      "image": Firenza4
     },
     {
       "id": 16,
-      "category": "CIMC",
-      "name": "Terminal Semi-Trailer",
+      "category": "Firenza",
+      "name": "SUMO FIRENZA SSR055A",
       "info": "",
-      "image": ""
+      "image": Firenza5
     },
     {
       "id": 17,
-      "category": "CIMC",
-      "name": "RORO Trailer",
+      "category": "Firenza",
+      "name": "SUMO FIRENZA SSR065",
       "info": "",
-      "image": ""
-    },
-    {
-      "id": 18,
-      "category": "CIMC",
-      "name": "Curtainside Semi-Trailer",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 19,
-      "category": "CIMC",
-      "name": "Refrigerated Semi-Trailer",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 20,
-      "category": "FUCHS",
-      "name": "Titan Super Gear 80W-90 5L",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 21,
-      "category": "FUCHS",
-      "name": "Titan Supergear 80W-90 500gm",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 22,
-      "category": "FUCHS",
-      "name": "Renolit FLM2 500gm",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 23,
-      "category": "FUCHS",
-      "name": "Titan Truck Plus 15W-40 5L",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 24,
-      "category": "FUCHS",
-      "name": "Titan Super Gear 85W-140 5L",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 25,
-      "category": "FUCHS",
-      "name": "Maintain Ficofin LL 50 5L",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 26,
-      "category": "FUCHS",
-      "name": "Titan Super Gear 80W-90 20L",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 27,
-      "category": "FUCHS",
-      "name": "Titan Truck Plus 15W-40 20L",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 28,
-      "category": "FUCHS",
-      "name": "Renolit M2 EP 18KG",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 29,
-      "category": "FUCHS",
-      "name": "Renolit GR2 EP 18KG",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 30,
-      "category": "FUCHS",
-      "name": "Renolit M2 EP 50KG",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 31,
-      "category": "LOVOL Industrial Trucks",
-      "name": "",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 32,
-      "category": "FIRENZA",
-      "name": "FIRENZA SSM10",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 33,
-      "category": "FIRENZA",
-      "name": "FIRENZA SSD08",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 34,
-      "category": "FIRENZA",
-      "name": "FIRENZA SSR05A",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 35,
-      "category": "FIRENZA",
-      "name": "FIRENZA SSR065",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 36,
-      "category": "FIRENZA",
-      "name": "FIRENZA SSR055A",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 37,
-      "category": "FIRENZA",
-      "name": "FIRENZA SSM07",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 38,
-      "category": "Batteries",
-      "name": "Hi-Fase",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 39,
-      "category": "Batteries",
-      "name": "Sabbat",
-      "info": "",
-      "image": ""
-    },
-    {
-      "id": 40,
-      "category": "Truck Parts",
-      "name": "",
-      "info": "",
-      "image": ""
+      "image": Firenza6
     }
   ]
   

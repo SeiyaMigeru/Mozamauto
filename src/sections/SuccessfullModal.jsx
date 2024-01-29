@@ -22,7 +22,7 @@ const SuccessfullModal = ({ closeModal }) => {
       >
         <img src={Success} width={100} />
         <p className="font-bold font-palanquin text-xl">
-          Success! Your form has been submitted.
+          Success! Your Inquiry has been submitted.
         </p>
         <button
           onClick={closeModal}

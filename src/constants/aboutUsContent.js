@@ -52,10 +52,10 @@ const whoIsMozamContent = {
 
 const brandsContent = {
     en: {
-        header: `Trusted by Open Source, enterprise, and more than 99,000 of you`
+        header: `Trusted by Renowed Banks in Mozambique`
     },
     es: {
-        header: `Confiado por Código Aberto, empresas e mais de 99.000 de vocês.`
+        header: `Confiado por bancos renomados em Moçambique.`
     }
 }
 

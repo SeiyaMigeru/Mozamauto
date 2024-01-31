@@ -5,11 +5,10 @@ import { LanguageContext } from "../language/LanguageContext";
 import { footerContent } from "../constants/homeContent";
 
 const Footer = () => {
-  const {language} = useContext(LanguageContext);
-
+  const { language } = useContext(LanguageContext);
 
   const googleMapsLocationURL = "https://maps.app.goo.gl/DKhmj7NGojxYcAeGA";
-  const googleMapsLocationURL2 = "https://maps.app.goo.gl/azGxRwDoFjyuVQGs8"
+  const googleMapsLocationURL2 = "https://maps.app.goo.gl/azGxRwDoFjyuVQGs8";
   return (
     <footer className="footer-container max-container grid grid-cols-3 grid-rows-2 gap-8">
       {/* Logo */}
@@ -20,8 +19,12 @@ const Footer = () => {
       </div>
 
       {/* Description */}
-      <p className="mt-6 text-sm text-center justify-self-center leading-7 font-montserrat text-white-400 sm:max-w-sm col-span-1 row-span-1" dangerouslySetInnerHTML={{__html: footerContent[language].footerTagline}} />
-      
+      <p
+        className="mt-6 text-sm text-center justify-self-center leading-7 font-montserrat text-white-400 sm:max-w-sm col-span-1 row-span-1"
+        dangerouslySetInnerHTML={{
+          __html: footerContent[language].footerTagline,
+        }}
+      />
 
       {/* Social Media Icons */}
       <div className="flex items-center gap-5 mt-8 col-span-1 row-span-1 justify-self-end">
@@ -30,7 +33,9 @@ const Footer = () => {
             className="flex justify-center items-center w-12 h-12 bg-white rounded-full"
             key={icon.alt}
           >
-            <img src={icon.src} alt={icon.alt} width={24} height={24} />
+            <a href={icon.href}>
+              <img src={icon.src} alt={icon.alt} width={24} height={24} />
+            </a>
           </div>
         ))}
       </div>
@@ -47,7 +52,9 @@ const Footer = () => {
         <p>{footerContent[language].copyright}</p>
       </div>
       <div className="flex flex-col items-center">
-        <p className="text-white font-montserrat text-xs font-bold text-center tracking-[10px] uppercase">Beira</p>
+        <p className="text-white font-montserrat text-xs font-bold text-center tracking-[10px] uppercase">
+          Beira
+        </p>
         <a
           className="mb-3 text-xs underline leading-7 font-montserrat text-white-400 sm:max-w-sm text-center"
           href={googleMapsLocationURL}
@@ -56,7 +63,9 @@ const Footer = () => {
         >
           Antiga Estrada N6 Munhava Casquinha Beira Sofala 2100
         </a>
-        <p className="text-white font-montserrat text-xs font-bold text-center tracking-[10px] uppercase">Maputo</p>
+        <p className="text-white font-montserrat text-xs font-bold text-center tracking-[10px] uppercase">
+          Maputo
+        </p>
         <a
           className="text-xs underline leading-7 font-montserrat text-white-400 sm:max-w-sm text-center"
           href={googleMapsLocationURL2}
@@ -68,7 +77,7 @@ const Footer = () => {
       </div>
 
       <p className="font-montserrat text-white col-span-1 row-span-2 cursor-pointer items-center flex mt-10 justify-self-end">
-      {footerContent[language].termsAndCondi}
+        {footerContent[language].termsAndCondi}
       </p>
     </footer>
   );

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../language/LanguageContext";
 import { visionMissionContent } from "../constants/aboutUsContent";
+import { Vission, Mission } from "../assets/images";
 
 const VM = () => {
   const {language} = useContext(LanguageContext);
@@ -16,7 +17,7 @@ const VM = () => {
           <div class="hidden lg:block lg:col-span-2">
             <img
               class="rounded-xl"
-              src="https://images.unsplash.com/photo-1671726203390-cdc4354ee2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              src={Vission}
               alt="Image Description"
             />
           </div>
@@ -45,7 +46,7 @@ const VM = () => {
           <div class="hidden lg:block lg:col-span-2">
             <img
               class="rounded-xl"
-              src="https://images.unsplash.com/photo-1671726203390-cdc4354ee2eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+              src={Mission}
               alt="Image Description"
             />
           </div>

@@ -85,8 +85,8 @@ const ProductSection = () => {
 
 
     return (
-        <div className="flex">
-            <div className="flex flex-col items-center p-4 w-fit">
+        <div className="flex justify-center">
+            <div className="flex flex-col items-center p-4 w-fit justify-start">
                 <h2 className="text-2xl font-palanquin font-bold mb-4">Mozam Products</h2>
                 <div class="my-6 py-2 px-3">
                     <div class="relative max-w-xs">

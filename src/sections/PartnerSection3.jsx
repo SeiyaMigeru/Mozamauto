@@ -14,11 +14,11 @@ const PartnerSection3 = () => {
   const partners = [
     Partner1,
     Partner2,
-    Partner3,
+    Partner7,
     Partner4,
     Partner5,
     Partner6,
-    Partner7,
+    Partner3,
     Partner8,
   ];
   const [showFirstHalf, setShowFirstHalf] = useState(true);

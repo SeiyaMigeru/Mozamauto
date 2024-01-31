@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { BGHero } from "../assets/images";
 import { LanguageContext } from "../language/LanguageContext";
 import { heroContent } from "../constants/homeContent";
+import { NewHeroBG } from "../assets/images";
 
 const NewHero = () => {
     const [fadeIn, setFadeIn] = useState(false);
@@ -14,8 +15,8 @@ const NewHero = () => {
     return (
       <div className={`flex items-center justify-center mt-10 ${fadeIn ? 'fadeIn' : ''}`}>
         <div className="relative w-[90%]">
-          <img src={BGHero} alt="Background Hero" className="mx-auto h-auto rounded-3xl" />
-          <div className="absolute inset-0 bg-gray-700 opacity-70 rounded-3xl"></div>
+          <img src={NewHeroBG} alt="Background Hero" className="mx-auto h-auto rounded-3xl" />
+          <div className="absolute inset-0 bg-gray-700 opacity-30 rounded-3xl"></div>
           <div className={`absolute inset-0 flex justify-between p-10 slideUp ${fadeIn ? 'slideUp' : ''}`}>
             <div className="flex flex-col items-center justify-center">
               <p className="text-white font-montserrat text-8xl font-bold z-10" dangerouslySetInnerHTML={{__html: heroContent[language].tagline}} />

@@ -15,7 +15,7 @@ const Nav = () => {
   };
 
   return (
-    <header className="padding-x pt-8 fixed z-20 w-full" style={{backgroundColor: 'rgba(255, 255, 255, 0.8)'}}>
+    <header className="padding-x pt-4 fixed z-20 w-full bg-white">
       <nav className="flex bg-white rounded-xl px-2 justify-between gap-10 items-center max-container">
         <div className="flex">
           <a href="/" className="mr-4">

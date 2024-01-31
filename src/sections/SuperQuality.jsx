@@ -17,20 +17,35 @@ const SuperQuality = () => {
     navigate("/Products");
   };
 
-
   return (
-    <section className="flex justify-between items-center max-lg:flex-col
-      gap-10 w-full max-container"> 
+    <section
+      className="flex justify-between items-center max-lg:flex-col
+      gap-10 w-full max-container"
+    >
       <div className="flex flex-1 flex-col">
-        <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg" dangerouslySetInnerHTML={{__html: superQualityContent[language].header}} />
-        <p className=" mt-4 lg:max-w-lg info-text" dangerouslySetInnerHTML={{__html: superQualityContent[language].caption}} />
-        <div className="mt-11">      <div className="mt-11">
-        <Button onClick={handleButtonClick} label={superQualityContent[language].shopLink} />
-      </div></div>
+        <h2
+          className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg"
+          dangerouslySetInnerHTML={{
+            __html: superQualityContent[language].header,
+          }}
+        />
+        <p
+          className=" mt-4 lg:max-w-lg info-text"
+          dangerouslySetInnerHTML={{
+            __html: superQualityContent[language].caption,
+          }}
+        />
+        <div className="mt-11">
+          {" "}
+          <div className="mt-11">
+            <Button
+              onClick={handleButtonClick}
+              label={superQualityContent[language].shopLink}
+            />
+          </div>
+        </div>
       </div>
-      <div
-        className="flex-1 relative flex justify-center items-center xl:min-h-[80vh] max-xl:py-40 bg-primary bg-hero bg-cover bg-center"
-      >
+      <div className="flex-1 relative flex justify-center items-center xl:min-h-[80vh] max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
         <img
           src={bigTruckImage}
           alt="Truck Collection"
@@ -51,7 +66,7 @@ const SuperQuality = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default SuperQuality
+export default SuperQuality;

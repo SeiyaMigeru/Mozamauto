@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { LanguageContext } from '../language/LanguageContext'
 import { whoIsMozamContent } from '../constants/aboutUsContent';
+import { WhoIsMozam } from '../assets/images';
 
 const WhoisMozam = () => {
   const {language} = useContext(LanguageContext);
@@ -13,7 +14,7 @@ const WhoisMozam = () => {
 
       <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
         <div>
-          <img class="rounded-xl" src="https://images.unsplash.com/photo-1648737963503-1a26da876aca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=900&q=80" alt="Image Description"/>
+          <img class="rounded-xl" src={WhoIsMozam} alt="Image Description"/>
         </div>
 
     

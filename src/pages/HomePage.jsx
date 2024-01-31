@@ -6,7 +6,8 @@ import {
   Services,
   Subscribe,
   SuperQuality,
-  NewHero
+  NewHero,
+  AppointmentHome
 } from "../sections";
 import FloatingIcon from "../components/FloatingIcon";
 import Nav from "../components/Nav";
@@ -83,7 +84,7 @@ const HomePage = () => {
         <PopularProducts />
       </section>
       <section className="padding">
-        <SuperQuality />
+        <AppointmentHome />
       </section>
       <section className="padding-x py-10">
         <Services />

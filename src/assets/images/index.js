@@ -41,6 +41,22 @@ import Firenza3 from './SUMO FIRENZA SSM10.png';
 import Firenza4 from './SUMO FIRENZA SSR05A.png';
 import Firenza5 from './SUMO FIRENZA SSR055A.png';
 import Firenza6 from './SUMO FIRENZA SSR065.png';
+import ShacmanP1 from './SHACMANPARTNER1.jpg';
+import ShacmanP2 from './SHACMANPARTNER2.jpg';
+import ShacmanP3 from './SHACMANPARTNER3.jpg';
+import ShacmanP4 from './SHACMANPARTNER4.jpg';
+import Mission from './Mission.jpg';
+import Vission from './Vision.jpg';
+import WhoIsMozam from './WhoIsMozam.jpg';
+import NewHeroBG from './NewHero.jpg';
+import AppointmentHero from './AppointmentHero.jpg';
+import FirenzaCert from './FIRENZACert.png';
+import LovolCert from './LOVOLCert.png';
+import ShacmanCert from './SHACMANCert.png';
+import FirenzaP1 from './FirenzaPartner1.jpg';
+import FirenzaP2 from './FirenzaPartner2.jpg';
+import FirenzaP3 from './FirenzaPartner3.jpg';
+import FirenzaP4 from './FirenzaPartner4.jpg';
 
 
 export {
@@ -49,5 +65,7 @@ export {
     Bank3, Bank4, Bank5, Partner1, Partner2, Partner3, Partner4, Partner5,
     Partner6, Partner7, Partner8, Shacman1, Shacman2, Lovol1, Lovol2, Lovol3,
     Lovol4, Lovol5, Lovol6, Lovol7, Lovol8, Lovol9, Firenza1, Firenza2, Firenza3,
-    Firenza4, Firenza5, Firenza6
+    Firenza4, Firenza5, Firenza6, ShacmanP1, ShacmanP2, ShacmanP3, ShacmanP4,
+    Mission, Vission, WhoIsMozam, NewHeroBG, AppointmentHero, FirenzaCert, LovolCert,
+    ShacmanCert, FirenzaP1, FirenzaP2, FirenzaP3, FirenzaP4
 }

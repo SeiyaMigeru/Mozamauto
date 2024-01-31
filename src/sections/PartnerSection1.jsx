@@ -12,7 +12,7 @@ const PartnerSection1 = () => {
           SHACMAN
         </h2>
         <p class="mt-3 text-gray-800 ">
-          The powerful and flexible theme for all kinds of businesses.
+        Shaanxi Automobile Group Co., Ltd., trading as Shacman was founded in 1968. A Chinese bus and truck manufacturer with headquarters in Xi'an, Shaanxi, China.
         </p>
       </div>
     
@@ -44,7 +44,7 @@ const PartnerSection1 = () => {
           LOVOL
         </h2>
         <p class="mt-3 text-gray-800 ">
-          The powerful and flexible theme for all kinds of businesses.
+        The largest agricultural equipment manufacturer in China, with yearly production of 100,000 tractors, 50,000 combine harvesters, 120,000 diesel engines and nearly 350,000 sets of axles and transmissions.
         </p>
       </div>
     
@@ -75,7 +75,7 @@ const PartnerSection1 = () => {
           FIRENZA
         </h2>
         <p class="mt-3 text-gray-800 ">
-          The powerful and flexible theme for all kinds of businesses.
+        Sumo Firenza, a proprietary brand of tyres from Stamford Tyres International, originated from the need to provide a quality yet affordable driving experience to value-seeking customers.
         </p>
       </div>
     

@@ -14,7 +14,7 @@ const Footer = () => {
       {/* Logo */}
       <div className="col-span-1 row-span-1">
         <a href="/">
-          <img src={footerLogo} width={150} height={46} alt="Footer Logo" />
+          <img src={footerLogo} width={200} height={100} alt="Footer Logo" />
         </a>
       </div>
 

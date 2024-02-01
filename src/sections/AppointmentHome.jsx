@@ -16,23 +16,23 @@ const AppointmentHome = () => {
   }, []);
   return (
     <div
-      className={`flex items-center justify-center mt-10 ${
+      className={`flex items-center justify-center mt-10 h-[85vh] overflow-hidden ${
         fadeIn ? "fadeIn" : ""
       }`}
     >
-      <div className="relative w-[80%]">
+      <div className="relative">
         <img
           src={AppointmentHero}
           alt="Background Hero"
-          className="mx-auto h-auto rounded-3xl"
+          className=""
         />
-        <div className="absolute inset-0 bg-gray-700 opacity-30 rounded-3xl"></div>
+        <div className="absolute inset-0 bg-gray-700 opacity-30"></div>
         <div
           className={`absolute inset-0 flex justify-end p-10 slideUp ${
             fadeIn ? "slideUp" : ""
           }`}
         >
-          <div className="flex flex-col items-center justify-end">
+          <div className="flex flex-col items-center justify-center mt-80">
             <h2
               className="font-palanquin text-4xl text-white capitalize font-bold lg:max-w-lg"
               dangerouslySetInnerHTML={{

@@ -75,15 +75,15 @@ const HomePage = () => {
     };
   }, []);
   return (
-    <main className="relative">
+    <main>
       <Nav />      
-      <section className="padding">
+      <section className="">
         <NewHero />
       </section>
       <section className="padding">
         <PopularProducts />
       </section>
-      <section className="padding">
+      <section className="sm:py-24 py-12">
         <AppointmentHome />
       </section>
       <section className="padding-x py-10">

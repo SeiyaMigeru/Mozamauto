@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { headerLogo, hamburger, headerLogoNew } from "../assets/icons";
 import { navLinks } from "../constants";
 import Lang from "./Lang";
@@ -8,6 +8,24 @@ import "../index.css"; // Import your custom CSS file
 const Nav = () => {
   // State to manage the visibility of the navigation links
   const [showNavLinks, setShowNavLinks] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   // Function to toggle the visibility of the navigation links
   const toggleNavLinks = () => {
@@ -15,11 +33,16 @@ const Nav = () => {
   };
 
   return (
-    <header className="padding-x pt-4 fixed z-20 w-full bg-white">
-      <nav className="flex bg-white rounded-xl px-2 justify-between gap-10 items-center max-container">
+    <header
+      className="flex items-center padding-x fixed z-20 w-full bg-gray-200 shadow-xl top-0"
+    >
+      <nav className="w-full flex rounded-xl gap-10 items-center justify-between px-20"
+      >
         <div className="flex">
-          <a href="/" className="mr-4">
-            <img src={headerLogo} alt="Logo" className="max-h-[90px]"/>
+          <a href="/" className={`mr-4 transition-all ${
+        isScrolled ? "max-w-[200px]" : "max-w-[300px]"
+      }`}>
+            <img src={headerLogoNew} alt="Logo" className="w-full" />
           </a>
           <Lang />
         </div>
@@ -49,7 +72,13 @@ const Nav = () => {
             onClick={toggleNavLinks}
             className={`hamburger-btn ${showNavLinks ? "open" : ""}`}
           >
-            <img src={hamburger} className="mx-6" alt="Hamburger" width={30} height={30} />
+            <img
+              src={hamburger}
+              className="mx-6"
+              alt="Hamburger"
+              width={30}
+              height={30}
+            />
           </button>
 
           <a

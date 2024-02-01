@@ -34,14 +34,15 @@ const popularProductContent = {
 const superQualityContent = {
     en: {
         header: `<span>Try the</span>
-        <span class="text-white-400 inline-block mt-3">Excellence of our</span> Truck Parts`,
-        caption: `Elevate your adventure with confidence, knowing that your vehicle is outfitted with the best-in-class equipment available. 
-        Explore our best-selling items. Be <span class=" text-white-400 text-lg font-palanquin font-bold">DRIVEN TO PERFECTION.</span>`,
+        <span class="text-white-400 inline-block mt-3">Excellence of our</span> Service Team`,
+        caption: `Elevate your adventure with confidence, knowing that your vehicle is outfitted with the best-selling equipment available 
+        and top class service. Be <span class=" text-white-400 text-lg font-palanquin font-bold">DRIVEN TO PERFECTION.</span>`,
         shopLink: 'Book An Appointment Now',
     },
     es: {
         header: `<span class="text-white-400 inline-block mt-3">Experimente a excelência</span> das peças do nosso caminhão`,
-        caption: `Eleve sua aventura com confiança, sabendo que seu veículo está equipado com os melhores equipamentos disponíveis. Explore nossos itens mais vendidos. <span class=" text-white-400 text-lg font-palanquin font-bold">Seja impulsionado para a perfeição.</span>`,
+        caption: `
+        Eleve a sua aventura com confiança, sabendo que o seu veículo está equipado com os equipamentos mais vendidos disponíveis. e serviço de primeira classe. <span class=" text-white-400 text-lg font-palanquin font-bold">Seja impulsionado para a perfeição.</span>`,
         shopLink: 'Reserva una cita ahora',
     }
 }

@@ -31,7 +31,7 @@ const VM = () => {
         </div>
       </div>
       <div class="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 lg:py-16 mx-auto">
-        <div aria-hidden="true" class="flex absolute start-0 -z-[1]">
+        <div aria-hidden="true" class="flex absolute start-[1000px] -z-[1]">
           <div class= " bg-slate-800 opacity-20 blur-3xl w-[1036px] h-[300px] "></div>
         </div>
 

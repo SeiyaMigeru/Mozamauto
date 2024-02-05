@@ -38,39 +38,7 @@ const PartnerSection1 = () => {
 
       </div>
 
-
-      <div class="mx-auto max-w-2xl mb-8 lg:mb-14 text-center pt-10">
-        <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold ">
-          LOVOL
-        </h2>
-        <p class="mt-3 text-gray-800 ">
-        The largest agricultural equipment manufacturer in China, with yearly production of 100,000 tractors, 50,000 combine harvesters, 120,000 diesel engines and nearly 350,000 sets of axles and transmissions.
-        </p>
-      </div>
-    
-      <div class="mt-20 grid grid-cols-12 items-center gap-x-2 sm:gap-x-6 lg:gap-x-8">
-        <div class="hidden md:block col-span-4 md:col-span-3">
-          <img class="rounded-xl" src="https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1981&q=80" alt="Image Description"/>
-        </div>
-
-    
-        <div class="col-span-4 md:col-span-3">
-          <img class="rounded-xl" src="https://images.unsplash.com/photo-1587613991119-fbbe8e90531d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1003&q=80" alt="Image Description"/>
-        </div>
-
-    
-        <div class="col-span-4 md:col-span-3">
-          <img class="rounded-xl" src="https://images.unsplash.com/photo-1554295405-abb8fd54f153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=652&q=80" alt="Image Description"/>
-        </div>
-
-    
-        <div class="col-span-4 md:col-span-3">
-          <img class="rounded-xl" src="https://images.unsplash.com/photo-1640622300473-977435c38c04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80" alt="Image Description"/>
-        </div>
-
-      </div>
-
-      <div class="mx-auto max-w-2xl mb-8 lg:mb-14 text-center pt-10">
+      <div class="mx-auto max-w-2xl mb-8 lg:mb-14 text-center pt-10 mt-40">
         <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold ">
           FIRENZA
         </h2>
@@ -79,7 +47,7 @@ const PartnerSection1 = () => {
         </p>
       </div>
     
-      <div class="mt-20 grid grid-cols-12 items-center gap-x-2 sm:gap-x-6 lg:gap-x-8">
+      <div class="mt-20 grid grid-cols-12 items-center gap-x-2 sm:gap-x-6 lg:gap-x-8 mb-20">
         <div class="hidden md:block col-span-4 md:col-span-3">
           <img class="rounded-xl" src={FirenzaP1} alt="Image Description"/>
         </div>

@@ -40,7 +40,7 @@ const MozamNews = () => {
   return (
     <main className="relative">
       <Nav />
-      <section className="padding-x">
+      <section className="">
         <MozamNewsHero />
       </section>
       <section className="padding">

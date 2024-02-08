@@ -37,15 +37,15 @@ const Partners = () => {
     };
   }, []);
   return (
-    <main className="relative">
+    <main className="relative overflow-hidden">
       <Nav />
-      <section className="padding-x ">
+      <section className="">
         <PartnersHero />
       </section>
       <section className="padding-x ">
         <PartnerSection1 />
       </section>
-      <section className="padding-x ">
+      <section className="padding-x overflow-hidden">
         <PartnerSection2 />
       </section>
       <section className="padding ">

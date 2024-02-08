@@ -89,7 +89,7 @@ const HomePage = () => {
       <section className="padding-x py-10">
         <Services />
       </section>
-      <section className="bg-gray-600 padding">
+      <section className=" mt-32">
         <CustomerReviews />
       </section>
       <section className="padding sm:py-32 py-16 w-full">

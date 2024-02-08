@@ -1,12 +1,12 @@
 
 const contactUsHeroContent = {
     en: {
-        header: `Send us your
-        <span class="text-gray-500 inline-block mt-3">Query</span>`
+        header: `<span class=" text-gray-900"> Send us your </span>
+        <span class="text-gray-600 inline-block mt-3">Query</span>`
     },
     es: {
-        header: `Envie-Nos Sua 
-        <span class="text-gray-500 inline-block mt-3">Consulta</span>`
+        header: `<span class=" text-gray-900"> Envie-Nos Sua </span>
+        <span class="text-gray-600 inline-block mt-3">Consulta</span>`
     }
 }
 

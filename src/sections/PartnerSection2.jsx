@@ -3,7 +3,7 @@ import { ShacmanCert, LovolCert, FirenzaCert } from "../assets/images";
 const PartnerSection2 = () => {
   return (
     <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto overflow-hidden">
-      <div class="relative max-w-[60%] m-auto">
+      <div class="relative max-w-[50%] m-auto">
         <div class="flex overflow-x-auto border-gray-600 border-4 snap-mandatory snap-x scroll-smooth rounded-3xl shadow-2xl">
           <img
             className=" flex-shrink-0 w-full flex-grow overflow-x-auto snap-x snap-start object-contain "

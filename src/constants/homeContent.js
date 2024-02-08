@@ -47,6 +47,20 @@ const superQualityContent = {
     }
 }
 
+const eventsHome = {
+    en: {
+        header: `Uniting Professionals, Driving Excellence`,
+        caption: `Stay updated on the latest industry trends, innovations, and regulations by attending our diverse range of events.</span>`,
+        shopLink: 'Check The Latest Events',
+    },
+    es: {
+        header: `<span class="text-white-400 inline-block mt-3">Experimente a excelência</span> das peças do nosso caminhão`,
+        caption: `
+        Eleve a sua aventura com confiança, sabendo que o seu veículo está equipado com os equipamentos mais vendidos disponíveis. e serviço de primeira classe. <span class=" text-white-400 text-lg font-palanquin font-bold">Seja impulsionado para a perfeição.</span>`,
+        shopLink: 'Reserva una cita ahora',
+    }
+}
+
 const services = {
     en: [
         {imgURL: fastTruck, label:"Outstanding Service", subtext:"We are made up of experienced professionals that are equipped with excellent workmanship to do excellent work in enabling you to get back on your journey."},
@@ -99,4 +113,4 @@ const footerContent = {
     }
 }
 
-export {heroContent, popularProductContent, superQualityContent, services, comments, subscribeContent, footerContent}
+export {heroContent, popularProductContent, superQualityContent, services, comments, subscribeContent, footerContent, eventsHome}

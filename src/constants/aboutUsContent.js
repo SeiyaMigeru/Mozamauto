@@ -2,12 +2,12 @@
 
 const aboutUsHeroContent = {
     en: {
-        header: `Mozam Auto 
-        <span class="text-gray-500 inline-block mt-3">and it's People</span>`
+        header: `<span class=" text-gray-900">Mozam Auto </span>
+        <span class="text-gray-600 inline-block mt-3">and it's People</span>`
     },
     es: {
-        header: `Mozam Auto 
-        <span class="text-gray-500 inline-block mt-3"> e Suas Pessoas</span>`
+        header: `<span class=" text-gray-900">Mozam Auto 
+        <span class="text-gray-600 inline-block mt-3"> e Suas Pessoas</span>`
     }
 }
 

@@ -72,7 +72,7 @@ const Appointment = () => {
   return (
     <main className="relative">
       <Nav />
-      <section className="padding-x ">
+      <section className="">
         <AppointmentHero />
       </section>
       <section className="padding">

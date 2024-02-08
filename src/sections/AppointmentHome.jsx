@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "../language/LanguageContext";
 import { AppointmentHero } from "../assets/images";
-import { heroContent, superQualityContent } from "../constants/homeContent";
+import { superQualityContent } from "../constants/homeContent";
 import Button from "../components/Button";
 
 const AppointmentHome = () => {
@@ -16,15 +16,15 @@ const AppointmentHome = () => {
   }, []);
   return (
     <div
-      className={`flex items-center justify-center mt-10 h-[85vh] overflow-hidden ${
+      className={`flex items-center justify-center ${
         fadeIn ? "fadeIn" : ""
       }`}
     >
-      <div className="relative">
+      <div className="relative h-[80vh] overflow-hidden w-full">
         <img
           src={AppointmentHero}
           alt="Background Hero"
-          className=""
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gray-700 opacity-30"></div>
         <div
@@ -32,7 +32,7 @@ const AppointmentHome = () => {
             fadeIn ? "slideUp" : ""
           }`}
         >
-          <div className="flex flex-col items-center justify-center mt-80">
+          <div className="flex flex-col items-center justify-center mt-24">
             <h2
               className="font-palanquin text-4xl text-white capitalize font-bold lg:max-w-lg"
               dangerouslySetInnerHTML={{

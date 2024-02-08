@@ -72,7 +72,7 @@ const ContactUs = () => {
     <main className="relative">
       <Nav/>
       
-      <section className="padding-x ">
+      <section className="">
         <ContacUsHero/>
       </section>
       <section className='padding'>

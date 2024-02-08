@@ -40,7 +40,7 @@ const AboutUs = () => {
   return (
     <main className="relative">
       <Nav/>
-      <section className="padding-x">
+      <section className="">
         <AboutUsHero />
       </section>
       <section className="padding">

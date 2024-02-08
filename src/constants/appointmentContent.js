@@ -1,7 +1,7 @@
 const apppointmentHeroContent = {
     en: {
-        header: `Set your
-        <span class="text-gray-500 inline-block mt-3">Appointment with us!</span>`
+        header: `<span class=" text-gray-900">Set your</span>
+        <span class="text-gray-600 inline-block mt-3">Appointment with us!</span>`
     },
     es: {
         header: `Agende Seu

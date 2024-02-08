@@ -203,6 +203,56 @@ import Part143 from './Parts/Upper Radiator Hose.png';
 import Part144 from './Parts/Windshiel Washer Reservior.png';
 import Part145 from './Parts/Wiper Arm Assembly.png';
 import Part146 from './Parts/X3000Cabin Tilt Flexible Hose.png';
+import eventHome from './EventHome.jpg';
+import HeroAboutUs from './AboutUsHero.jpg';
+import PartnerHero from './PartnerHero.jpg';
+import EventHero from './EventHero.jpg';
+import HeroAppointment from './AppointmentHero2.jpg';
+import ContactHero from './ContactHero.jpg';
+import Event1 from './Event1.jpg';
+import Event2 from './Event2.jpg';
+import Event3 from './Event3.jpg';
+import Event4 from './Event4.jpg';
+import Employee1 from './MozamTeam/ADIJA HASSANE CAMISSA - SALES REPRESENTATIVE.png';
+import Employee2 from './MozamTeam/ALCIDO CHIVAMBO - LOGISTICS.png';
+import Employee3 from './MozamTeam/AMILTON MAKARANGA - LOGISTIC.png';
+import Employee4 from './MozamTeam/AMINA DUARTE - ACCOUNTANT.png';
+import Employee5 from './MozamTeam/ANA TITO - CLIENT SUPPORT ADVOCATE.png';
+import Employee6 from './MozamTeam/ANABELA CHENGERANI - ACCOUNTANT.png';
+import Employee7 from './MozamTeam/BALBINA MATIAS - ACCOUNTANT.png';
+import Employee8 from './MozamTeam/BERNARDO GOTINE - LOGISTICS.png';
+import Employee9 from './MozamTeam/CARLITOS DIOGO ALBERTO - SALES REPRESENTATIVE.png';
+import Employee10 from './MozamTeam/CÉLIO DE SOUSA - SALES REPRESENTATIVE.png';
+import Employee11 from './MozamTeam/CHRISTIAN BERSALES - IT MANAGER.png';
+import Employee12 from './MozamTeam/ELMER SAMORANOS - SERVICE MECHANIC.png';
+import Employee13 from './MozamTeam/FILIPE MUABSA - SERVICE MECHANIC.png';
+import Employee14 from './MozamTeam/FRANCISCO MUCHOLA - SERVICE MECHANIC.png';
+import Employee15 from './MozamTeam/IZAIAS MEQUE - DRIVER.png';
+import Employee16 from './MozamTeam/JEROME CARANOG - ACCOUNTING MANAGER.png';
+import Employee17 from './MozamTeam/JOAQUIM JOÃO - SERVICE MECHANIC.png';
+import Employee18 from './MozamTeam/JOEL LINGAD - SERVICE OPERATION MANAGER.png';
+import Employee19 from './MozamTeam/JOSUÉ MATEUS MAUANHA - SERVICE MECHANIC.png';
+import Employee20 from './MozamTeam/JOVÊNCIO AFONSO - HUMAN RESOURCES.png';
+import Employee21 from './MozamTeam/JULIETA DULCE DRAVIDO - ACCOUNTANT.png';
+import Employee22 from './MozamTeam/LORE MIE OLIVAR - SERVICE ADMINISTRATOR.png';
+import Employee23 from './MozamTeam/MARIO ITATULA - WAREHOUSE MAN.png';
+import Employee24 from './MozamTeam/MICHAEL DE CASTRO - SERVICE MECHANIC.png';
+import Employee25 from './MozamTeam/MOISÉS SAMUEL MARONDO - SERVICE MECHANIC.png';
+import Employee26 from './MozamTeam/NELMA DIOGO - INVENTORY ADMIN.png';
+import Employee27 from './MozamTeam/ORDE JULINHO CERVEJA - SERVICE MECHANIC.png';
+import Employee28 from './MozamTeam/PAULINO WILLIAM - PART SALES ASSOCIATE.png';
+import Employee29 from './MozamTeam/PEDRO BRITO CAMINHO - WAREHOUSE MAN.png';
+import Employee30 from './MozamTeam/PERFECTO PANTI - WAREHOUSE MANAGER.png';
+import Employee31 from './MozamTeam/RAFFY CASALJAY - SERVICE MECHANIC.png';
+import Employee32 from './MozamTeam/RENZO LOUISE GABON - SERVICE MECHANIC.png';
+import Employee33 from './MozamTeam/ROBERT CASTILLO JR. - SERVICE TECHNICIAN.png';
+import Employee34 from './MozamTeam/SERIO CARLOS - SERVICE MECHANIC.png';
+import Employee35 from './MozamTeam/SIPIENE PINTO - SALES ADMIN.png';
+import Employee36 from './MozamTeam/VALERIO RASUL - ACCOUNTANT.png';
+import Employee37 from './MozamTeam/VANIA ELINA MUTONDO - CLIENT SUPPORT.png';
+import Employee38 from './MozamTeam/YURAN NHAMUE - ACCOUNTANT (OJT).png';
+import Employee39 from './MozamTeam/ZECA MANUEL RODA - PART-SALES REPRESENTATIVE.png';
+
 
 
 export {
@@ -228,5 +278,11 @@ export {
     Part115, Part116, Part117, Part118, Part119, Part120, Part121, Part122, Part123, Part124,
     Part125, Part126, Part127, Part128, Part129, Part130, Part131, Part132, Part133, Part134,
     Part135, Part136, Part137, Part138, Part139, Part140, Part141, Part142, Part143, Part144,
-    Part145, Part146, 
+    Part145, Part146, eventHome, HeroAboutUs, PartnerHero, EventHero, HeroAppointment, ContactHero,
+    Event1, Event2, Event3, Event4, Employee1, Employee2, Employee3, Employee4, Employee5,
+    Employee6, Employee7, Employee8, Employee9, Employee10, Employee11, Employee12,
+    Employee13, Employee14, Employee15, Employee16, Employee17, Employee18, Employee19,
+    Employee20, Employee21, Employee22, Employee23, Employee24, Employee25, Employee26,
+    Employee27, Employee28, Employee29, Employee30, Employee31, Employee32, Employee33, Employee34,
+    Employee35, Employee36, Employee37, Employee38, Employee39,
 }

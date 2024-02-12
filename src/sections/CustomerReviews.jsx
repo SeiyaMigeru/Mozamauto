@@ -27,7 +27,7 @@ const CustomerReviews = () => {
         />
         <div className="absolute inset-0 bg-gray-700 opacity-50"></div>
         <div
-          className={`absolute inset-0 flex justify-start slideUp  p-10 ${
+          className={`absolute inset-0 flex justify-end slideUp  p-10 ${
             fadeIn ? "slideUp" : ""
           }`}
         >

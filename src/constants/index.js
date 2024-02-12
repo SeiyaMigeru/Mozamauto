@@ -1,5 +1,5 @@
 import { truck1, truck2, truck3, product1, product2,
-    product3, product4, customer1, customer2, Firenza1, Lovol1, Lovol3, Lovol4 } from '../assets/images'
+    product3, product4, customer1, customer2, Firenza1, Lovol1, Lovol3, Lovol4, Shacman2, Shacman3, Shacman4 } from '../assets/images'
 import { facebook, fastTruck, passion, support, instagram, twitter } from '../assets/icons'
 
 export const navLinks = [
@@ -24,8 +24,8 @@ export const trucks = [
 ];
 
 export const products = [
-    {imgURL:Firenza1, name:"SUMO FIRENZA SSD08"},
-    {imgURL:Lovol1, name:"LOVOL 1004"},
+    {imgURL:Shacman4, name:"SHACMAN X3000 430"},
+    {imgURL:Shacman3, name:"SHACMAN F3000"},
     {imgURL:Lovol3, name:"LOVOL D904"},
     {imgURL:Lovol4, name:"LOVOL GK120"},
 ];

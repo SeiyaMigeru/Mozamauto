@@ -41,10 +41,10 @@ import Firenza3 from './SUMO FIRENZA SSM10.png';
 import Firenza4 from './SUMO FIRENZA SSR05A.png';
 import Firenza5 from './SUMO FIRENZA SSR055A.png';
 import Firenza6 from './SUMO FIRENZA SSR065.png';
-import ShacmanP1 from './SHACMANPARTNER1.jpg';
-import ShacmanP2 from './SHACMANPARTNER2.jpg';
+import ShacmanP1 from './ShacmanPartner1.png';
+import ShacmanP2 from './ShacmanPartner2.png';
 import ShacmanP3 from './SHACMANPARTNER3.jpg';
-import ShacmanP4 from './SHACMANPARTNER4.jpg';
+import ShacmanP4 from './ShacmanPartner3.png';
 import Mission from './Mission.jpg';
 import Vission from './Vision.jpg';
 import WhoIsMozam from './WhoIsMozam.jpg';
@@ -53,10 +53,10 @@ import AppointmentHero from './AppointmentHero.jpg';
 import FirenzaCert from './FIRENZACert.png';
 import LovolCert from './LOVOLCert.png';
 import ShacmanCert from './SHACMANCert.png';
-import FirenzaP1 from './FirenzaPartner1.jpg';
-import FirenzaP2 from './FirenzaPartner2.jpg';
-import FirenzaP3 from './FirenzaPartner3.jpg';
-import FirenzaP4 from './FirenzaPartner4.jpg';
+import FirenzaP1 from './FirenzaPartner1.png';
+import FirenzaP2 from './FirenzaPartner2.png';
+import FirenzaP3 from './FirenzaPartner3.png';
+import FirenzaP4 from './FirenzaPartner4.png';
 import Part1 from './Parts/7 way Connecter.png';
 import Part2 from './Parts/Adaptor Fitting.png';
 import Part3 from './Parts/Air Cleaner Rubber Seal.png';
@@ -203,12 +203,12 @@ import Part143 from './Parts/Upper Radiator Hose.png';
 import Part144 from './Parts/Windshiel Washer Reservior.png';
 import Part145 from './Parts/Wiper Arm Assembly.png';
 import Part146 from './Parts/X3000Cabin Tilt Flexible Hose.png';
-import eventHome from './EventHome.jpg';
-import HeroAboutUs from './AboutUsHero.jpg';
+import eventHome from './newHeroImage.jpg';
+import HeroAboutUs from './aboutUsHero2.jpg';
 import PartnerHero from './PartnerHero.jpg';
-import EventHero from './EventHero.jpg';
-import HeroAppointment from './AppointmentHero2.jpg';
-import ContactHero from './ContactHero.jpg';
+import EventHero from './eventHero2.jpg';
+import HeroAppointment from './appointmentHero3.JPG';
+import ContactHero from './contactusHero2.jpg';
 import Event1 from './Event1.jpg';
 import Event2 from './Event2.jpg';
 import Event3 from './Event3.jpg';
@@ -252,6 +252,9 @@ import Employee36 from './MozamTeam/VALERIO RASUL - ACCOUNTANT.png';
 import Employee37 from './MozamTeam/VANIA ELINA MUTONDO - CLIENT SUPPORT.png';
 import Employee38 from './MozamTeam/YURAN NHAMUE - ACCOUNTANT (OJT).png';
 import Employee39 from './MozamTeam/ZECA MANUEL RODA - PART-SALES REPRESENTATIVE.png';
+import Shacman3 from './SHACMAN F3000.png';
+import Shacman4 from './SHACMAN X3000 430.png';
+import ProductHero from './productHero.jpg';
 
 
 
@@ -284,5 +287,5 @@ export {
     Employee13, Employee14, Employee15, Employee16, Employee17, Employee18, Employee19,
     Employee20, Employee21, Employee22, Employee23, Employee24, Employee25, Employee26,
     Employee27, Employee28, Employee29, Employee30, Employee31, Employee32, Employee33, Employee34,
-    Employee35, Employee36, Employee37, Employee38, Employee39,
+    Employee35, Employee36, Employee37, Employee38, Employee39, Shacman3, Shacman4, ProductHero,
 }

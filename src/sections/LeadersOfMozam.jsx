@@ -1598,7 +1598,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">NELMA DIOGO</h3>
-              <p class="text-xs uppercase text-gray-500">INVENTORY ADMIN</p>
+              <p class="text-xs uppercase text-gray-500">INVENTORY ADMINISTRATOR</p>
             </div>
           </div>
 
@@ -2269,7 +2269,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">VANIA ELINA MUTONDO</h3>
-              <p class="text-xs uppercase text-gray-500">CLIENT SUPPORT</p>
+              <p class="text-xs uppercase text-gray-500">CLIENT SUPPORT ADVOCATE</p>
             </div>
           </div>
 

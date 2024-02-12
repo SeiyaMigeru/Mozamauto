@@ -42,7 +42,7 @@ const Products = () => {
   return (
     <main className="relative">
       <Nav />
-      <section className="padding-x">
+      <section className="">
         <ProductsHero />
       </section>
       <section className="padding">

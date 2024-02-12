@@ -7,7 +7,7 @@ import { Firenza1, Firenza2, Firenza3, Firenza4, Firenza5, Firenza6, Lovol1, Lov
   Part101, Part102, Part103, Part104, Part105, Part106, Part107, Part108, Part109, Part110, Part111, Part112, Part113, Part114, Part115, Part116, Part117, Part118, Part119, Part120,
   Part121, Part122, Part123, Part124, Part125, Part126, Part127, Part128, Part129, Part130, Part131, Part132, Part133, Part134, Part135, Part136, Part137, Part138, Part139, Part140,
   Part141, Part142, Part143, Part144, Part145, Part146,
-   Shacman1, Shacman2 } from "../assets/images"
+   Shacman1, Shacman2, Shacman3, Shacman4 } from "../assets/images"
 
 export const allProducts = [
     {
@@ -20,7 +20,7 @@ export const allProducts = [
     {
       "id": 2,
       "category": "Shacman",
-      "name": "SHACMAN X3000",
+      "name": "SHACMAN X3000 450",
       "info": "",
       "image": Shacman2
     },
@@ -1151,7 +1151,20 @@ export const allProducts = [
       "info": "",
       "image": Part146
     },
-
+    {
+      "id": 164,
+      "category": "Shacman",
+      "name": "SHACMAN F3000",
+      "info": "",
+      "image": Shacman3
+    },
+    {
+      "id": 165,
+      "category": "Shacman",
+      "name": "SHACMAN X3000 430",
+      "info": "",
+      "image": Shacman4
+    },
   
   ]
   

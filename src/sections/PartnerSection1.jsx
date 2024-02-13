@@ -11,7 +11,7 @@ const PartnerSection1 = () => {
         <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold ">
           SHACMAN
         </h2>
-        <p class="mt-3 text-gray-800 ">
+        <p class="mt-3 text-white ">
         Shaanxi Automobile Group Co., Ltd., trading as Shacman was founded in 1968. A Chinese bus and truck manufacturer with headquarters in Xi'an, Shaanxi, China.
         </p>
       </div>
@@ -42,7 +42,7 @@ const PartnerSection1 = () => {
         <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold ">
           FIRENZA
         </h2>
-        <p class="mt-3 text-gray-800 ">
+        <p class="mt-3 text-white ">
         Sumo Firenza, a proprietary brand of tyres from Stamford Tyres International, originated from the need to provide a quality yet affordable driving experience to value-seeking customers.
         </p>
       </div>

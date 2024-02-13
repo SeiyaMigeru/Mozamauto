@@ -37,7 +37,7 @@ const Partners = () => {
     };
   }, []);
   return (
-    <main className="relative overflow-hidden">
+    <main className="relative overflow-hidden bg-zinc-500">
       <Nav />
       <section className="">
         <PartnersHero />

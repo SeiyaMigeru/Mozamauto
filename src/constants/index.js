@@ -1,5 +1,5 @@
 import { truck1, truck2, truck3, product1, product2,
-    product3, product4, customer1, customer2, Firenza1, Lovol1, Lovol3, Lovol4, Shacman2, Shacman3, Shacman4 } from '../assets/images'
+    product3, product4, customer1, customer2, Firenza1, Lovol1, Lovol3, Lovol4, Shacman2, Shacman3, Shacman4, LovolCert, FirenzaCert, ShacmanCert } from '../assets/images'
 import { facebook, fastTruck, passion, support, instagram, twitter } from '../assets/icons'
 
 export const navLinks = [
@@ -18,9 +18,9 @@ export const statistics = [
 ];
 
 export const trucks = [
-    {bigTruck: truck1, thumbnail: truck1},
-    {bigTruck: truck2, thumbnail: truck2},
-    {bigTruck: truck3, thumbnail: truck3},
+    {bigTruck: ShacmanCert, thumbnail: ShacmanCert},
+    {bigTruck: LovolCert, thumbnail: LovolCert},
+    {bigTruck: FirenzaCert, thumbnail: FirenzaCert},
 ];
 
 export const products = [

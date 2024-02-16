@@ -37,7 +37,7 @@ const Partners = () => {
     };
   }, []);
   return (
-    <main className="relative overflow-hidden bg-zinc-500">
+    <main className="relative overflow-hidden">
       <Nav />
       <section className="">
         <PartnersHero />
@@ -45,7 +45,7 @@ const Partners = () => {
       <section className="padding-x ">
         <PartnerSection1 />
       </section>
-      <section className="padding-x overflow-hidden">
+      <section className="padding-x overflow-hidden bg-gray-50">
         <PartnerSection2 />
       </section>
       <section className="padding ">

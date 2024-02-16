@@ -13,14 +13,14 @@ const TruckCard = ({ imgURL, changeTruckImage, bigTruckImage }) => {
       bigTruckImage === imgURL.bigTruck ? " border-gray-950" : "border-transparent"
     } cursor-pointer max-sm:flex-1`} onClick={handleClick}
     >
-        <div className="flex justify-center items-center bg-card bg-center
-         bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
+        <div className="flex justify-center items-center  bg-center
+          sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
             <img
                 src={imgURL.thumbnail}
                 alt="Truck Collection"
                 width={127}
                 height={103.34}
-                className="object-contain"
+                className="object-contain shadow-xl rounded"
             />
         </div>
 

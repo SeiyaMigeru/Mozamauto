@@ -1,42 +1,34 @@
 import { ShacmanCert, LovolCert, FirenzaCert } from "../assets/images";
+import { trucks, statistics } from "../constants";
+import { useState } from "react";
+import TruckCard from "../components/TruckCard";
 
 const PartnerSection2 = () => {
+  const [bigTruckImage, setTruckImage] = useState(ShacmanCert);
   return (
-    <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto overflow-hidden">
-      <div class="relative max-w-[40%] m-auto">
-        <div class="flex overflow-x-auto border-gray-600 border-4 snap-mandatory snap-x scroll-smooth rounded-3xl shadow-2xl">
-          <img
-            className=" flex-shrink-0 w-full flex-grow overflow-x-auto snap-x snap-start object-contain "
-            src={ShacmanCert}
-            id="slide-1"
-            alt="Shacman Certificate"
-          />
-          <img
-            className=" flex-shrink-0 w-full flex-grow overflow-x-auto snap-x snap-start object-contain "
-            src={LovolCert}
-            id="slide-2"
-            alt="Lovol Certificate"
-          />
-          <img
-            className=" flex-shrink-0 w-full flex-grow overflow-x-auto snap-x snap-start object-contain "
-            src={FirenzaCert}
-            id="slide-3"
-            alt="Firenza Certificate"
-          />
-        </div>
-        <div class="flex absolute bottom-8 left-2/4 z-[1] gap-x-4 transform -translate-x-1/2">
-          <a
-            className=" w-4 h-4 bg-slate-500 opacity-75 rounded-full transition-opacity ease duration-250 hover:opacity-100"
-            href="#slide-1"
-          />
-          <a
-            className=" w-4 h-4 bg-slate-500 opacity-75 rounded-full transition-opacity ease duration-250 hover:opacity-100"
-            href="#slide-2"
-          />
-          <a
-            className=" w-4 h-4 bg-slate-500 opacity-75 rounded-full transition-opacity ease duration-250 hover:opacity-100"
-            href="#slide-3"
-          />
+    <div class="px-4 py-20 sm:px-6 lg:px-8 lg:py-14 mx-auto overflow-hidden">
+      <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold uppercase text-center pb-10">Certificates</h2>
+      <div
+        className="flex-1 relative flex justify-center items-center
+         max-xl:py-60 bg-cover bg-center pb-36"
+      >
+        <img
+          src={bigTruckImage}
+          alt="Truck Collection"
+          width={750}
+          height={502}
+          className="object-contain relative z-10 shadow-2xl rounded-lg"
+        />
+        <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] max-sm:px-6">
+          {trucks.map((truck) => (
+            <div key={truck}>
+              <TruckCard
+                imgURL={truck}
+                changeTruckImage={(truck) => setTruckImage(truck)}
+                bigTruckImage={bigTruckImage}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

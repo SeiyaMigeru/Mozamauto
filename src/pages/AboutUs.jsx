@@ -49,7 +49,7 @@ const AboutUs = () => {
       <section>
         <WhoIsMozam/>
       </section>
-      <section>
+      <section className="bg-zinc-50">
         <LeadersOfMozam/>
       </section>
       <section className="padding">

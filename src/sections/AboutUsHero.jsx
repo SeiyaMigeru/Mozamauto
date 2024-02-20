@@ -16,12 +16,13 @@ const AboutUsHero = () => {
       className={`flex items-center justify-center ${fadeIn ? "fadeIn" : ""}`}
     >
       <div className="relative h-[70vh] overflow-hidden w-full mt-28">
-        <img
+        {/*         <img
           src={HeroAboutUs}
           alt="Background Hero"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-slate-300 opacity-60"></div>
+        <div className="absolute inset-0 bg-slate-300 opacity-60"></div>*/}
+
         <div
           className={`absolute inset-0 flex justify-center slideUp  p-10 ${
             fadeIn ? "slideUp" : ""

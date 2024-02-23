@@ -1,8 +1,11 @@
 import { Failed } from "../assets/icons";
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
+import { LanguageContext } from "../language/LanguageContext";
+import { generalModalContent } from "../constants/modalContent";
 
 const LoadingModal = () => {
   const modalContentRef = useRef(null);
+  const { language } = useContext(LanguageContext);
 
   useEffect(() => {
     // Disable scrolling when the modal is mounted
@@ -21,7 +24,7 @@ const LoadingModal = () => {
       >
             <div className="border-t-4 border-blue-500 border-solid rounded-full h-12 w-12 animate-spin"></div>
         <p className="font-bold font-palanquin text-xl">
-          Sending Mail
+          {generalModalContent[language].loading}
         </p>
       </div>
     </div>

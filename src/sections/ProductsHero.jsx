@@ -1,7 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import { ProductHero } from "../assets/images";
+import { LanguageContext } from "../language/LanguageContext";
+import { productsHeroContent } from "../constants/productsContent";
 
 const ProductsHero = () => {
+  const { language } = useContext(LanguageContext);
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
@@ -25,17 +28,21 @@ const ProductsHero = () => {
           }`}
         >
           <div className="flex flex-col items-center justify-center">
-            <h1 className=" text-center mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold">
-              <span class=" text-gray-900">Mozam Auto </span>
-              <span className="text-gray-600 inline-block mt-3">
-                {" "}
-                Trucks & Parts
-              </span>
-              <h2 class="font-tahoma text-lg text-gray-800">
-                We take pride in offering a wide variety of premium products,
-                each of which is a testament to quality and endurance.
+            <h1 className=" text-center mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold"
+              dangerouslySetInnerHTML={{
+                __html: productsHeroContent[language].header,
+              }}
+            
+            ></h1>
+              
+              <h2 class="font-tahoma text-lg text-gray-800"
+                dangerouslySetInnerHTML={{
+                  __html: productsHeroContent[language].subHeader,
+                }}
+              >
+                
               </h2>
-            </h1>
+            
           </div>
         </div>
       </div>

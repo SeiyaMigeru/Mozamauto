@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import {
   Partner1,
   Partner2,
@@ -9,6 +9,8 @@ import {
   Partner7,
   Partner8,
 } from "../assets/images"; // Update with the correct image paths
+import { LanguageContext } from "../language/LanguageContext";
+import { partnersHeroContent } from "../pages/partnersContent";
 
 const PartnerSection3 = () => {
   const partners = [
@@ -23,6 +25,8 @@ const PartnerSection3 = () => {
   ];
   const [showFirstHalf, setShowFirstHalf] = useState(true);
 
+  const { language } = useContext(LanguageContext);
+
   const toggleHalf = () => {
     setShowFirstHalf((prev) => !prev);
   };
@@ -34,8 +38,10 @@ const PartnerSection3 = () => {
   return (
     <div className="flex flex-col items-center max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div className="w-2/3 sm:w-1/2 lg:w-1/3 mx-auto text-center mb-6">
-        <h2 className="text-white">
-        Trusted by recognized <b>Chinese Brands</b> to deliver quality products.
+        <h2 className="text-white" dangerouslySetInnerHTML={{
+                __html: partnersHeroContent[language].header,
+              }}>
+        
         </h2>
       </div>
 

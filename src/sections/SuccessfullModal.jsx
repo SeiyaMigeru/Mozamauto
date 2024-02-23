@@ -1,8 +1,12 @@
 import { Success } from "../assets/icons";
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
+import { LanguageContext } from "../language/LanguageContext";
+import { generalModalContent } from "../constants/modalContent";
 
 const SuccessfullModal = ({ closeModal }) => {
   const modalContentRef = useRef(null);
+  const { language } = useContext(LanguageContext);
+  
 
   useEffect(() => {
     // Disable scrolling when the modal is mounted
@@ -22,13 +26,13 @@ const SuccessfullModal = ({ closeModal }) => {
       >
         <img src={Success} width={100} />
         <p className="font-bold font-palanquin text-xl">
-          Success! Your Inquiry has been submitted.
+          {generalModalContent[language].successful}
         </p>
         <button
           onClick={closeModal}
           className="bg-gray-500 hover:bg-gray-700 text-white px-4 py-1 uppercase rounded-md font-bold font-palanquin"
         >
-          Close
+          {generalModalContent[language].close}
         </button>
       </div>
     </div>

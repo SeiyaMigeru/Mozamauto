@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FirenzaTire2 } from "../assets/images";
+import { LanguageContext } from "../language/LanguageContext";
+import { infoModalContent } from "../constants/modalContent";
 
 const InfoModal = ({ onClose, product, submitForm }) => {
   const [formData, setFormData] = useState({
@@ -11,6 +13,7 @@ const InfoModal = ({ onClose, product, submitForm }) => {
   });
 
   const [isFormValid, setIsFormValid] = useState(false);
+  const { language } = useContext(LanguageContext);
 
 
   const onChange = (e) => {
@@ -70,7 +73,7 @@ const InfoModal = ({ onClose, product, submitForm }) => {
           <div className="flex-[.75]">
             <div className="bg-white flex flex-col border rounded-xl p-4">
               <h2 className="text-xl font-semibold text-gray-800">
-                Information Desk
+                {infoModalContent[language].header}
               </h2>
 
               <form>
@@ -80,7 +83,7 @@ const InfoModal = ({ onClose, product, submitForm }) => {
                       htmlFor="work-email"
                       className="block mb-2 text-sm text-gray-700 font-medium"
                     >
-                      Work Email
+                      {infoModalContent[language].email}
                     </label>
                     <input
                       type="email"
@@ -97,7 +100,7 @@ const InfoModal = ({ onClose, product, submitForm }) => {
                       htmlFor="company-name"
                       className="block mb-2 text-sm text-gray-700 font-medium"
                     >
-                      Company Name
+                      {infoModalContent[language].companyName}
                     </label>
                     <input
                       type="text"
@@ -113,7 +116,7 @@ const InfoModal = ({ onClose, product, submitForm }) => {
                       htmlFor="contact-number"
                       className="block mb-2 text-sm text-gray-700 font-medium"
                     >
-                      Contact Number
+                      {infoModalContent[language].number}
                     </label>
                     <input
                       type="tel"
@@ -131,7 +134,7 @@ const InfoModal = ({ onClose, product, submitForm }) => {
                       htmlFor="details"
                       className="block mb-2 text-sm text-gray-700 font-medium"
                     >
-                      Details
+                      {infoModalContent[language].details}
                     </label>
                     <textarea
                       id="about-details"
@@ -156,7 +159,7 @@ const InfoModal = ({ onClose, product, submitForm }) => {
                   } `}
                 disabled={!isFormValid}
               >
-                Confirm Order
+                {infoModalContent[language].confirm}
               </button>
             </div>
           </div>

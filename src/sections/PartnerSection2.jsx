@@ -1,13 +1,17 @@
 import { ShacmanCert, LovolCert, FirenzaCert } from "../assets/images";
 import { trucks, statistics } from "../constants";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import TruckCard from "../components/TruckCard";
+import { LanguageContext } from "../language/LanguageContext";
+import { partnersSectionContent } from "../pages/partnersContent";
 
 const PartnerSection2 = () => {
   const [bigTruckImage, setTruckImage] = useState(ShacmanCert);
+  const { language } = useContext(LanguageContext);
+
   return (
     <div class="px-4 py-20 sm:px-6 lg:px-8 lg:py-14 mx-auto overflow-hidden">
-      <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold uppercase text-center pb-10">Certificates</h2>
+      <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold uppercase text-center pb-10">{partnersSectionContent[language].certificates}</h2>
       <div
         className="flex-1 relative flex justify-center items-center
          max-xl:py-60 bg-cover bg-center pb-36"

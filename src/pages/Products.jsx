@@ -3,6 +3,7 @@ import FloatingIcon from "../components/FloatingIcon";
 import Nav from "../components/Nav";
 import { Footer, ProductsHero, ProductsTab } from "../sections";
 import ProductSection from "../sections/ProductSection";
+import Navbar from "../components/Navbar";
 
 const Products = () => {
   const [isFloatingIconFixed, setIsFloatingIconFixed] = useState(true);
@@ -41,7 +42,7 @@ const Products = () => {
 
   return (
     <main className="relative">
-      <Nav />
+      <Navbar />
       <section className="">
         <ProductsHero />
       </section>

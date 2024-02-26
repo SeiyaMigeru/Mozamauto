@@ -33,7 +33,7 @@ const CustomerReviews = () => {
         >
           <div className="flex flex-col items-center justify-center">
             <h2
-              className="font-palanquin text-4xl text-white capitalize font-bold lg:max-w-lg"
+              className="font-palanquin text-3xl sm:text-4xl text-white capitalize font-bold lg:max-w-lg"
               dangerouslySetInnerHTML={{
                 __html: eventsHome[language].header,
               }}

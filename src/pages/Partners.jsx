@@ -1,5 +1,6 @@
 import FloatingIcon from "../components/FloatingIcon";
 import Nav from "../components/Nav";
+import Navbar from "../components/Navbar";
 import { PartnersHero, PartnerSection1, PartnerSection2, PartnerSection3, Footer } from "../sections";
 import React, { useState, useEffect } from "react";
 
@@ -38,7 +39,7 @@ const Partners = () => {
   }, []);
   return (
     <main className="relative overflow-hidden">
-      <Nav />
+      <Navbar />
       <section className="">
         <PartnersHero />
       </section>

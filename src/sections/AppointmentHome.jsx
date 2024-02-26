@@ -16,9 +16,7 @@ const AppointmentHome = () => {
   }, []);
   return (
     <div
-      className={`flex items-center justify-center ${
-        fadeIn ? "fadeIn" : ""
-      }`}
+      className={`flex items-center justify-center ${fadeIn ? "fadeIn" : ""}`}
     >
       <div className="relative h-[80vh] overflow-hidden w-full">
         <img
@@ -34,7 +32,7 @@ const AppointmentHome = () => {
         >
           <div className="flex flex-col items-center justify-center mt-24">
             <h2
-              className="font-palanquin text-4xl text-white capitalize font-bold lg:max-w-lg"
+              className="font-palanquin text-3xl sm:text-4xl text-white capitalize font-bold lg:max-w-lg"
               dangerouslySetInnerHTML={{
                 __html: superQualityContent[language].header,
               }}

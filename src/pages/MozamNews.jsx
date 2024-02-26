@@ -2,6 +2,7 @@ import Nav from "../components/Nav";
 import { MozamEvents, MozamNewsHero, Footer } from "../sections";
 import { useEffect, useState } from "react";
 import FloatingIcon from "../components/FloatingIcon";
+import Navbar from "../components/Navbar";
 
 const MozamNews = () => {
   const [isFloatingIconFixed, setIsFloatingIconFixed] = useState(true);
@@ -39,7 +40,7 @@ const MozamNews = () => {
 
   return (
     <main className="relative">
-      <Nav />
+      <Navbar />
       <section className="">
         <MozamNewsHero />
       </section>

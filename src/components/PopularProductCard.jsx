@@ -2,7 +2,7 @@ import { star } from '../assets/icons'
 
 const PopularProductCard = ({ imgURL, name}) => {
   return (
-    <div className="flex flex-1 flex-col w-full max-sm:w-full">
+    <div className="flex flex-1 flex-col w-full sm:w-full items-center xs:item-start">
         <img
             src={imgURL} alt={name}
             className=" rounded-2xl w-[280px] h-[280px]"

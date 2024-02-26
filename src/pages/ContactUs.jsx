@@ -5,6 +5,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { sendContactUsForm } from '../functions/sendMail';
 import GeneralModal from '../sections/GeneralModal';
 import { ModalContext } from '../components/ModalProvider';
+import Navbar from '../components/Navbar';
 
 
 const ContactUs = () => {
@@ -70,7 +71,7 @@ const ContactUs = () => {
 
   return (
     <main className="relative">
-      <Nav/>
+      <Navbar/>
       
       <section className="">
         <ContacUsHero/>

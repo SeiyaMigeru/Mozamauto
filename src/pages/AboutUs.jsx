@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Nav from "../components/Nav"
 import FloatingIcon from "../components/FloatingIcon";
 import { AboutUsHero, Footer, VM, Brands, WhoIsMozam, LeadersOfMozam } from "../sections"
+import Navbar from "../components/Navbar";
 
 const AboutUs = () => {
   const [isFloatingIconFixed, setIsFloatingIconFixed] = useState(true);
@@ -39,7 +40,7 @@ const AboutUs = () => {
 
   return (
     <main className="relative">
-      <Nav/>
+      <Navbar/>
       <section className="">
         <AboutUsHero />
       </section>

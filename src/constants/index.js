@@ -40,5 +40,4 @@ export const reviews = [
 export const socialmedia = [
     {src: facebook, alt:'facebook logo', href:'https://www.facebook.com/mozamauto/'},
     {src: instagram, alt:'instagramlogo', href:'https://www.instagram.com/mozam_autolda/'},
-    {src: twitter, alt:'twitter logo', href:''},
 ];

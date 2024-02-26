@@ -15,6 +15,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { ModalContext } from "../components/ModalProvider";
 import GeneralModal from "../sections/GeneralModal";
 import { sendSuggestionForm } from "../functions/sendMail";
+import Navbar from "../components/Navbar";
 
 const HomePage = () => {
   const [isFloatingIconFixed, setIsFloatingIconFixed] = useState(true);
@@ -76,7 +77,7 @@ const HomePage = () => {
   }, []);
   return (
     <main>
-      <Nav />      
+      <Navbar />      
       <section className="">
         <NewHero />
       </section>

@@ -5,6 +5,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { ModalContext } from "../components/ModalProvider";
 import GeneralModal from "../sections/GeneralModal";
 import { sendAppointmentForm, sendContactUsForm } from "../functions/sendMail";
+import Navbar from "../components/Navbar";
 
 const Appointment = () => {
   const [isFloatingIconFixed, setIsFloatingIconFixed] = useState(true);
@@ -71,7 +72,7 @@ const Appointment = () => {
 
   return (
     <main className="relative">
-      <Nav />
+      <Navbar />
       <section className="">
         <AppointmentHero />
       </section>

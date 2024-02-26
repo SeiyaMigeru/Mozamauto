@@ -99,15 +99,15 @@ const subscribeContent = {
 
 const footerContent = {
     en: {
-        footerTagline: `CHOOSE MOZAM AUTO. <br />
-        CHOOSE TO BE <b>DRIVEN TO PERFECTION</b>`,
+        footerTagline: `CHOOSE MOZAM AUTO.
+        CHOOSE TO BE <br> <span class="font-bold mt-2">DRIVEN TO PERFECTION</span>`,
         copyright: `Copyright. All Rights Reserved`,
         termsAndCondi: `Terms & Conditions`
     },
     es: {
         footerTagline: `
-        ESCOLHA MOZAM AUTO.<br />
-        Escolha Ser <b>IMPULSIONADO PARA A PERFEIÇÃO</b>`,
+        ESCOLHA MOZAM AUTO.
+        Escolha Ser <br> <span class="font-bold mt-2">IMPULSIONADO PARA A PERFEIÇÃO</span>`,
         copyright: `Copyright. All Rights Reserved`,
         termsAndCondi: `Termos e Condições`
     }

@@ -1,9 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import { EventHero } from "../assets/images";
+import { newsHeroContent } from "../constants/newsContent";
+import { LanguageContext } from "../language/LanguageContext";
 
 const MozamNewsHero = () => {
 
   const [fadeIn, setFadeIn] = useState(false);
+  const { language } = useContext(LanguageContext);
 
   useEffect(() => {
     setFadeIn(true);
@@ -28,10 +31,11 @@ const MozamNewsHero = () => {
         <div className="flex flex-col items-center justify-center">
           <h1
             className=" text-center mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold"
-           
+            dangerouslySetInnerHTML={{
+              __html: newsHeroContent[language].header,
+            }}
           >
-             <span class=" text-gray-900">Mozam News {" "} </span>
-            <span className="text-gray-600 inline-block mt-3">and Events</span>
+             
           </h1>
         </div>
       </div>

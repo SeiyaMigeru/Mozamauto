@@ -1,6 +1,12 @@
+import { useContext } from "react";
 import { Event1, Event2, Event3, Event4 } from "../assets/images";
+import { LanguageContext } from "../language/LanguageContext";
+import { newsEventsContent } from "../constants/newsContent";
 
 const MozamEvents = () => {
+  const { language } = useContext(LanguageContext);
+
+
   return (
     <div>
       <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -17,11 +23,10 @@ const MozamEvents = () => {
             <div class="absolute bottom-0 inset-x-0 z-10">
               <div class="flex flex-col h-full p-4 sm:p-6">
                 <h3 class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/[.8]">
-                  Recap: The Landmark Event by MozamAuto
+                  {newsEventsContent[language].eventOneHeader}
                 </h3>
                 <p class="mt-2 text-white/[.8]">
-                  Unveiled Groundbreaking Fleet Innovations & Inspiring Keynote
-                  Addresses by Industry Pioneers
+                {newsEventsContent[language].eventOneSubHeader}
                 </p>
               </div>
             </div>
@@ -39,11 +44,10 @@ const MozamEvents = () => {
             <div class="absolute bottom-0 inset-x-0 z-10">
               <div class="flex flex-col h-full p-4 sm:p-6">
                 <h3 class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/[.8]">
-                  Reflecting on the Unforgettable Moments and Events!
+                {newsEventsContent[language].eventTwoHeader}
                 </h3>
                 <p class="mt-2 text-white/[.8]">
-                  Live Demonstrations Showcasing Cutting-Edge Technology &
-                  Networking Opportunities with Visionary Leaders
+                {newsEventsContent[language].eventTwoSubHeader}
                 </p>
               </div>
             </div>
@@ -64,8 +68,7 @@ const MozamEvents = () => {
             <div class="absolute bottom-0 inset-x-0 z-10">
               <div class="flex flex-col h-full p-4 sm:p-6">
                 <h3 class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/[.8]">
-                  Stay tuned for more updates and innovations from MozamAuto on
-                  our Facebook Page!
+                  {newsEventsContent[language].facebookEventContent}
                 </h3>
               </div>
             </div>
@@ -83,8 +86,7 @@ const MozamEvents = () => {
             <div class="absolute bottom-0 inset-x-0 z-10">
               <div class="flex flex-col h-full p-4 sm:p-6">
                 <h3 class="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/[.8]">
-                  Stay tuned for more updates and innovations from MozamAuto on
-                  our Instagram Page!
+                  {newsEventsContent[language].instagramEventContent}
                 </h3>
               </div>
             </div>

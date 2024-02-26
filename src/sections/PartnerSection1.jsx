@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { ShacmanP1, ShacmanP2, ShacmanP3, ShacmanP4,
         FirenzaP1, FirenzaP2, FirenzaP3, FirenzaP4 } from '../assets/images'
+import { LanguageContext } from '../language/LanguageContext';
+import { partnersSectionContent } from '../pages/partnersContent';
 
 const PartnerSection1 = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
 
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
 
       <div class="mx-auto max-w-2xl mb-8 lg:mb-14 text-center">
         <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold ">
-          SHACMAN
+          {partnersSectionContent[language].shacmanHeader}
         </h2>
         <p class="mt-3 text-black ">
-        Shaanxi Automobile Group Co., Ltd., trading as Shacman was founded in 1968. A Chinese bus and truck manufacturer with headquarters in Xi'an, Shaanxi, China.
+          {partnersSectionContent[language].shacmanSubHeader}
         </p>
       </div>
     
@@ -40,10 +44,10 @@ const PartnerSection1 = () => {
 
       <div class="mx-auto max-w-2xl mb-8 lg:mb-14 text-center pt-10 mt-40">
         <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold ">
-          FIRENZA
+          {partnersSectionContent[language].firenzaHeader}
         </h2>
         <p class="mt-3 text-black ">
-        Sumo Firenza, a proprietary brand of tyres from Stamford Tyres International, originated from the need to provide a quality yet affordable driving experience to value-seeking customers.
+          {partnersSectionContent[language].firenzaSubHeader}
         </p>
       </div>
     

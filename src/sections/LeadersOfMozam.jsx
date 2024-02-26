@@ -39,16 +39,22 @@ import {
   Employee38,
   Employee39,
 } from "../assets/images";
+import { useContext } from "react";
+import { LanguageContext } from "../language/LanguageContext";
+import { peopleOfMozamContent } from "../constants/peopleOfMozamContent";
 
 const LeadersOfMozam = () => {
+  const { language } = useContext(LanguageContext);
+
   return (
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div class=" mx-auto text-center mb-10 lg:mb-14 max-w-2xl">
         <h2 class="text-2xl font-bold md:text-4xl md:leading-tight">
           People of Mozam
+          {peopleOfMozamContent[language].header}
         </h2>
         <p class="mt-1 text-gray-600 ">
-          Passionate individuals that executes exemplary results
+        {peopleOfMozamContent[language].subHeader}
         </p>
       </div>
 
@@ -63,7 +69,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">JEROME CARANOG</h3>
-              <p class="text-xs uppercase text-gray-500">ACCOUNTING MANAGER</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].accountingManager}</p>
             </div>
           </div>
 
@@ -126,7 +132,7 @@ const LeadersOfMozam = () => {
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">JOEL LINGAD</h3>
               <p class="text-xs uppercase text-gray-500">
-                SERVICE OPERATION MANAGER
+              {peopleOfMozamContent[language].serviceOpsManager}
               </p>
             </div>
           </div>
@@ -189,7 +195,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">PERFECTO PANTI</h3>
-              <p class="text-xs uppercase text-gray-500">WAREHOUSE MANAGER</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].warehouseManager}</p>
             </div>
           </div>
 
@@ -252,7 +258,7 @@ const LeadersOfMozam = () => {
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">LORE MIE OLIVAR</h3>
               <p class="text-xs uppercase text-gray-500">
-                SERVICE ADMINISTRATOR
+              {peopleOfMozamContent[language].serviceAdmin}
               </p>
             </div>
           </div>
@@ -316,7 +322,7 @@ const LeadersOfMozam = () => {
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">NELMA DIOGO</h3>
               <p class="text-xs uppercase text-gray-500">
-                INVENTORY ADMINISTRATOR
+              {peopleOfMozamContent[language].inventoryAdmin}
               </p>
             </div>
           </div>
@@ -379,7 +385,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">SIPIENE PINTO</h3>
-              <p class="text-xs uppercase text-gray-500">SALES ADMIN</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].salesAdmin}</p>
             </div>
           </div>
 
@@ -442,7 +448,7 @@ const LeadersOfMozam = () => {
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">ADIJA HASSANE CAMISSA</h3>
               <p class="text-xs uppercase text-gray-500">
-                SALES REPRESENTATIVE
+              {peopleOfMozamContent[language].salesRep}
               </p>
             </div>
           </div>
@@ -506,7 +512,7 @@ const LeadersOfMozam = () => {
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">ANA TITO</h3>
               <p class="text-xs uppercase text-gray-500">
-                CLIENT SUPPORT ADVOCATE
+              {peopleOfMozamContent[language].clientSupport}
               </p>
             </div>
           </div>
@@ -570,7 +576,7 @@ const LeadersOfMozam = () => {
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">CARLITOS DIOGO ALBERTO</h3>
               <p class="text-xs uppercase text-gray-500">
-                SALES REPRESENTATIVE
+              {peopleOfMozamContent[language].salesRep}
               </p>
             </div>
           </div>
@@ -633,7 +639,7 @@ const LeadersOfMozam = () => {
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">CÉLIO DE SOUSA</h3>
               <p class="text-xs uppercase text-gray-500">
-                SALES REPRESENTATIVE
+                {peopleOfMozamContent[language].salesRep}
               </p>
             </div>
           </div>
@@ -696,7 +702,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">ELMER SAMORANOS</h3>
-              <p class="text-xs uppercase text-gray-500">SERVICE MECHANIC</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].serviceMechanic}</p>
             </div>
           </div>
 
@@ -757,7 +763,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">FILIPE MUABSA</h3>
-              <p class="text-xs uppercase text-gray-500">SERVICE MECHANIC</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].serviceMechanic}</p>
             </div>
           </div>
 
@@ -818,7 +824,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">FRANCISCO MUCHOLA</h3>
-              <p class="text-xs uppercase text-gray-500">SERVICE MECHANIC</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].serviceMechanic}</p>
             </div>
           </div>
 
@@ -880,7 +886,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">JOAQUIM JOÃO</h3>
-              <p class="text-xs uppercase text-gray-500">SERVICE MECHANIC</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].serviceMechanic}</p>
             </div>
           </div>
 
@@ -942,7 +948,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">JOSUÉ MATEUS MAUANHA</h3>
-              <p class="text-xs uppercase text-gray-500">SERVICE MECHANIC</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].serviceMechanic}</p>
             </div>
           </div>
 
@@ -1004,7 +1010,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">MARIO ITATULA</h3>
-              <p class="text-xs uppercase text-gray-500">WAREHOUSE MAN</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].warehouseMan}</p>
             </div>
           </div>
 
@@ -1065,7 +1071,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">MICHAEL DE CASTRO</h3>
-              <p class="text-xs uppercase text-gray-500">SERVICE MECHANIC</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].serviceMechanic}</p>
             </div>
           </div>
 
@@ -1126,7 +1132,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">MOISÉS SAMUEL MARONDO</h3>
-              <p class="text-xs uppercase text-gray-500">SERVICE MECHANIC</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].serviceMechanic}</p>
             </div>
           </div>
 
@@ -1188,7 +1194,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">ORDE JULINHO CERVEJA</h3>
-              <p class="text-xs uppercase text-gray-500">SERVICE MECHANIC</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].serviceMechanic}</p>
             </div>
           </div>
 
@@ -1250,7 +1256,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">PEDRO BRITO CAMINHO</h3>
-              <p class="text-xs uppercase text-gray-500">WAREHOUSE MAN</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].warehouseMan}</p>
             </div>
           </div>
 
@@ -1312,7 +1318,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">RAFFY CASALJAY</h3>
-              <p class="text-xs uppercase text-gray-500">SERVICE MECHANIC</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].serviceMechanic}</p>
             </div>
           </div>
 
@@ -1373,7 +1379,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">RENZO LOUISE GABON</h3>
-              <p class="text-xs uppercase text-gray-500">SERVICE MECHANIC</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].serviceMechanic}</p>
             </div>
           </div>
 
@@ -1434,7 +1440,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">ROBERT CASTILLO JR.</h3>
-              <p class="text-xs uppercase text-gray-500">SERVICE TECHNICIAN</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].serviceTechnician}</p>
             </div>
           </div>
 
@@ -1495,7 +1501,7 @@ const LeadersOfMozam = () => {
             />
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">SERIO CARLOS</h3>
-              <p class="text-xs uppercase text-gray-500">SERVICE MECHANIC</p>
+              <p class="text-xs uppercase text-gray-500">{peopleOfMozamContent[language].serviceMechanic}</p>
             </div>
           </div>
 
@@ -1558,7 +1564,7 @@ const LeadersOfMozam = () => {
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">VANIA ELINA MUTONDO</h3>
               <p class="text-xs uppercase text-gray-500">
-                CLIENT SUPPORT ADVOCATE
+              {peopleOfMozamContent[language].clientSupport}
               </p>
             </div>
           </div>
@@ -1622,7 +1628,7 @@ const LeadersOfMozam = () => {
             <div class="grow">
               <h3 class="font-medium text-gray-800 ">ZECA MANUEL RODA</h3>
               <p class="text-xs uppercase text-gray-500">
-                PART-SALES REPRESENTATIVE
+              {peopleOfMozamContent[language].partSalesRep}
               </p>
             </div>
           </div>

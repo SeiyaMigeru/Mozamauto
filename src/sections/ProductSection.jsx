@@ -6,6 +6,8 @@ import InfoModal from "./InfoModal";
 import GeneralModal from "./GeneralModal";
 import { sendContactUsForm, sendOrderForm } from "../functions/sendMail";
 import { ModalContext } from "../components/ModalProvider";
+import { LanguageContext } from "../language/LanguageContext";
+import { productSectionContent } from "../constants/productsContent";
 
 const ProductSection = () => {
     const [selectedCategory, setSelectedCategory] = useState("all");
@@ -14,6 +16,8 @@ const ProductSection = () => {
     const [selectedTruck, setSelectedTruck] = useState(allProducts[0]);
     const {isModalVisible, status, openModal, closeModal, updateStatus} = useContext(ModalContext);
     const [searchTerm, setSearchTerm] = useState("");
+
+    const { language } = useContext(LanguageContext);
 
 
     const searchProductByName = (products, searchName) => {
@@ -87,7 +91,7 @@ const ProductSection = () => {
     return (
         <div className="flex justify-center">
             <div className="flex flex-col items-center p-4 w-fit justify-start">
-                <h2 className="text-2xl font-palanquin font-bold mb-4">Mozam Products</h2>
+                <h2 className="text-2xl font-palanquin font-bold mb-4">{productSectionContent[language].mozamProducts}</h2>
                 <div class="my-6 py-2 px-3">
                     <div class="relative max-w-xs">
                         <label for="hs-table-search" class="sr-only">
@@ -126,7 +130,7 @@ const ProductSection = () => {
                         className={` min-w-[250px] m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "all" ? "text-gray-700 bg-gray-300" : ""
                             }`}
                     >
-                        All
+                        {productSectionContent[language].all}
                     </li>
                     <li onClick={() => changeCategory("Shacman")}
                         className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "Shacman"
@@ -134,7 +138,7 @@ const ProductSection = () => {
                             : ""
                             }`}
                     >
-                        Shacman
+                        {productSectionContent[language].shacman}
                     </li>
                     <li onClick={() => changeCategory("Lovol")}
                         className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "LOVOL Industrial Trucks"
@@ -142,7 +146,7 @@ const ProductSection = () => {
                             : ""
                             }`}
                     >
-                        Lovol
+                        {productSectionContent[language].lovol}
                     </li>
                     <li onClick={() => changeCategory("CIMC")}
                         className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "CIMC"
@@ -150,7 +154,7 @@ const ProductSection = () => {
                             : ""
                             }`}
                     >
-                        CIMC
+                        {productSectionContent[language].cimc}
                     </li>
                     <li onClick={() => changeCategory("Firenza")}
                         className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "Firenza"
@@ -158,7 +162,7 @@ const ProductSection = () => {
                             : ""
                             }`}
                     >
-                        Firenza
+                        {productSectionContent[language].firenza}
                     </li>
                     <li onClick={() => changeCategory("Fuchs Oil")}
                         className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "Fuchs Oil"
@@ -166,7 +170,7 @@ const ProductSection = () => {
                             : ""
                             }`}
                     >
-                        Fuchs Oil
+                        {productSectionContent[language].fuchsOil}
                     </li>
                     <li onClick={() => changeCategory("Batteries")}
                         className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "Batteries"
@@ -174,7 +178,7 @@ const ProductSection = () => {
                             : ""
                             }`}
                     >
-                        Batteries
+                        {productSectionContent[language].batteries}
                     </li>
                     <li onClick={() => changeCategory("Parts & Accessories")}
                         className={`m-2 px-3 py-1 border rounded-xl hover:bg-gray-200 font-montserrat shadow cursor-pointer ${selectedCategory === "Parts & Accessories"
@@ -182,7 +186,7 @@ const ProductSection = () => {
                             : ""
                             }`}
                     >
-                        Parts & Accessories
+                        {productSectionContent[language].parts}
                     </li>
                 </ul>
             </div>
@@ -192,7 +196,7 @@ const ProductSection = () => {
                         shownProducts.length === 0 ?
                             (<div className="flex items-center justify-center bg-white p-4 h-full">
                                 <p className="text-2xl font-bold font-palanquin">
-                                    No Products Available
+                                {productSectionContent[language].noProductsAvailable}
                                 </p>
                             </div>) : 
 

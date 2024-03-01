@@ -26,7 +26,7 @@ const NewHero = () => {
             fadeIn ? "slideUp" : ""
           }`}
         >
-          <div className="flex flex-col items-center justify-center gap-10 mt-24">
+          <div className="flex flex-col items-center justify-center gap-10 mt-[10rem]">
             <p
               className="text-white font-montserrat text-4xl md:text-8xl font-bold"
               dangerouslySetInnerHTML={{

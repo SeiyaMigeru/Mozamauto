@@ -12,8 +12,8 @@ const infoModalContent = {
         email: `E-mail de Trabalho`,
         companyName: `Nome da Empresa`,
         number: `Número de Contato`,
-        details: `Details`,
-        confirm: `Confirm Order`
+        details: `Detalhes`,
+        confirm: `Confirmar Pedido`
     }
 }
 
@@ -25,10 +25,10 @@ const generalModalContent = {
         close: `Close`
     },
     es: {
-        loading: `Sending Mail`,
-        successful: `Success! Your Inquiry has been submitted.`,
-        failed: `An error has occured. Please try again`,
-        close: `Close`
+        loading: `Enviar E-mail`,
+        successful: `Sucesso! Sua consulta foi enviada.`,
+        failed: `Ocorreu um erro. Por favor, tente novamente.`,
+        close: `Fechar`
     }
 }
 

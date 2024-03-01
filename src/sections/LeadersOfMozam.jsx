@@ -50,7 +50,6 @@ const LeadersOfMozam = () => {
     <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div class=" mx-auto text-center mb-10 lg:mb-14 max-w-2xl">
         <h2 class="text-2xl font-bold md:text-4xl md:leading-tight">
-          People of Mozam
           {peopleOfMozamContent[language].header}
         </h2>
         <p class="mt-1 text-gray-600 ">

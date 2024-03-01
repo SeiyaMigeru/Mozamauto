@@ -14,17 +14,14 @@ const Brands = () => {
         </h2>
       </div>
 
-      <div class="flex justify-center gap-x-6 sm:gap-x-12 lg:gap-x-24">
-        <img src={Bank1} width={200}/>
+      <div class="flex justify-center flex-wrap gap-6 sm:gap-12 lg:gap-24">
+    <img src={Bank1} width={200} class="w-full sm:w-auto lg:w-1/5"/>
+    <img src={Bank2} width={200} class="w-full sm:w-auto lg:w-1/5"/>
+    <img src={Bank3} width={200} class="w-full sm:w-auto lg:w-1/5"/>
+    <img src={Bank4} width={200} class="w-full sm:w-auto lg:w-1/5"/>
+    <img src={Bank5} width={200} class="w-full sm:w-auto lg:w-1/5"/>
+</div>
 
-        <img src={Bank2} width={200}/>
-
-        <img src={Bank3} width={200}/>
-
-        <img src={Bank4} width={200}/>
-
-        <img src={Bank5} width={200}/>
-      </div>
     </div>
   );
 };

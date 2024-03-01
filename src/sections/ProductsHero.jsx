@@ -15,7 +15,7 @@ const ProductsHero = () => {
     <section
       className={`flex items-center justify-center ${fadeIn ? "fadeIn" : ""}`}
     >
-      <div className="relative h-[70vh] overflow-hidden w-full mt-28">
+      <div className="relative h-[90vh] overflow-hidden w-full">
         <img
           src={ProductHero}
           alt="Background Hero"
@@ -35,7 +35,7 @@ const ProductsHero = () => {
             
             ></h1>
               
-              <h2 class="font-tahoma text-lg text-gray-800"
+              <h2 class="font-tahoma text-lg text-gray-800 font-bold text-center mt-4"
                 dangerouslySetInnerHTML={{
                   __html: productsHeroContent[language].subHeader,
                 }}

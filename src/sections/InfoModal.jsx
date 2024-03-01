@@ -45,9 +45,9 @@ const InfoModal = ({ onClose, product, submitForm }) => {
 
   return (
     <div
-      className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-20 modal-overlay visible"
+      className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-[999] modal-overlay visible"
     >
-      <div className="bg-white p-6 w-1/2 rounded-md shadow-md max-h-[80vh] overflow-y-auto">
+      <div className="bg-white p-6 md:w-9/12 w-10/12 rounded-md shadow-md max-h-[80vh] overflow-y-auto">
         <div className="flex items-center justify-between mb-4">
           <h2 className="font-montserrat text-xl font-bold">{product.name}</h2>
           <button
@@ -57,7 +57,7 @@ const InfoModal = ({ onClose, product, submitForm }) => {
             X
           </button>
         </div>
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <div className="flex-1 flex flex-col">
             <img
               className="m-4 self-center"

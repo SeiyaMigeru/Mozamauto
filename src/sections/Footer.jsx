@@ -20,7 +20,7 @@ const Footer = () => {
 
       {/* Description */}
       <p
-        className="self-start text-sm text-center leading-7 font-montserrat text-white-400  col-span-1 row-span-1"
+        className="self-start text-xs md:text-sm text-center leading-7 font-montserrat text-white-400  col-span-1 row-span-1"
         dangerouslySetInnerHTML={{
           __html: footerContent[language].footerTagline,
         }}
@@ -52,7 +52,7 @@ const Footer = () => {
         <p className="self-center">{footerContent[language].copyright}</p>
       </div>
       <div className="flex flex-col self-end">
-        <p className="text-white font-montserrat text-xs font-bold text-center tracking-[10px] uppercase my-8 md:my-0">
+        <p className="text-white font-montserrat text-xs font-bold text-center tracking-widest md:tracking-[10px] uppercase my-8 md:my-0">
           Beira
         </p>
         <a
@@ -63,7 +63,7 @@ const Footer = () => {
         >
           Antiga Estrada N6 Munhava Casquinha Beira Sofala 2100
         </a>
-        <p className="text-white font-montserrat text-xs font-bold text-center tracking-[10px] uppercase">
+        <p className="text-white font-montserrat text-xs font-bold text-center tracking-widest md:tracking-[10px] uppercase">
           Maputo
         </p>
         <a

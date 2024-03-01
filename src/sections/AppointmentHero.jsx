@@ -15,7 +15,7 @@ const AppointmentHero = () => {
     <section
     className={`flex items-center justify-center ${fadeIn ? "fadeIn" : ""}`}
   >
-    <div className="relative h-[70vh] overflow-hidden w-full mt-28">
+    <div className="relative h-[90vh] overflow-hidden w-full">
       <img
         src={HeroAppointment}
         alt="Background Hero"
@@ -29,7 +29,7 @@ const AppointmentHero = () => {
       >
         <div className="flex flex-col items-center justify-center">
           <h1
-            className=" text-center mt-10 font-palanquin text-8xl max-sm:[72px] max:sm:leading-[82] font-bold"
+            className=" text-center mt-10 font-palanquin text-4xl sm:text-8xl max-sm:[72px] max:sm:leading-[82] font-bold"
             dangerouslySetInnerHTML={{
               __html: apppointmentHeroContent[language].header,
             }}

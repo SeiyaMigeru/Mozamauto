@@ -16,7 +16,7 @@ const MozamNewsHero = () => {
     <section
     className={`flex items-center justify-center ${fadeIn ? "fadeIn" : ""}`}
   >
-          <div className="relative h-[70vh] overflow-hidden w-full mt-28">
+          <div className="relative h-[90vh] overflow-hidden w-full">
       <img
         src={EventHero}
         alt="Background Hero"

@@ -3,7 +3,7 @@ import { customer1, customer2 } from '../assets/images'
 
 const heroContent = {
     en: {
-        tagline: 'Driven To <br /> Perfection',
+        tagline: 'Where Quality Meets <br /> Exceptional Service',
         shopLink: 'Shop now',
         additionalText: `Discover the road ahead with <b>Mozamauto</b>. Our collection
         of powerful trucks is your ticket to unmatched performance,
